@@ -2,6 +2,8 @@
 
 Jedno źródło prawdy dla skilli **organizacji** Opcji Natury: tych, z których korzystają pracownicy (biblioteka organizacji na claude.ai, workspace ChatGPT, projekty zespołu). Narzędzia, z którymi pracuje tylko Daniel w Claude Code, są poza tym repo (lokalne `~/Claude_praca/skille_daniel/`). Repo prywatne `opcja-natura/skille`.
 
+Log wgrań: [`WGRANIA.md`](WGRANIA.md) — po każdym wgraniu dopisz wiersz.
+
 **Zasada:** skill zmieniamy TYLKO tutaj. Po każdej zmianie: commit + push, potem ponowne wgranie paczki tam, gdzie skill jest używany (kolumna „Gdzie wgrany”). Kopie poza tym repo nie istnieją; Claude Code Daniela czyta skille przez symlinki `~/.claude/skills/<nazwa>` → `skills/<nazwa>`.
 
 Wyjątki (skille żyjące przy swojej dokumentacji, bo czytają pliki repo względnymi ścieżkami):
