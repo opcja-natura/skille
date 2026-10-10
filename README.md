@@ -57,7 +57,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | Skill | Po co | Gdzie wgrany | Uwagi |
 |---|---|---|---|
 | `marketing-opcja-natura` | planowanie: strategia (Supabase), kampanie, projekty, historia postów, plan miesiąca | org, CC | 10.10.2026: odesłania do `notion-publikacje`, 13 typów; do ponownego wgrania |
-| `notion-publikacje` | publikacje i zadania marketingu w Notionie (obsada, statusy, zlecenie zadania, „dlaczego nie ma zadania”) + `references/` (automat n8n, inne bazy) | org, CC | 10.10.2026 wchłonął `notion-produkcja-tresci`; zweryfikowany na żywym Notionie i n8n; org ma stare wersje obu — wgrać ten, tamten zdjąć |
+| `notion-publikacje` | publikacje i zadania marketingu w Notionie; SKILL.md = część dla operatora (po ludzku), `references/zapis.md` + `inne-bazy.md` = część techniczna dla agenta | org, CC | 10.10.2026 wchłonął `notion-produkcja-tresci`; zweryfikowany na żywym Notionie i n8n; org ma stare wersje obu — wgrać ten, tamten zdjąć |
 | `tiktok-opcja-natura` | second brain TikToka Agaty | org | master był tylko w paczce |
 | `slack-opcja-natura` | Slack dla pracownika: kanały i do czego służą, apki (marketing, kupony, urlopy), wysyłki, boty | claude.ai-D | przepisany 10.10.2026 (bez `employees.json`); do wgrania do organizacji zamiast wersji z 09.04 |
 

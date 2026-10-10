@@ -43,7 +43,7 @@ Spotkania prowadzone w Notionie (starsze; nagrania i transkrypty rozmów są w T
 - **Daty** rozbite: `date:<Pole>:start` + `date:<Pole>:is_datetime` (0 = sama data).
 - **Checkbox** `__YES__` / `__NO__`.
 - **Pola person** potrafią się zgubić przy `notion-create-pages` — po zapisie odczytaj, popraw `notion-update-page` (`update_properties`).
-- **Szablony** stosuje tylko MCP i tylko z jawnym `template_id`; wtedy nie podawaj `content`. Surowe REST API (n8n) szablonów nie stosuje.
+- **Szablony** stosujesz przez jawne `template_id`; wtedy nie podawaj `content`.
 - **Nie ustawiaj** formuł, rollupów ani pól automatu. Nie kasuj stron (MCP nie ma kasowania) — neutralizuj.
 - **Rename opcji select** kasuje tę wartość w rekordach — zmiany słowników tylko z backupem i za zgodą.
 - Wyszukiwanie: `notion-query-data-sources` (SQL, filtry dat wprost) do list i przekrojów; `notion-search` (semantyczny) do znalezienia strony po treści.
