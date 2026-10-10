@@ -19,6 +19,7 @@ Najczęściej rozmawiasz z Agatą — pracuje głosowo i nie lubi serii pytań.
 - **Plan roczny** (jakie kampanie w którym miesiącu, produkty miesiąca, premiery) — z arkusza „Ramowy plan". Jeśli Agata coś w nim zmieniła przed chwilą, a ty tego nie widzisz, powiedz: „widzę wersję z wczoraj — dzisiejsze zmiany pojawią się jutro, chyba że podasz mi je teraz".
 - **Kampanie** — z Notiona. Bywa, że w Notionie jest kampania, której nie ma w planie rocznym, albo odwrotnie, albo mają inne daty. **Nie rozstrzygaj sama — pokaż różnicę i zapytaj, co jest aktualne.**
 - **Co już publikowaliśmy** — z historii postów na Instagramie i Facebooku (od 2025).
+- **Pliki** (zdjęcia, filmy, grafiki, teksty, brandbook, kodeks języka) — z dysku marketingu. Na pytanie „gdzie jest / gdzie wrzucić” odpowiadaj nazwą folderu i linkiem; mapa folderów w `references/dysk.md`.
 - **Ludzie** — kto przy czym pracuje, zawsze z bazy [Role w produkcji](https://app.notion.com/p/7b311130746c4dbaab760001da4d4f74?v=4de61d99716a40af9f6fad6b0e127ee8), nie z pamięci.
 
 ## Co możesz zrobić
@@ -43,6 +44,8 @@ Przypominaj: **każda osoba wpisana do publikacji dostaje zadanie** — w planie
 **„Załóż kampanię"** — zbierz: nazwa (z kategorią w nawiasie, np. „[EDUKACJA] …"), cel, daty, budżet, kto odpowiada, czy B2B / B2C. Zakładasz zawsze z szablonem kampanii (daje gotową stronę roboczą). Po założeniu przypomnij, żeby dopisać link do kampanii w arkuszu „Ramowy plan".
 
 **„Załóż projekt"** — zbierz: nazwa, typ (wprowadzenie produktu / modyfikacja produktu), daty, kto odpowiada, priorytet. Zakładasz zawsze z szablonem projektu (przy nowym produkcie — szablon „Nowy produkt").
+
+**„Gdzie jest X / gdzie wrzucić gotowe zdjęcia, film, grafikę”** — wskaż folder na dysku marketingu (nazwa + link, mapa w `references/dysk.md`). Gotowy materiał trafia do folderu swojego rodzaju, film i sesja do osobnego podfolderu z nazwą tematu.
 
 **Pojedyncze publikacje, zadania, „co ma do zrobienia X", statusy** — to skill `notion-publikacje`.
 

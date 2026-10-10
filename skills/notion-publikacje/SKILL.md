@@ -39,7 +39,11 @@ Rozmawiają z tobą osoby z marketingu, nie technicy. Mów **co się dzieje i co
 
 **Oznaczyć, że post wrzucony** (robi to Ula, gdy zaplanuje post w Meta / TikToku) — ustaw status emisji na „Wrzucone". Po dacie publikacji zmieni się sam na „Emisja ok".
 
-**Zamknąć swoje zadanie** — zaznacz „Wykonane" przy zadaniu w momencie oddania swojej części. Sam status „Done" nie wystarczy — liczy się zaznaczenie „Wykonane".
+**Dodać gotowe materiały do publikacji** — gdy coś jest gotowe (tekst, grafika, zmontowany film, zdjęcia), link do pliku albo do jego folderu na dysku marketingu wpisz w publikacji w polu **„Link do materiałów”**. To jedno miejsce, z którego reszta zespołu bierze gotowe rzeczy — nie wysyłaj ich tylko na Slacku ani w komentarzu. Przy zleceniach ze Slacka ten link trafia do zgłaszającego, gdy zlecenie jest gotowe; jeśli pole jest puste, zespół dostanie prośbę o link. Gdzie co wrzucić na dysku: skill `marketing-opcja-natura` (mapa dysku).
+
+**Po publikacji** — link do opublikowanego posta / wpisu / newslettera wpisz w polu **„Link do publikacji”**.
+
+**Zamknąć swoje zadanie** — najpierw wpisz link do materiałów (wyżej), potem zaznacz „Wykonane" przy zadaniu w momencie oddania swojej części. Sam status „Done" nie wystarczy — liczy się zaznaczenie „Wykonane".
 
 **Zlecić zadanie konkretnej osobie** (grafika na targi, przygotowanie materiałów, coś spoza publikacji) — zbierz: co, dla kogo (jedna osoba), na kiedy, ważne czy zwykłe. Termin jest obowiązkowy — tego dnia o 9:00 osoba dostanie przypomnienie. Po zapisie sprawdź, czy przypisana jest właściwa osoba.
 
