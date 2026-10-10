@@ -9,25 +9,33 @@ Wszystko, czego potrzebujesz, żeby zapisać i odczytać bez zgadywania. Operato
 | Publikacje marketingowe | `25cdee07-c0dd-8090-8304-000b514105f9` |
 | Tasks Tracker (zadania) | `25adee07-c0dd-80b1-a822-000b6037f86a` |
 | Marketing Campaigns | `25bdee07-c0dd-8074-a650-000b4e3d4fd0` |
-| Role w produkcji | `52fd9c67-81d6-4c15-9cad-bd45146381b2` |
-| Przepływy tworzenia treści | `07019ce5-cb58-4102-b579-47521b4f381e` |
+| Role w produkcji ([widok](https://app.notion.com/p/7b311130746c4dbaab760001da4d4f74?v=4de61d99716a40af9f6fad6b0e127ee8)) | `52fd9c67-81d6-4c15-9cad-bd45146381b2` |
+| Przepływy tworzenia treści ([widok](https://app.notion.com/p/7f51aa31bffc4234a81612b6ea5c7a83?v=3acdee07c0dd801da7d3000c931c127a)) | `07019ce5-cb58-4102-b579-47521b4f381e` |
 
 Parent przy zapisie: `{"type":"data_source_id","data_source_id":"…"}`. Zapis: `notion-create-pages` (max 100 naraz). Edycja: `notion-update-page` z `command:"update_properties"`. Odczyt list i przekrojów: `notion-query-data-sources` (SQL). Do znalezienia strony po treści: `notion-search`.
 
-## Osoby (Notion user ID)
+## Ludzie i terminy — czytaj na żywo, nie z pamięci
 
-| Osoba | user ID |
-|---|---|
-| Antonina Zaleska (copy@) | `36bd872b-594c-81a4-8a9b-0002faf33666` |
-| Ula Mierzwa (studio@) | `345d872b-594c-817a-af4e-0002dfad1601` |
-| video opcjanatura (video@) | `3cdd872b-594c-8100-8e64-00029882adfb` |
-| Agata (kontakt@) | `25ad872b-594c-8176-86eb-0002d9a624e7` |
-| Daniel Suliga | `1f4d872b-594c-81f9-b5cf-00025e45b0dd` |
-| Jakub Biernacki | `329d872b-594c-810b-b1ed-000228735433` |
-| social@ (Zuza) | `39dd872b-594c-8168-b046-00028ab01170` |
-| Daria Szczygieł (foto@) — nieaktywna w produkcji | `360d872b-594c-819f-baa3-000270a88242` |
+Role w produkcji (kto, jaka rola, aktywny, user ID):
+```sql
+SELECT "Osoba", "Role", "Aktywna", "Notion user", "Offset awaryjny"
+FROM "collection://52fd9c67-81d6-4c15-9cad-bd45146381b2";
+```
+- `Notion user` = ID do pola `Responsible Person` / `Assignee` (zdejmij prefiks `user://`).
+- `Aktywna = '__NO__'` → nie wpisuj tej osoby.
+- `Offset awaryjny` = termin (dni przed publikacją) zadania ogólnego dla osoby bez roli w danym rodzaju.
 
-Aktualna lista: `notion-get-users`.
+Kroki i terminy dla rodzaju publikacji:
+```sql
+SELECT "Krok", "Rola", "Offset dni", "Opis kroku"
+FROM "collection://07019ce5-cb58-4102-b579-47521b4f381e"
+WHERE "Type" = ? ORDER BY "Krok";
+```
+Termin zadania = data publikacji − `Offset dni`. Kto dostaje zadanie: osoba z publikacji, której `Role` (z Ról w produkcji) zawiera `Rola` kroku. **Kolumny `Domyślna osoba` w Przepływach nie używaj** — o osobie decyduje obsada publikacji.
+
+Osoby spoza Ról (np. przy zadaniu ręcznym dla kogoś z innego działu): `notion-get-users` z zapytaniem po imieniu lub mailu.
+
+Odczytaj obie bazy raz na rozmowę i trzymaj wynik — nie pytaj o to samo przy każdej publikacji.
 
 ## Publikacja — pola
 
@@ -53,7 +61,7 @@ Przykład:
   "date:Date:is_datetime": 0,
   "Type": "video",
   "Channel": "[\"Instagram\",\"Facebook\"]",
-  "Responsible Person": "[\"3cdd872b-594c-8100-8e64-00029882adfb\",\"36bd872b-594c-81a4-8a9b-0002faf33666\",\"345d872b-594c-817a-af4e-0002dfad1601\"]",
+  "Responsible Person": "[\"<user ID z Ról>\",\"<user ID z Ról>\"]",
   "Campaign": "[\"https://app.notion.com/p/32fdee07c0dd80e1aab2fa1c583cbb2f\"]"
 }
 ```
@@ -66,7 +74,7 @@ Szablon publikacji (opcjonalny): `template_id: 25cdee07-c0dd-80ac-bd60-c64752a79
 ```json
 {
   "Task name": "Grafiki na stoisko targowe",
-  "Assignee": "[\"345d872b-594c-817a-af4e-0002dfad1601\"]",
+  "Assignee": "[\"<user ID>\"]",
   "date:Due date:start": "2026-10-20",
   "date:Due date:is_datetime": 0,
   "Status": "To do",

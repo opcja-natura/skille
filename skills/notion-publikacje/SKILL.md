@@ -23,7 +23,7 @@ Rozmawiają z tobą osoby z marketingu, nie technicy. Mów **co się dzieje i co
 
 ## Co możesz zrobić dla operatora
 
-**Dodać publikację** — zbierz: o czym jest (tytuł), datę, rodzaj, kto pracuje, kampanię (jeśli jest). Kanał zaproponuj z tabeli rodzajów. Pokaż podsumowanie, po „tak" zapisz. Potem powiedz, kto dostał jakie zadanie i na kiedy (patrz „Terminy").
+**Dodać publikację** — zbierz: o czym jest (tytuł), datę, rodzaj, kto pracuje, kampanię (jeśli jest). Kanał zaproponuj z tabeli rodzajów. Pokaż podsumowanie, po „tak" zapisz. Potem powiedz, kto dostał jakie zadanie i na kiedy .
 
 **Dodać kilka publikacji naraz** — najpierw tabela do akceptacji, potem jedna na próbę, potem reszta. Przy planowaniu całego miesiąca korzystaj ze skilla `marketing-opcja-natura`.
 
@@ -48,7 +48,7 @@ Rozmawiają z tobą osoby z marketingu, nie technicy. Mów **co się dzieje i co
 **„Nie widzę swojego zadania"** — sprawdź po kolei i powiedz operatorowi wynik prostymi słowami:
 1. Czy publikacja ma datę, rodzaj i tę osobę wpisaną? Jeśli nie — zaproponuj uzupełnienie.
 2. Czy operator szuka pod właściwą nazwą? Zadanie nazywa się „[rola · rodzaj] tytuł publikacji", np. „[copy · post] Nakarm skórę…". Osoba bez swojej roli w danym rodzaju ma zadanie „[zadanie · rodzaj] tytuł".
-3. Czy osoba jest na liście aktywnych (tabela „Kto jest kim")?
+3. Czy osoba jest aktywna w Rolach w produkcji i czy ma rolę z kroków tego rodzaju?
 4. Jeśli wszystko się zgadza, a zadania nie ma — powiedz: „Wszystko jest wpisane poprawnie, a zadanie się nie pojawiło. Zgłaszam to Danielowi." Nie zakładaj zadania ręcznie w zastępstwie.
 
 ## Rodzaje publikacji
@@ -65,40 +65,22 @@ Rozmawiają z tobą osoby z marketingu, nie technicy. Mów **co się dzieje i co
 | `inne` | konkurs, wyzwanie, coś jednorazowego | zależnie |
 | `b2b artykuł` · `b2b baner` · `b2b newsletter` · `b2b inne` · `b2b pakiet` | materiały dla partnera B2B (zwykle ze zlecenia ze Slacka) | zależnie |
 
-Innych rodzajów nie ma. „Inne" też daje ludziom zadania — nie używaj go jako „nie wiem".
+Innych rodzajów nie ma (gdyby operator podał nowy, sprawdź w Przepływach, czy już jest). „Inne" też daje ludziom zadania — nie używaj go jako „nie wiem".
 
 **Tytuł** = o czym to jest, 4–8 słów, zrozumiałe dla kogoś, kto tego nie planował. Bez rodzaju, kanału, kampanii i daty w tytule — to osobne pola.
 
-## Terminy — kto co robi i ile dni przed publikacją
+## Terminy i ludzie — zawsze aktualne z Notiona
 
-| Rodzaj | Kolejne kroki (dni przed datą publikacji) |
-|---|---|
-| `stories` | tekst −14, grafika −14 |
-| `post` | tekst −21, grafika −14 |
-| `video` | nagranie −21, montaż −14, tekst −7, okładka −5 |
-| `video agata` | nagranie −14, montaż −7 |
-| `newsletter` | materiały −21, sprawdzenie tematu −18, tekst −14, grafika −7 |
-| `blog creative` | SEO −14, tekst −7, grafika −5 |
-| `blog seo` | tekst −7, grafika −5 |
-| `inne` · `b2b inne` · `b2b pakiet` | tekst / nagranie / montaż −14, grafika / składanie −7 |
-| `b2b artykuł` | SEO −21, tekst −14, grafika −7 |
-| `b2b baner` | tekst −7, grafika −3 |
-| `b2b newsletter` | tekst −14, grafika −7 |
+Nie masz tu wpisanej listy ludzi ani terminów, bo się zmieniają. **Za każdym razem, gdy potrzebujesz wiedzieć, kto co robi albo na kiedy, przeczytaj dwie bazy** (gotowe zapytania w `references/zapis.md`):
 
-Zadanie dostaje tylko ta osoba, która jest wpisana i ma tę rolę. Osoba wpisana, której roli w danym rodzaju nie ma, dostaje ogólne zadanie przy tej publikacji.
+- **[Przepływy tworzenia treści](https://app.notion.com/p/7f51aa31bffc4234a81612b6ea5c7a83?v=3acdee07c0dd801da7d3000c931c127a)** — dla każdego rodzaju publikacji: jakie są kroki (tekst, grafika, montaż…) i ile dni przed publikacją wypada termin każdego.
+- **[Role w produkcji](https://app.notion.com/p/7b311130746c4dbaab760001da4d4f74?v=4de61d99716a40af9f6fad6b0e127ee8)** — kto jest w zespole produkcji, jaką rolę pełni i czy jest aktywny.
 
-## Kto jest kim (stan 10.10.2026)
-
-| Osoba | Co robi |
-|---|---|
-| Antosia (Antonina Zaleska) | teksty, materiały |
-| Ula (Ula Mierzwa) | grafika, okładki; oznacza „Wrzucone" |
-| konto video@ | montaż |
-| Agata | nagrania; decyduje o zleceniach |
-| Daniel | SEO i publikacja bloga |
-| Kuba (Jakub Biernacki) | sprawdzenie tematu newslettera |
-| Zuza (konto social@) | brak przypisanej roli — wpisana dostanie tylko zadanie ogólne |
-| Daria Szczygieł | **nie wpisuj** — od 31.08 montaż robi konto video@ |
+Jak z tego korzystać w rozmowie:
+- **Kto dostanie zadanie:** osoba wpisana do publikacji, która ma rolę z kroków tego rodzaju, dostaje zadanie z terminem „data publikacji minus dni z kroku". Osoba wpisana bez takiej roli dostaje jedno ogólne zadanie przy tej publikacji.
+- **Nie wpisuj osób nieaktywnych** w Rolach w produkcji. Osoby, której nie ma w Rolach, wpisuj tylko, jeśli operator tego chce — powiedz mu, że dostanie zadanie ogólne.
+- **Kiedy operator pyta „kto robi grafikę"** — odpowiedz imieniem z Ról, nie nazwą konta.
+- Operatorowi podawaj gotowe daty („tekst do 2.10"), nie „−21 dni".
 
 Gdzie zespół to ogląda: [FABRYKA PUBLIKACJI](https://app.notion.com/p/3afdee07c0dd8020a6aed89214ca39a6) (publikacje, kalendarz, zaległe) · [ZARZĄDZAJ ZADANIAMI](https://app.notion.com/p/273dee07c0dd8089acb3c1e4fd72d72d) (swoje zadania) · [Jak pracujemy](https://app.notion.com/p/bd2dee07c0dd83e9a22b8171dee46def) (zasady zespołu).
 
