@@ -1,0 +1,10 @@
+interface:
+  display_name: przelewy powracajace
+  short_description: 'Odnotowanie opłaconych płatności powracających Opcja Natura (wypłaty, ZUS, podatki, czynsze, abonamenty, kurierzy, stałe faktury) w arkuszu „003_przelewy powracajace”. Z listy przelewów (CSV z iPKO, wyciąg, tabelka, PDF) rozpoznaje, które są powracające, i podaje gotowe wiersze do wklejenia w payments_logs oraz wątpliwości dla operatora.'
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

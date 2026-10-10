@@ -1,0 +1,12 @@
+interface:
+  display_name: Nowe zamówienie dostawy
+  short_description: Zakładanie zamówień eksploatacyjnych/pozostałych w rejestrze dostaw Opcja Natura
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

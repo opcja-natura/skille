@@ -1,0 +1,516 @@
+{
+  "schema": "opcja-natura-brandbook-agent/1.0",
+  "brand": "Opcja Natura",
+  "source": {
+    "file": "opcja_natura_brandbook_08_2026.pdf",
+    "date": "2026-08",
+    "pages": 17,
+    "creator": "Adobe InDesign 20.5 (Macintosh)",
+    "page_size_points": [
+      1920,
+      1080
+    ]
+  },
+  "typography": {
+    "primary_display": [
+      {
+        "family": "New Spirit",
+        "variants": [
+          "Light Condensed",
+          "Light Condensed Italic"
+        ],
+        "use": [
+          "nagłówki",
+          "hasła",
+          "CTA",
+          "krótkie wyróżnienia w tekście długim"
+        ]
+      },
+      {
+        "family": "New Spirit",
+        "variants": [
+          "Regular",
+          "Regular Italic"
+        ],
+        "use": [
+          "nagłówki",
+          "hasła",
+          "CTA",
+          "krótkie wyróżnienia w tekście długim"
+        ]
+      }
+    ],
+    "secondary": [
+      {
+        "family": "Lato",
+        "variants": [
+          "Regular",
+          "Italic",
+          "Bold",
+          "Bold Italic"
+        ],
+        "use": [
+          "tekst długi",
+          "hasła",
+          "CTA",
+          "fragmenty nagłówków"
+        ],
+        "base_variant": "Regular"
+      }
+    ],
+    "incidental_pdf_fonts": [
+      "Playfair Display Regular",
+      "Balto Medium",
+      "Minion Pro Regular"
+    ],
+    "web_note": "Nazwy fontów są zidentyfikowane, ale pliki fontów nie są osadzone w tym HTML. CSS używa nazw rodzin i bezpiecznych fallbacków."
+  },
+  "colors": [
+    {
+      "name": "Złamana biel",
+      "role": "tło / typografia",
+      "rgb": [
+        248,
+        245,
+        242
+      ],
+      "cmyk": [
+        4,
+        4,
+        6,
+        0
+      ],
+      "hex": "#f8f5f2",
+      "group": "podstawowe"
+    },
+    {
+      "name": "Wypłowiała zieleń",
+      "role": "typografia / elementy graficzne; trawa, oliwki",
+      "rgb": [
+        159,
+        149,
+        64
+      ],
+      "cmyk": [
+        39,
+        30,
+        83,
+        13
+      ],
+      "hex": "#9f9540",
+      "group": "podstawowe"
+    },
+    {
+      "name": "Brąz glinki",
+      "role": "głównie typografia, także elementy graficzne; ziemia",
+      "rgb": [
+        66,
+        8,
+        8
+      ],
+      "cmyk": [
+        48,
+        95,
+        75,
+        74
+      ],
+      "hex": "#420808",
+      "group": "podstawowe"
+    },
+    {
+      "name": "Ciepły krem skóry",
+      "role": "elementy graficzne",
+      "rgb": [
+        227,
+        200,
+        167
+      ],
+      "cmyk": [
+        12,
+        22,
+        37,
+        1
+      ],
+      "hex": "#e3c8a7",
+      "group": "uzupełniające"
+    },
+    {
+      "name": "Delikatniejszy brąz ziemi",
+      "role": "elementy graficzne",
+      "rgb": [
+        122,
+        103,
+        78
+      ],
+      "cmyk": [
+        42,
+        46,
+        62,
+        3
+      ],
+      "hex": "#7a674e",
+      "group": "uzupełniające"
+    }
+  ],
+  "visual_language": {
+    "photography": [
+      "ciepła",
+      "niskonasycona",
+      "ziarnista",
+      "jakościowa",
+      "jasna baza"
+    ],
+    "graphic_motifs": [
+      "papier",
+      "tuszowe abstrakcyjno-organiczne malunki",
+      "ołówkowe zakreślenia",
+      "podkreślenia",
+      "strzałki",
+      "skany",
+      "wycinanki",
+      "gazetowość",
+      "mazy",
+      "kształty",
+      "plamy"
+    ],
+    "principle": "Dodatki analogowe stosować z umiarem; baza ma pozostać czysta, jasna i fotograficzna."
+  },
+  "social_media": {
+    "reels_titles": [
+      "tytuły w belkach",
+      "łączenie fontów",
+      "ołówkowe zakreślenia"
+    ],
+    "stories": [
+      "hierarchia krojów",
+      "łączenie Regular i Italic",
+      "kolory marki",
+      "naklejki i komunikaty wspierające interakcję",
+      "spójny krój natywny w stories",
+      "flagowe emotikony"
+    ]
+  },
+  "source_inconsistencies": [
+    "Na stronie 'II krój pisma' tekst mówi o Lato jako uzupełnieniu do kroju Playfair, podczas gdy strony 'I krój pisma' definiują New Spirit. Traktować jako możliwą pozostałość po wcześniejszej wersji i nie nadpisywać automatycznie zasad New Spirit.",
+    "W sekcji stories pojawia się nazwa 'Editor' / 'Edito'. Nie występuje ona w oficjalnej sekcji fontów i wygląda na nazwę kroju dostępnego w narzędziu social media, a nie globalny font marki.",
+    "Playfair Display, Balto i Minion Pro istnieją w zasobach PDF, ale nie są zdefiniowane jako główne kroje w sekcji typograficznej."
+  ],
+  "pdf_font_usage": [
+    {
+      "font": "Lato-Regular",
+      "spans": 109,
+      "chars": 2023,
+      "sizes": [
+        [
+          24.0,
+          889
+        ],
+        [
+          30.0,
+          557
+        ],
+        [
+          36.0,
+          249
+        ],
+        [
+          20.0,
+          125
+        ],
+        [
+          22.0,
+          101
+        ],
+        [
+          19.0,
+          88
+        ],
+        [
+          60.0,
+          14
+        ]
+      ],
+      "colors": [
+        [
+          "#9f9540",
+          1304
+        ],
+        [
+          "#faf8f0",
+          408
+        ],
+        [
+          "#420808",
+          311
+        ]
+      ],
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "font": "Lato-Italic",
+      "spans": 35,
+      "chars": 1676,
+      "sizes": [
+        [
+          24.0,
+          826
+        ],
+        [
+          20.0,
+          758
+        ],
+        [
+          48.0,
+          80
+        ],
+        [
+          60.0,
+          12
+        ]
+      ],
+      "colors": [
+        [
+          "#9f9540",
+          1584
+        ],
+        [
+          "#faf8f0",
+          80
+        ],
+        [
+          "#420808",
+          12
+        ]
+      ],
+      "pages": [
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "font": "NewSpirit-LightCondensed",
+      "spans": 27,
+      "chars": 530,
+      "sizes": [
+        [
+          36.0,
+          343
+        ],
+        [
+          60.0,
+          127
+        ],
+        [
+          180.0,
+          27
+        ],
+        [
+          250.0,
+          17
+        ],
+        [
+          300.0,
+          16
+        ]
+      ],
+      "colors": [
+        [
+          "#420808",
+          407
+        ],
+        [
+          "#9f9540",
+          63
+        ],
+        [
+          "#faf8f0",
+          60
+        ]
+      ],
+      "pages": [
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17
+      ]
+    },
+    {
+      "font": "NewSpirit-Regular",
+      "spans": 7,
+      "chars": 230,
+      "sizes": [
+        [
+          36.0,
+          212
+        ],
+        [
+          60.0,
+          18
+        ]
+      ],
+      "colors": [
+        [
+          "#420808",
+          230
+        ]
+      ],
+      "pages": [
+        5,
+        15
+      ]
+    },
+    {
+      "font": "Lato-Bold",
+      "spans": 6,
+      "chars": 177,
+      "sizes": [
+        [
+          30.0,
+          167
+        ],
+        [
+          60.0,
+          10
+        ]
+      ],
+      "colors": [
+        [
+          "#9f9540",
+          167
+        ],
+        [
+          "#420808",
+          10
+        ]
+      ],
+      "pages": [
+        4,
+        5,
+        6,
+        8,
+        9
+      ]
+    },
+    {
+      "font": "Lato-BoldItalic",
+      "spans": 7,
+      "chars": 144,
+      "sizes": [
+        [
+          20.0,
+          128
+        ],
+        [
+          60.0,
+          16
+        ]
+      ],
+      "colors": [
+        [
+          "#9f9540",
+          128
+        ],
+        [
+          "#420808",
+          16
+        ]
+      ],
+      "pages": [
+        6,
+        11
+      ]
+    },
+    {
+      "font": "NewSpirit-RegularItalic",
+      "spans": 1,
+      "chars": 25,
+      "sizes": [
+        [
+          60.0,
+          25
+        ]
+      ],
+      "colors": [
+        [
+          "#420808",
+          25
+        ]
+      ],
+      "pages": [
+        5
+      ]
+    },
+    {
+      "font": "PlayfairDisplay-Regular",
+      "spans": 2,
+      "chars": 5,
+      "sizes": [
+        [
+          36.0,
+          5
+        ]
+      ],
+      "colors": [
+        [
+          "#420808",
+          5
+        ]
+      ],
+      "pages": [
+        16,
+        17
+      ]
+    },
+    {
+      "font": "MinionPro-Regular",
+      "spans": 1,
+      "chars": 1,
+      "sizes": [
+        [
+          12.0,
+          1
+        ]
+      ],
+      "colors": [
+        [
+          "#000000",
+          1
+        ]
+      ],
+      "pages": [
+        11
+      ]
+    }
+  ]
+}

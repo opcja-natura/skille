@@ -1,0 +1,91 @@
+# skille – skille firmowe Opcji Natury
+
+Jedno źródło prawdy dla skilli **organizacji** Opcji Natury: tych, z których korzystają pracownicy (biblioteka organizacji na claude.ai, workspace ChatGPT, projekty zespołu). Narzędzia, z którymi pracuje tylko Daniel w Claude Code, są poza tym repo (lokalne `~/Claude_praca/skille_daniel/`). Repo prywatne `opcja-natura/skille`.
+
+**Zasada:** skill zmieniamy TYLKO tutaj. Po każdej zmianie: commit + push, potem ponowne wgranie paczki tam, gdzie skill jest używany (kolumna „Gdzie wgrany”). Kopie poza tym repo nie istnieją; Claude Code Daniela czyta skille przez symlinki `~/.claude/skills/<nazwa>` → `skills/<nazwa>`.
+
+Wyjątki (skille żyjące przy swojej dokumentacji, bo czytają pliki repo względnymi ścieżkami):
+- `opcja-natura-erp` → repo `erp-docs` (`skills/opcja-natura-erp/`)
+- `hub-manufaktura`, `ocena-obslugi-klienta` → repo `hub-manufaktura` (`skills/`)
+
+## Struktura
+
+```text
+skills/<nazwa>/SKILL.md     skill (+ references/, assets/, skrypty, agents/openai.yaml dla ChatGPT)
+wycofane/<nazwa>/           skille zastąpione; zdjąć z claude.ai, nie wgrywać ponownie
+scripts/pakuj.sh            buduje paczki do wgrania: dist/<nazwa>.skill (ZIP z folderem <nazwa>/)
+TODO_notion_slack.md        audyt skilli Notion i Slack (30.09.2026), do przepisania
+```
+
+Nazwa folderu = pole `name:` we frontmatterze `SKILL.md`. Paczki nie są w repo (`dist/` w `.gitignore`), buduje się je przed wgraniem:
+
+```bash
+scripts/pakuj.sh                 # wszystkie
+scripts/pakuj.sh przelewy-powracajace product-documents
+```
+
+Ta sama paczka nadaje się do claude.ai i do ChatGPT (ChatGPT czyta dodatkowo `agents/openai.yaml`, claude.ai go ignoruje).
+
+## Rejestr (stan 10.10.2026)
+
+Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.ai, **claude.ai-D** = skille osobiste Daniela na claude.ai, **ChatGPT** = workspace ChatGPT (Karina), **CC** = Claude Code Daniela.
+
+### Operacje i ERP
+
+| Skill | Po co | Gdzie wgrany | Uwagi |
+|---|---|---|---|
+| `raw-material-documents` | dokumenty stałe surowców (SDS, certyfikaty, IFRA) w `BD_surowiec_dokumenty` | ChatGPT | zgodny z arkuszem live 10.10 |
+| `product-documents` | dokumenty produktów gotowych (PIF, SDS, ROB…) | ChatGPT | zgodny z arkuszem live 10.10; opis we frontmatterze mówi „edytowalne źródło + PDF”, a od 16.09 `source_url` jest opcjonalny (do poprawy) |
+| `delivery-quality-documents` | CoA/MSDS do konkretnej dostawy surowca | ChatGPT | zgodny z arkuszem live 10.10 |
+| `delivery-order-intake` | zakładanie zamówień eksploatacyjnych/pozostałych w rejestrze dostaw | ChatGPT | zgodny z arkuszem live 10.10 |
+| `przelewy-powracajace` | odnotowanie opłaconych płatności powracających | ChatGPT | zgodny z arkuszem live 10.10 |
+| `generowanie-przelewow-pko` | plik przelewów Elixir-O do iPKO (skrypt Python) | CC | wymaga uruchamiania kodu |
+| `katalog-wersje` | wersje i poprawki katalogu PL/EN | — | niewgrany |
+| `pracownicy-database` | baza pracowników (Supabase `public.pracownicy`) | claude.ai-D, CC | ⚠️ claude.ai-D z 31.05, nieaktualny (sync to dziś upsert, nie full refresh) |
+| `meetings-opcja-natura` | baza spotkań w Supabase | claude.ai-D, CC | ⚠️ claude.ai-D z 31.05, bez ostrzeżenia, że baza gubi spotkania |
+
+### Marka, produkt, treści
+
+| Skill | Po co | Gdzie wgrany | Uwagi |
+|---|---|---|---|
+| `naturalna-pielegnacja` | doradztwo pielęgnacyjne, rytuały | CC | 10.10: kopia w CC miała błąd (30% biofermentu w Atop Stop zamiast 10%) i brak sekcji „pachy”; kanon = ta wersja |
+| `produkty-lookup` | szybki lookup produktu: opis + link do strony (bez cen i pojemności od 10.10) | CC | nazwy produktów do tatuażu nieaktualne (czeka na decyzję); docelowo lista generowana z `products_catalog` |
+| `pozyskiwanie-wiedzy-produktowej` | mapa źródeł wiedzy produktowej | — | |
+| `glos-opcja-natura` | pisanie prozy marki PL | CC | odsyła do plików `modele-wszystko/projekty_claude/contentWriter/`; poza CC trzeba je dograć jako wiedzę projektu |
+| `tlumaczenia-opcja-natura` | tłumaczenia EN | CC | z glosariuszem `glosariusz_en.md` |
+| `opcja-natura-creative-brand` | brandbook 08.2026 dla działu kreatywnego | ChatGPT, CC | |
+| `consensus-formulacja` | research naukowy przy recepturach | org | |
+
+### Marketing i social
+
+| Skill | Po co | Gdzie wgrany | Uwagi |
+|---|---|---|---|
+| `marketing-opcja-natura` | hub marketingu (Supabase + Notion) | org, CC | |
+| `notion-publikacje` | baza Publikacje w Notionie | org, CC | |
+| `notion-produkcja-tresci` | automat zadań pod publikacje | org, CC | wersja CC z 26.09 (typy b2b newsletter/pakiet); sprawdzić, czy org ma tę wersję |
+| `influencer-research` | research influencerów | claude.ai-D, CC | ⚠️ claude.ai-D z 26.05, bez kroku zapisu do bazy Analiz |
+| `tiktok-opcja-natura` | second brain TikToka Agaty | org | master był tylko w paczce |
+| `notion-opcja-natura` | przewodnik po Notionie | claude.ai-D | ⚠️ nieaktualny, do przepisania (`TODO_notion_slack.md`) |
+| `slack-opcja-natura` | Slack dla pracownika: kanały i do czego służą, apki (marketing, kupony, urlopy), wysyłki, boty | claude.ai-D | przepisany 10.10.2026 (bez `employees.json`); do wgrania do organizacji zamiast wersji z 09.04 |
+
+### B2B, sprzedaż, eksport
+
+| Skill | Po co | Gdzie wgrany | Uwagi |
+|---|---|---|---|
+| `bigin-opcja-natura` | CRM Bigin na żywo: rdzeń + `references/` (handel, marketing-trade, rozliczenia-retro) | org | przebudowany 10.10.2026 (zweryfikowany na MCP); org ma wersję jednoplikową — do ponownego wgrania |
+| `analityka-b2b-zoho` | liczenie sprzedaży B2B w Zoho Analytics | org | |
+| `sprint-handlowy` | partner Łukasza do szukania sprzedaży | org | |
+| `ocena-wydawcy-b2b` | ocena cudzej domeny pod współpracę | org | |
+
+
+### Wycofane (zdjąć z claude.ai)
+
+| Skill | Zastąpiony przez |
+|---|---|
+| `bigin-mcp-navigation` | `bigin-opcja-natura` + `analityka-b2b-zoho` (25.09.2026) |
+| `supabase-opcja-natura` | `sklep-ecommerce-database`, `pracownicy-database`, `produkty-lookup`, `meetings-opcja-natura` |
+
+## Poza tym repo (świadomie)
+
+- **Skille robocze Daniela** (tylko Claude Code, nie dla zespołu): lokalne repo `~/Claude_praca/skille_daniel/` — m.in. `radar-aeo`, `metabase-dashboards-opcja-natura`, `backoffice-opcja-natura`, `sklep-ecommerce-database`, `monitoring-senuto`. Jeśli taki skill ma trafić do zespołu, przenosimy go tutaj.
+- Skille ogólne, niefirmowe (`n8n-*`, `apify-cli`, `google-workspace-cli`, `notion-api`, `kompresja-zdjec*`, `usuwanie-tla-obrazow`), skille Anthropic (docx, pdf, xlsx…) i `humanizer` — tylko w `~/.claude/skills`.
