@@ -1,6 +1,6 @@
 ---
 name: marketing-opcja-natura
-description: Punkt wejścia do marketingu Opcja Natura w Notionie i Supabase — strategia roczna, kampanie, historia postów, projekty, oraz routing do skilli szczegółowych. Używaj ZAWSZE gdy zaczynasz pracę w Notionie po stronie marketingu, oraz gdy Agata/Daniel pyta jakie kampanie mamy, co zaplanowane w danym miesiącu, jakie produkty miesiąca i premiery, chce ułożyć harmonogram lub rozłożyć posty wg proporcji, albo założyć projekt. Triggeruje na "jakie kampanie mamy", "co zaplanowane na dany miesiąc", "plan marketingowy", "kalendarz marketingowy", "zaplanuj publikacje", "rozłóż posty", "harmonogram kampanii X", "co mamy w lipcu", "rozkład 60/20/20", "załóż projekt". Szczegóły publikacji ma notion-publikacje, a automat zadań notion-produkcja-tresci.
+description: Punkt wejścia do marketingu Opcja Natura w Notionie i Supabase — strategia roczna, kampanie, historia postów, projekty, oraz routing do skilli szczegółowych. Używaj ZAWSZE gdy zaczynasz pracę w Notionie po stronie marketingu, oraz gdy Agata/Daniel pyta jakie kampanie mamy, co zaplanowane w danym miesiącu, jakie produkty miesiąca i premiery, chce ułożyć harmonogram lub rozłożyć posty wg proporcji, albo założyć projekt. Triggeruje na "jakie kampanie mamy", "co zaplanowane na dany miesiąc", "plan marketingowy", "kalendarz marketingowy", "zaplanuj publikacje", "rozłóż posty", "harmonogram kampanii X", "co mamy w lipcu", "rozkład 60/20/20", "załóż projekt". Praca na pojedynczych publikacjach, zadaniach i automacie zadań: skill notion-publikacje.
 ---
 
 # Marketing Opcja Natura — strategia (Supabase) + egzekucja (Notion)
@@ -38,10 +38,10 @@ brakujące parametry zbieraj **jedną wiadomością**, zawsze z domyślną propo
 | „jakie kampanie mamy", „co zaplanowane na lipiec", „produkty miesiąca", „premiery" | Strategia + operacyjka | Supabase SELECT **+** Notion Kampanie (konfrontuj — patrz „Konfrontacja") |
 | „szczegóły kampanii X", „budżet", „cel", „daty kampanii" | Kampanie | `notion-fetch` (URL z `notion_link`) |
 | „zaplanuj/dodaj/przejrzyj/edytuj publikacje", „harmonogram", „co zaległe" | Publikacje | skill **`notion-publikacje`** |
-| „dlaczego nie ma zadania", „kto to robi i na kiedy", statusy produkcji/emisji | Produkcja treści | skill **`notion-produkcja-tresci`** |
+| „dlaczego nie ma zadania", „kto to robi i na kiedy", statusy produkcji/emisji, zlecenie zadania | Zadania | skill **`notion-publikacje`** |
 | „co już publikowaliśmy", „jak często postujemy", „czy temat już był", realna kadencja | Historia | Supabase `Posty` (warstwa 0) |
 | „załóż projekt", „projekty produktowe" | Projekty | Notion `Projects` (warstwa 4) |
-| „co ma do zrobienia Antosia/Ula", zadania spoza publikacji | Zadania | Notion `Tasks Tracker` (warstwa 5) |
+| „co ma do zrobienia Antosia/Ula", zadania spoza publikacji | Zadania | skill **`notion-publikacje`** (warstwa 5) |
 
 > **Zasada nadrzędna (twarda):** masowy zapis do Notion robisz dopiero po
 > akceptacji planu (tabela → „ok" → zapis). Supabase: **TYLKO SELECT, tylko
@@ -289,27 +289,17 @@ Procedura:
 
 ---
 
-## WARSTWA 3 — Publikacje i produkcja treści → osobne skille
+## WARSTWA 3 — Publikacje i zadania → skill `notion-publikacje`
 
-Egzekucja wyprowadzona z tego skilla, bo urosła w system z własnym automatem.
-
-| Czego dotyczy pytanie | Skill |
-|---|---|
-| dodać / edytować / przejrzeć publikację, tytuły, typy, kanały, obsada, co zaległe | **`notion-publikacje`** |
-| dlaczego powstało (albo nie) zadanie, terminy, `Status produkcji` / `Status emisji`, przepływy, role, n8n | **`notion-produkcja-tresci`** |
-
-Minimum, które musisz wiedzieć planując z tego poziomu:
+Egzekucja (publikacje, obsada, zadania, statusy, automat n8n, zlecenia ze Slacka) ma własny skill **`notion-publikacje`**. Minimum, które musisz wiedzieć, planując z tego poziomu:
 
 - baza Publikacje: `collection://25cdee07-c0dd-8090-8304-000b514105f9`
-- `Type` ma **8 opcji**: `stories` `post` `video` `video agata` `newsletter`
-  `blog creative` `blog seo` `inne` (operator mówi na to „rodzaj")
-- **pola `Status` nie ma** — są dwie osie: `Status produkcji` (rollup, sam się liczy)
-  i `Status emisji` (`Zaplanowane` → `Wrzucone` → `Emisja_ok`, plus `Odpuszczone`)
-- `Responsible Person` to **obsada, która generuje zadania** — nie lista zainteresowanych
+- `Type` ma **13 opcji**: `stories` `post` `video` `video agata` `newsletter` `blog creative` `blog seo` `inne` oraz B2B: `b2b artykuł` `b2b baner` `b2b newsletter` `b2b inne` `b2b pakiet` (operator mówi na to „rodzaj"; typy B2B przychodzą zwykle ze zleceń ze Slacka)
+- **pola `Status` nie ma** — osie: `Status produkcji` (rollup), `Status emisji` (`Zaplanowane` → `Wrzucone` → `Emisja_ok`, plus `Odpuszczone`), a przy zleceniach `Status zlecenia`
+- `Responsible Person` to **obsada, która generuje zadania** — nie lista zainteresowanych; aktualna obsada i role w `notion-publikacje`
 - publikacja bez `Date`, `Type` albo obsady **nie dostaje żadnych zadań i nic tego nie zgłasza**
 
-Planując miesiąc: kontekst bierzesz stąd (warstwy 0–2), zapis robisz wg
-`notion-publikacje` — tabela planu → akceptacja → 1 strona testowa → batch.
+Planując miesiąc: kontekst bierzesz stąd (warstwy 0–2), zapis robisz wg `notion-publikacje` — tabela planu → akceptacja → 1 strona testowa → batch.
 
 ---
 
@@ -384,27 +374,9 @@ i zakładaj z tymi samymi polami. Baza bywa rozbudowywana.
 
 ## WARSTWA 5 — Tasks Tracker (zadania zespołu)
 
-Trzyma zadania **nie tylko marketingowe** — także ze spotkań, projektów
-i kontaktów. Nie zakładaj, że każdy wiersz dotyczy publikacji.
-
-data source `collection://25adee07-c0dd-80b1-a822-000b6037f86a`
-
-Podstawa: `Task name` (title) · `Assignee` (person) · `Due date` (date,
-**przypomnienie 09:00 Europe/Warsaw**) · `Status` (`To do`/`Overdue`/`Done`) ·
-`Priority` (`High`/`Medium`) · `Wykonane` (checkbox) · relacje
-`Marketing Campaigns`, `Meetings`, `Projects`, `Global Tag`, `Kontakty`, `Team Pages`.
+Zadania (także spoza marketingu: ze spotkań, projektów, kontaktów), zlecanie zadań konkretnym osobom, „co ma do zrobienia X" → skill **`notion-publikacje`**, sekcje „Zadanie ręczne" i „Częste pytania". **Zadań produkcyjnych pod publikacje nie zakładaj ręcznie** — robi to automat.
 
 Strona operacyjna: „Zarządzaj zadaniami" `273dee07-c0dd-8089-acb3-c1e4fd72d72d`.
-
-> **Zadań produkcyjnych pod publikacje nie zakładaj ręcznie** — robi to automat,
-> a ręczne zadanie o nazwie niepasującej do konwencji zostanie zdublowane.
-
-**Zlecenie dla konkretnej osoby** (grafika na targi, ogarnięcie zwrotu) to co
-innego — zakładasz je normalnie, z pustym `task_source`, które chroni je przed
-automatem. Procedura, format i pułapki: **`notion-produkcja-tresci`**, sekcja
-„Zadanie ręczne — zlecenie dla kogoś". Tam też pola automatu (`Publikacja`,
-`Offset dni`, `Krok`, `Type`, `Deadline wyliczony`, `Due date (automat)`,
-`task_rule`), których nie ruszasz.
 
 ---
 
@@ -421,7 +393,7 @@ automatem. Procedura, format i pułapki: **`notion-produkcja-tresci`**, sekcja
   jedną wiadomością** o brakujące parametry (zwięźle, z domyślną propozycją przy każdym):
   - **ile / tempo** — liczba publikacji albo rytm;
   - **podział pod kątem kanałów** — które kanały i w jakich proporcjach;
-  - **typy** — miks z **8 opcji** `Type` i mapowanie na kanał (patrz `notion-publikacje`);
+  - **typy** — miks z **13 opcji** `Type` i mapowanie na kanał (patrz `notion-publikacje`);
   - **tytuły** — konkret „o czym to jest", 4–8 słów; typ / kanał / kampania / data
     **nie wchodzą do tytułu**, bo są osobnymi polami;
   - **kampania** — jakie kampanie są wiodące danego miesiąca? (URL z `notion_link`);
@@ -433,7 +405,7 @@ automatem. Procedura, format i pułapki: **`notion-produkcja-tresci`**, sekcja
   (Zasady ogólne 2). Nigdy nie twórz serii publikacji bez zatwierdzonego planu.
   Format properties i pola: **`notion-publikacje`**.
 - **„Dodaj jedną publikację" / „edytuj publikację"** → **`notion-publikacje`**.
-- **„Dlaczego nie ma zadania" / terminy / statusy** → **`notion-produkcja-tresci`**.
+- **„Dlaczego nie ma zadania" / terminy / statusy** → **`notion-publikacje`**.
 - **„Załóż projekt"** → warstwa 4, **zawsze z `template_id`**.
 
 ---

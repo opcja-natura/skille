@@ -14,7 +14,6 @@ Wyjątki (skille żyjące przy swojej dokumentacji, bo czytają pliki repo wzgl�
 skills/<nazwa>/SKILL.md     skill (+ references/, assets/, skrypty, agents/openai.yaml dla ChatGPT)
 wycofane/<nazwa>/           skille zastąpione; zdjąć z claude.ai, nie wgrywać ponownie
 scripts/pakuj.sh            buduje paczki do wgrania: dist/<nazwa>.skill (ZIP z folderem <nazwa>/)
-TODO_notion_slack.md        audyt skilli Notion i Slack (30.09.2026), do przepisania
 ```
 
 Nazwa folderu = pole `name:` we frontmatterze `SKILL.md`. Paczki nie są w repo (`dist/` w `.gitignore`), buduje się je przed wgraniem:
@@ -57,11 +56,9 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 
 | Skill | Po co | Gdzie wgrany | Uwagi |
 |---|---|---|---|
-| `marketing-opcja-natura` | hub marketingu (Supabase + Notion) | org, CC | |
-| `notion-publikacje` | baza Publikacje w Notionie | org, CC | |
-| `notion-produkcja-tresci` | automat zadań pod publikacje | org, CC | wersja CC z 26.09 (typy b2b newsletter/pakiet); sprawdzić, czy org ma tę wersję |
+| `marketing-opcja-natura` | planowanie: strategia (Supabase), kampanie, projekty, historia postów, plan miesiąca | org, CC | 10.10.2026: odesłania do `notion-publikacje`, 13 typów; do ponownego wgrania |
+| `notion-publikacje` | publikacje i zadania marketingu w Notionie (obsada, statusy, zlecenie zadania, „dlaczego nie ma zadania”) + `references/` (automat n8n, inne bazy) | org, CC | 10.10.2026 wchłonął `notion-produkcja-tresci`; zweryfikowany na żywym Notionie i n8n; org ma stare wersje obu — wgrać ten, tamten zdjąć |
 | `tiktok-opcja-natura` | second brain TikToka Agaty | org | master był tylko w paczce |
-| `notion-opcja-natura` | przewodnik po Notionie | claude.ai-D | ⚠️ nieaktualny, do przepisania (`TODO_notion_slack.md`) |
 | `slack-opcja-natura` | Slack dla pracownika: kanały i do czego służą, apki (marketing, kupony, urlopy), wysyłki, boty | claude.ai-D | przepisany 10.10.2026 (bez `employees.json`); do wgrania do organizacji zamiast wersji z 09.04 |
 
 ### B2B, sprzedaż, eksport
@@ -79,6 +76,8 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | Skill | Zastąpiony przez |
 |---|---|
 | `bigin-mcp-navigation` | `bigin-opcja-natura` + `analityka-b2b-zoho` (25.09.2026) |
+| `notion-produkcja-tresci` | `notion-publikacje` (10.10.2026) |
+| `notion-opcja-natura` | `notion-publikacje` + `references/inne-bazy.md` (10.10.2026) |
 | `supabase-opcja-natura` | `sklep-ecommerce-database`, `pracownicy-database`, `produkty-lookup`, `meetings-opcja-natura` |
 
 ## Poza tym repo (świadomie)
