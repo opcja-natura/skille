@@ -13,7 +13,7 @@ Wyjątki (skille żyjące przy swojej dokumentacji, bo czytają pliki repo wzgl�
 ```text
 skills/<nazwa>/SKILL.md     skill (+ references/, assets/, skrypty, agents/openai.yaml dla ChatGPT)
 wycofane/<nazwa>/           skille zastąpione; zdjąć z claude.ai, nie wgrywać ponownie
-scripts/pakuj.sh            buduje paczki do wgrania: dist/<nazwa>.skill (ZIP z folderem <nazwa>/)
+scripts/pakuj.sh            buduje paczki do wgrania: dist/<nazwa>.zip
 ```
 
 Nazwa folderu = pole `name:` we frontmatterze `SKILL.md`. Paczki nie są w repo (`dist/` w `.gitignore`), buduje się je przed wgraniem:

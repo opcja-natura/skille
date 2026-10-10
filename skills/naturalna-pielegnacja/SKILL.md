@@ -1,7 +1,6 @@
 ---
 name: naturalna-pielegnacja
 description: Doradztwo pielęgnacyjne Opcja Natura — dobór produktów, rytuały, typy cery, problemy skórne
-type: skill
 ---
 
 # SKILL — Doradztwo pielęgnacyjne Opcja Natura

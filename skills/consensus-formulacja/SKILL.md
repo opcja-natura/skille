@@ -1,7 +1,6 @@
 ---
 name: consensus-formulacja
 description: Proaktywne proponowanie Agacie researchu naukowego przez MCP Consensus przy pracy nad recepturami, składnikami, ziołami i kosmetykami naturalnymi. Używaj zawsze gdy Agata wspomina o szukaniu naturalnego składnika, myśli nad nową recepturą, rozważa egzotyczne surowce, pyta jak coś działa, sprawdza interakcje, stężenia, stabilność, lub po prostu rozważa wprowadzenie nowego komponentu do formulacji. Trigger jest szeroki — wszystko co dotyczy roślin/składników/receptur/zielarstwa kosmetycznego. Skill najpierw proponuje sprawdzenie w Consensus i czeka na zgodę, nie odpala researchu samodzielnie. Pamiętaj że Agata jest typu "żółtego" — ostatnim tropem jest konkretne pytanie, większość rozmów to refleksja, eksploracja, myślenie głośno.
-type: skill
 ---
 
 # SKILL — Consensus dla Agaty (formulacja, składniki, naturalne kosmetyki)

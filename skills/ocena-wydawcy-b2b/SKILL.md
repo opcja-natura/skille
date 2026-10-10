@@ -1,7 +1,6 @@
 ---
 name: ocena-wydawcy-b2b
 description: Pełna ocena, czy i jak podjąć współpracę marketingową (artykuł, banner, poradnik itp.) z właścicielem cudzej domeny — dla działu handlowego Opcji Natury, powiązana z systemem propozycjeB2B. Umieszcza domenę na drabinie realnych klientów Opcji Natury (DOZ, Gemini, Nutridome, Kopalnia Zdrowia, opcjanatura.pl) wg siły SEO (Senuto MCP), liczy relację ceny do wartości ruchu, proponuje profil/temat artykułu i sugeruje kategorię działania (banner/artykuł/pakiet) do dalszego dobrania w propozycjeB2B. Używaj gdy ktoś pyta "czy warto opublikować u [domena]", "oceń tego wydawcę", "sprawdź domenę pod publikację", "czy ta cena za artykuł ma sens", "jaki temat zaproponować [domena]", "jaką współpracę zaproponować [domena]", "wycena współpracy blogowej [domena], cena X zł". NIE używaj do analizy WŁASNEJ domeny opcjanatura.pl (od tego są skille `monitoring-senuto` / `radar-aeo`) ani do researchu influencerów (`influencer-research`) — to wyłącznie pre-screening cudzych stron pod płatną współpracę marketingową.
-type: skill
 ---
 
 # SKILL — Ocena wydawcy pod publikację B2B

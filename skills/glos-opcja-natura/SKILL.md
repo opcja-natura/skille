@@ -1,7 +1,6 @@
 ---
 name: glos-opcja-natura
 description: Pisanie prozy marki Opcja Natura po polsku głosem człowieka, nie AI. Używaj ZANIM napiszesz jakąkolwiek treść marketingową/redakcyjną w tym repo — odpowiedzi FAQ, opisy produktów, posty, fragmenty bloga/newslettera, treści na stronę. Triggeruj też, gdy tekst „brzmi robotycznie", gdy ktoś prosi „napisz to głosem marki", „przepisz mniej sztucznie", „zhumanizuj", albo gdy zaraz wygenerujesz proze, którą i tak trzeba by potem poprawiać ręcznie. NIE do: doradztwa pielęgnacyjnego (naturalna-pielegnacja), angielskiego (tlumaczenia-opcja-natura), lookupu danych produktu (produkty-lookup), technicznego schematu FAQ JSON (FORMAT_faqJSON.md). Ten skill daje GŁOS; format/pakowanie to osobna sprawa.
-type: skill
 ---
 
 # Głos Opcji Natury — proza marki, po polsku, po ludzku

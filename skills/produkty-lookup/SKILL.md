@@ -1,7 +1,6 @@
 ---
 name: produkty-lookup
 description: Szybki lookup produktów Opcja Natura — nazwa, link do strony sklepu, skład, przeznaczenie i działanie (cenę i pojemność bierzesz ze strony). Używaj zawsze gdy potrzebujesz zweryfikować dane konkretnego produktu zanim podasz je klientowi.
-type: skill
 ---
 
 # SKILL — Szybki lookup produktów Opcja Natura

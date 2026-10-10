@@ -1,7 +1,6 @@
 ---
 name: pozyskiwanie-wiedzy-produktowej
 description: Skąd i jak pozyskiwać wiedzę o produktach i pielęgnacji Opcji Natury (rytuały, mechanizmy, składy) — mapa źródeł, kolejność sięgania, playbook NotebookLM. Używaj ZANIM zaczniesz pisać treści produktowe/pielęgnacyjne (FAQ, blog, opisy, posty), żeby gruntować w wiedzy marki, a nie zgadywać.
-type: skill
 ---
 
 # SKILL — Pozyskiwanie wiedzy produktowej Opcja Natura
