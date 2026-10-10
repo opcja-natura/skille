@@ -39,7 +39,7 @@ Rozmawiają z tobą osoby z marketingu, nie technicy. Mów **co się dzieje i co
 
 **Oznaczyć, że post wrzucony** (robi to Ula, gdy zaplanuje post w Meta / TikToku) — ustaw status emisji na „Wrzucone". Po dacie publikacji zmieni się sam na „Emisja ok".
 
-**Dodać gotowe materiały do publikacji** — gdy coś jest gotowe (tekst, grafika, zmontowany film, zdjęcia), link do pliku albo do jego folderu na dysku marketingu wpisz w publikacji w polu **„Link do materiałów”**. To jedno miejsce, z którego reszta zespołu bierze gotowe rzeczy — nie wysyłaj ich tylko na Slacku ani w komentarzu. Przy zleceniach ze Slacka ten link trafia do zgłaszającego, gdy zlecenie jest gotowe; jeśli pole jest puste, zespół dostanie prośbę o link. Gdzie co wrzucić na dysku: skill `marketing-opcja-natura` (mapa dysku).
+**Dodać gotowe materiały do publikacji** — gdy coś jest gotowe (tekst, grafika, zmontowany film, zdjęcia), link do pliku albo do jego folderu na dysku marketingu wpisz w publikacji w polu **„Link do materiałów”**. To jedno miejsce, z którego reszta zespołu bierze gotowe rzeczy — nie wysyłaj ich tylko na Slacku ani w komentarzu. Przy zleceniach ze Slacka ten link trafia do zgłaszającego, gdy zlecenie jest gotowe; jeśli pole jest puste, zespół dostanie prośbę o link.
 
 **Po publikacji** — link do opublikowanego posta / wpisu / newslettera wpisz w polu **„Link do publikacji”**.
 
