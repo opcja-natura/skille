@@ -39,10 +39,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `delivery-quality-documents` | CoA/MSDS do konkretnej dostawy surowca | ChatGPT | zgodny z arkuszem live 10.10 |
 | `delivery-order-intake` | zakładanie zamówień eksploatacyjnych/pozostałych w rejestrze dostaw | ChatGPT | zgodny z arkuszem live 10.10 |
 | `przelewy-powracajace` | odnotowanie opłaconych płatności powracających | ChatGPT | zgodny z arkuszem live 10.10 |
-| `generowanie-przelewow-pko` | plik przelewów Elixir-O do iPKO (skrypt Python) | CC | wymaga uruchamiania kodu |
 | `katalog-wersje` | wersje i poprawki katalogu PL/EN | — | niewgrany |
-| `pracownicy-database` | baza pracowników (Supabase `public.pracownicy`) | claude.ai-D, CC | ⚠️ claude.ai-D z 31.05, nieaktualny (sync to dziś upsert, nie full refresh) |
-| `meetings-opcja-natura` | baza spotkań w Supabase | claude.ai-D, CC | ⚠️ claude.ai-D z 31.05, bez ostrzeżenia, że baza gubi spotkania |
 
 ### Marka, produkt, treści
 
@@ -63,7 +60,6 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `marketing-opcja-natura` | hub marketingu (Supabase + Notion) | org, CC | |
 | `notion-publikacje` | baza Publikacje w Notionie | org, CC | |
 | `notion-produkcja-tresci` | automat zadań pod publikacje | org, CC | wersja CC z 26.09 (typy b2b newsletter/pakiet); sprawdzić, czy org ma tę wersję |
-| `influencer-research` | research influencerów | claude.ai-D, CC | ⚠️ claude.ai-D z 26.05, bez kroku zapisu do bazy Analiz |
 | `tiktok-opcja-natura` | second brain TikToka Agaty | org | master był tylko w paczce |
 | `notion-opcja-natura` | przewodnik po Notionie | claude.ai-D | ⚠️ nieaktualny, do przepisania (`TODO_notion_slack.md`) |
 | `slack-opcja-natura` | Slack dla pracownika: kanały i do czego służą, apki (marketing, kupony, urlopy), wysyłki, boty | claude.ai-D | przepisany 10.10.2026 (bez `employees.json`); do wgrania do organizacji zamiast wersji z 09.04 |
@@ -87,5 +83,5 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 
 ## Poza tym repo (świadomie)
 
-- **Skille robocze Daniela** (tylko Claude Code, nie dla zespołu): lokalne repo `~/Claude_praca/skille_daniel/` — m.in. `radar-aeo`, `metabase-dashboards-opcja-natura`, `backoffice-opcja-natura`, `sklep-ecommerce-database`, `monitoring-senuto`. Jeśli taki skill ma trafić do zespołu, przenosimy go tutaj.
+- **Skille robocze Daniela** (tylko Claude Code, nie dla zespołu): lokalne repo `~/Claude_praca/skille_daniel/` — m.in. `radar-aeo`, `metabase-dashboards-opcja-natura`, `backoffice-opcja-natura`, `sklep-ecommerce-database`, `pracownicy-database`, `meetings-opcja-natura`, `influencer-research`, `generowanie-przelewow-pko`. Jeśli taki skill ma trafić do zespołu, przenosimy go tutaj.
 - Skille ogólne, niefirmowe (`n8n-*`, `apify-cli`, `google-workspace-cli`, `notion-api`, `kompresja-zdjec*`, `usuwanie-tla-obrazow`), skille Anthropic (docx, pdf, xlsx…) i `humanizer` — tylko w `~/.claude/skills`.
