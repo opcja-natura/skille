@@ -67,7 +67,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 
 | Skill | Po co | Gdzie wgrany | Uwagi |
 |---|---|---|---|
-| `bigin-opcja-natura` | CRM Bigin na żywo: rdzeń + `references/` (handel, marketing-trade, rozliczenia-retro) | org | przebudowany 10.10.2026 (zweryfikowany na MCP); org ma wersję jednoplikową — do ponownego wgrania |
+| `bigin-opcja-natura` | CRM Bigin na żywo: rdzeń + `references/` (handel, marketing-trade, rozliczenia-retro) | org | przebudowany 10.10.2026 (zweryfikowany na MCP); poprawka zapisu akcji 12.10.2026, wgrany (`c8e81f9`) |
 | `analityka-b2b-zoho` | liczenie sprzedaży B2B w Zoho Analytics | org | |
 | `sprint-handlowy` | partner Łukasza do szukania sprzedaży | org | |
 | `ocena-wydawcy-b2b` | ocena cudzej domeny pod współpracę | org | |

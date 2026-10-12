@@ -4,6 +4,7 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 
 | Data | Skill | Gdzie | Co | Wersja (commit) | Do zrobienia |
 |---|---|---|---|---|---|
+| 2026-10-12 | `bigin-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (zapis etapu „Zaplanowano z klientem” pełną nazwą, koszt akcji przez `Warto_akcji_netto`) | `c8e81f9` | — |
 | 2026-10-10 | `notion-publikacje` | claude.ai — biblioteka organizacji | podmieniony (część dla operatora + references, ludzie i terminy z Notiona, pola linków) | `4e91806` | — |
 | 2026-10-10 | `notion-produkcja-tresci` | claude.ai — biblioteka organizacji | usunięty (wchłonięty przez `notion-publikacje`) | — | — |
 | 2026-10-10 | `notion-opcja-natura` | claude.ai — skille osobiste Daniela | usunięty (wycofany) | — | — |
