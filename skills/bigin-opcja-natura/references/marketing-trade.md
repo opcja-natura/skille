@@ -80,4 +80,4 @@ from Pipelines where propo_id = 'PRP-0038' limit 50
 
 ## Zapis
 
-Tylko na wyraźną prośbę. Przy tworzeniu akcji `Sub_Pipeline` = `Akcje Promo i Marketing Standardowy` wymaga też `Pipeline: {"id": "427926000000654205"}` (inaczej `MAPPING_MISMATCH`). Wartości techniczne etapów: `Zaproponowano Klientowi`→`Zaproponowano`, `Zaplanowano z klientem`→`Zaplanowano`. Propozycje z PDF-em zakłada generator, nie agent: nie twórz rekordów `PRP-…` ręcznie.
+Tylko na wyraźną prośbę. Przy tworzeniu akcji `Sub_Pipeline` = `Akcje Promo i Marketing Standardowy` wymaga też `Pipeline: {"id": "427926000000654205"}` (inaczej `MAPPING_MISMATCH`). Wartości etapów przy zapisie: `Zaproponowano Klientowi`→`Zaproponowano`; `Zaplanowano z klientem` pełną nazwą (`Zaplanowano` daje `MAPPING_MISMATCH`, sprawdzone 12.10.2026). Koszt wpisuj w `Warto_akcji_netto`: `Ca_kowity_koszt_akcji` liczy się z niego sam, a wpisany bezpośrednio zostaje 0. Propozycje z PDF-em zakłada generator, nie agent: nie twórz rekordów `PRP-…` ręcznie.

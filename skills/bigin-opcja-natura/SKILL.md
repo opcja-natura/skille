@@ -63,7 +63,7 @@ Każdy zwrócony rekord ląduje w rozmowie. Orientacyjnie: wiersz COQL z 5 polam
 Pełne id potoku = `427926000000` + końcówka (np. Akcje = `427926000000654205`) — potrzebne tylko przy **zapisie**.
 
 - Literówki (`Zamówiene`, `Fakture`, `oplacona`, `Zaplanowwano`) wpisuj 1:1, inaczej wynik jest pusty.
-- **COQL filtruje po nazwie wyświetlanej.** Przy **zapisie** część etapów ma inną wartość techniczną: `Zaproponowano Klientowi`→`Zaproponowano`, `Zaplanowano z klientem`→`Zaplanowano`, `Spakowano`→`Proposal/Price Quote`, `Wysłane`→`Negotiation/Review`, `Zamówiene dostarczone`→`Closed Won`, `Zamknięty, utracony`→`Closed Lost`, `Zimny Kontakt`→`Potencjalny Klient`, `Wykonano telefon zainteresowani`→`Wykonano telefon`, `Klient pozyskany - złożono zam.`→`Klient pozyskany`.
+- **COQL filtruje po nazwie wyświetlanej.** Przy **zapisie** część etapów ma inną wartość techniczną: `Zaproponowano Klientowi`→`Zaproponowano`, `Spakowano`→`Proposal/Price Quote`, `Wysłane`→`Negotiation/Review`, `Zamówiene dostarczone`→`Closed Won`, `Zamknięty, utracony`→`Closed Lost`, `Zimny Kontakt`→`Potencjalny Klient`, `Wykonano telefon zainteresowani`→`Wykonano telefon`, `Klient pozyskany - złożono zam.`→`Klient pozyskany`. Wyjątek: `Zaplanowano z klientem` zapisuj pełną nazwą (`Zaplanowano` → `MAPPING_MISMATCH`, sprawdzone 12.10.2026).
 
 ## Ludzie (id użytkowników Bigina, stan 10.10.2026)
 
