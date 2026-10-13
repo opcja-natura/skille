@@ -27,6 +27,7 @@ Status wierszy: ✅ zatwierdzone · ❓ czeka na decyzję (patrz sekcja 0).
 | D6 | Miód w balsamie: arkusz *tattoo balm*, opis *Honey in Balm*. | **Tattoo Honey Balm** (rodzina z Tattoo Honey) |
 | D7 ✅ zostaje | Bio-Tox — fonetycznie blisko „Botox” (znak towarowy Allergan) + w katalogu Eye Cocktail „pseudo-botulinum”. | Nazwa ❓; „pseudo-botulinum” usunąć bezwarunkowo. |
 | D8 | Mandarynka: *mandarin* (arkusz) vs *tangerine* (katalog). | **mandarin** |
+| D9 | „Option Nature” w tytułach: native (recenzja 2026-10-13) przeczytał nazwę jak zwykłą frazę („Do you mean ‘a natural option’?”). | Nazwa zostaje. W `page_title`, `google_title` i podobnych dać jej kontekst marki (*by Option Nature*, *Option Nature’s …*) — do decyzji, potem jedna konwencja dla wszystkich produktów. |
 
 ---
 
@@ -160,7 +161,7 @@ W prozie nazwa zwyczajowa; INCI tylko w liście składników.
 | macerat z nagietka | calendula-infused oil | ❌ *macerate* — termin technologa |
 | olej tłoczony na zimno | cold-pressed oil | |
 | olejek eteryczny | essential oil | ❌ *fragrance* (w EN = syntetyczna kompozycja) |
-| zapach | scent | |
+| zapach | scent | ❌ *odour* o produkcie (= brzydki zapach); bez zapachu = *unscented / scent-free / fragrance-free* |
 | mocznik | urea | |
 | pantenol | panthenol (provitamin B5) | |
 | lanolina | lanolin | |
@@ -265,7 +266,9 @@ Nie może leczyć, zapobiegać chorobom, usuwać objawów ani zmieniać funkcji 
 
 ## 8. Konwencje
 
-- Liczby i stężenia: `30% urea`, `10% vitamin C` (bez spacji przed %).
-- „&” w nazwach produktów i podtytułach, „and” w prozie.
-- Pauza: ` — ` ze spacjami (jak w katalogu), konsekwentnie.
+- Liczby i stężenia: `30% urea`, `10% vitamin C` (bez spacji przed %). Jednostki ze spacją: `200 ml`, `50 g`.
+- Apostrofy i cudzysłowy drukarskie: `it’s`, `“…”`.
+- Liczby do dziesięciu w prozie słownie (*ten years*).
+- „&” tylko w nazwach produktów i podtytułach; „and” wszędzie indziej, także w hasłach na zdjęcia.
+- Pauza: ` — ` ze spacjami (jak w katalogu), ale oszczędnie: w prozie najwyżej jedna na akapit, resztę zastąp przecinkiem, kropką lub dwukropkiem (recenzja native 2026-10-13).
 - Hashtagi z katalogu nie są glosariuszem — nie tłumaczyć ich na treści sklepu.

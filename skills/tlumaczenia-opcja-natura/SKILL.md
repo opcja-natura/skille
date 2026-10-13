@@ -20,6 +20,16 @@ i składników bierzesz stamtąd — bez synonimów. Tam też jest lista słów 
 z zamiennikami i otwarte decyzje (❓) — jeśli tekst dotyka otwartej decyzji, zaznacz to
 użytkownikowi zamiast zgadywać.
 
+**Po napisaniu, przed oddaniem: `native_review_lekcje.md`** (ten sam folder). To wzorce, które
+poprawił nam brytyjski redaktor: kalki z polskiego, dopowiedzenia na końcu zdań, wzmacniacze,
+typografia UK. Przejdź listę na swoim tekście. Tam też: czego z recenzji NIE przejmować.
+
+**Opisy produktów na sklep EN** mają własny workflow (plik-matka → kontrola → recenzja native →
+backoffice/Drive/arkusz): `modele-wszystko/opcjanatura_pl/opisy_produktow/en/` — `SZABLON_EN.md`
+(pola, limity, stałe teksty), `check_en.py` (kontrola), `export_docx.py` (paczka dla recenzenta),
+`review_redline.py` (odczyt poprawek recenzenta). Strukturę opisu bierz z `SZABLON_EN.md`, nie
+z „złotego wzorca” niżej.
+
 ---
 
 ## Zasada naczelna: adaptacja, nie tłumaczenie
@@ -137,3 +147,4 @@ Przechodź od agresywnego **Anti-Aging** w stronę **Skin Longevity** – wspier
 6. Czy puenta zamyka filozofią, a nie podsumowaniem?
 7. Czy nie ma „Polish-isms" – zdań poprawnych gramatycznie, ale brzmiących obco?
 8. Czy nazwy, kategorie i składniki są zgodne z `glosariusz_en.md`, a żadne słowo z jego sekcji 6 („❌ Nie”) nie przeszło?
+9. Czy przeszedłem `native_review_lekcje.md`: kalki („even several times a day”, „It’s joined by”), dopowiedzenia na końcu zdań, „very”, myślniki, apostrofy ’, „200 ml”?
