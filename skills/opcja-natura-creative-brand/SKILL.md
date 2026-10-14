@@ -1,6 +1,6 @@
 ---
 name: opcja-natura-creative-brand
-description: "Stosować przy pracy działu kreatywnego Opcja Natura nad materiałami wizualnymi i branded content: posty, karuzele, stories, reels i ich okładki, reklamy, bannery, landing pages, grafiki newsletterowe, materiały POS/druk, moodboardy, briefy foto/wideo, generowanie lub edycja obrazów oraz audyt zgodności z marką. Egzekwuje brandbook Opcja Natura w stanie 08.2026: typografię, paletę, fotografię, analogowe motywy, hierarchię i wzorce social media. Przy czystym copy bez decyzji wizualnych nie narzucać tone of voice, bo ten brandbook go nie definiuje."
+description: "Stosować zawsze, gdy powstaje coś, co ma wyglądać jak Opcja Natura: dokumenty biurowe i handlowe (oferta, cennik, zestawienie, tabela w Sheets/Excelu, one-pager dla partnera, raport, prezentacja, PDF dla klienta, formatowanie w Docs/Word) oraz materiały działu kreatywnego (posty, karuzele, stories, okładki rolek, reklamy, bannery, grafiki newsletterowe, druk, briefy foto/wideo, generowanie obrazów, audyt zgodności z marką). Daje kolory, krój pisma, zasady tabel i wykresów oraz brandbook 08.2026. Przy czystym copy bez decyzji wizualnych nie narzucać tone of voice, bo ten brandbook go nie definiuje."
 ---
 
 # Opcja Natura Creative Brand
@@ -16,8 +16,8 @@ Traktować ten skill jako wizualny system marki Opcja Natura w stanie na **08.20
 
 ## Workflow
 
-1. Rozpoznać typ zadania: **create**, **edit**, **review** albo **brief**.
-2. Zawsze przeczytać `references/brand-guidelines-08-2026.md` przed podjęciem decyzji wizualnych.
+1. Rozpoznać typ zadania: **dokument** (biurowy/handlowy), **create**, **edit**, **review** albo **brief**.
+2. Przy **dokumencie** przeczytać `references/dokumenty-biurowe.md` i to zwykle wystarcza. Przy pozostałych zawsze przeczytać `references/brand-guidelines-08-2026.md` przed podjęciem decyzji wizualnych.
 3. Gdy potrzebne są dokładne tokeny, kody kolorów, warianty fontów lub strukturalne dane, przeczytać `references/brandbook-agent.json`.
 4. Gdy potrzebny jest kontekst wizualny oryginalnych plansz, otworzyć `assets/brandbook-agent.html`. Nie ładować go rutynowo do kontekstu.
 5. Wykonać zadanie zgodnie z hierarchią reguł i ograniczeniami poniżej.
@@ -66,6 +66,18 @@ Stosować kolejno:
 - Rekomendacje dotyczące spójnych okładek highlights, twarzy na wyróżnionych postach czy porządkowania relacji oznaczać jako kierunek z sekcji „propozycje zmian”, a nie obowiązkowy przepis.
 
 ## Tryby pracy
+
+### Dokument
+
+Najczęstszy przypadek: oferta, cennik, zestawienie, tabela, one-pager, raport, prezentacja. To nie projektowanie, tylko porządne formatowanie w barwach marki:
+
+- jeden krój (Lato), białe tło, bordo jako kolor tekstu i nagłówków,
+- tabele i wykresy według `references/dokumenty-biurowe.md`,
+- kwoty i daty w polskim zapisie, kwoty z dopiskiem netto/brutto,
+- dla klienta PDF, wewnątrz firmy plik edytowalny,
+- bez analogowych motywów, ozdobników i wymyślonego logo.
+
+Gdy dokument powstaje narzędziem (skill do docx/xlsx/pptx/pdf, Apps Script, eksport z Sheets), ten skill daje kolory i zasady, a tamto narzędzie mechanikę.
 
 ### Create
 
@@ -120,6 +132,10 @@ Przy zwykłym tworzeniu materiału nie dokładać długiego raportu zgodności. 
 Przy audycie pokazać konkretne naruszenia i rekomendowane poprawki. Nie tworzyć sztucznych problemów tam, gdzie brandbook nie daje podstawy do oceny.
 
 ## Przykładowe zadania
+
+- „Zrób z tej tabeli cennik dla hurtowni w PDF, w naszych kolorach.”
+- „Sformatuj ten arkusz ze sprzedażą tak, żeby dało się go wysłać partnerowi.”
+- „Przygotuj one-pager z warunkami współpracy dla apteki.”
 
 - „Zrób okładkę rolki Opcja Natura o pielęgnacji skóry po lecie.”
 - „Przygotuj karuzelę na Instagram zgodną z naszym brandingiem.”

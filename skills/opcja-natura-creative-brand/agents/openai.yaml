@@ -1,12 +1,6 @@
 interface:
   display_name: opcja natura creative brand
-  short_description: 'Stosować przy pracy działu kreatywnego Opcja Natura nad materiałami
-    wizualnymi i branded content: posty, karuzele, stories, reels i ich okładki, reklamy,
-    bannery, landing pages, grafiki newsletterowe, materiały POS/druk, moodboardy,
-    briefy foto/wideo, generowanie lub edycja obrazów oraz audyt zgodności z marką.
-    Egzekwuje brandbook Opcja Natura w stanie 08.2026: typografię, paletę, fotografię,
-    analogowe motywy, hierarchię i wzorce social media. Przy czystym copy bez decyzji
-    wizualnych nie narzucać tone of voice, bo ten brandbook go nie definiuje.'
+  short_description: 'Kolory, krój i zasady Opcja Natura dla dokumentów biurowych i handlowych (oferty, cenniki, tabele, one-pagery, prezentacje, PDF) oraz materiałów kreatywnych; brandbook 08.2026.'
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:

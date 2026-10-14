@@ -9,6 +9,7 @@ Brandbook: **08.2026**.
 Skill zawiera:
 
 - `SKILL.md` - reguły aktywacji i workflow,
+- `references/dokumenty-biurowe.md` - zasady dla dokumentów biurowych i handlowych (krój, kolory, tabele, wykresy, zapis liczb),
 - `references/brand-guidelines-08-2026.md` - operacyjny ekstrakt zasad,
 - `references/brandbook-agent.json` - dokładne tokeny i dane strukturalne,
 - `assets/brandbook-agent.html` - pełny agent-friendly HTML z materiałem referencyjnym,
