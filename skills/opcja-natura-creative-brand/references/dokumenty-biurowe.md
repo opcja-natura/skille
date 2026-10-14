@@ -73,9 +73,23 @@ Tło strony: **białe**. Dokument idzie do druku i do PDF; kremowe tło szarzeje
 
 ## Logo
 
-- Nie rysować, nie odtwarzać i nie przekolorowywać logo. Nie składać „logo” z tekstu „opcja natura” wpisanego fontem.
-- Wstawiać tylko oficjalny plik od zespołu (marketing). Jeśli go nie ma pod ręką: zostawić miejsce na logo albo dać sam tekst „Opcja Natura” w nagłówku, zwykłym Lato, i powiedzieć o tym użytkownikowi.
-- Obecne logo PL ma miedziany gradient; na białym tle działa, na kolorowym tle nie używać.
+Oficjalne logo (projekt Uli, 09.2026, płaskie, bez gradientu) jest w `assets/logo/`. Trzy formy w czterech kolorach:
+
+| Plik | Co to | Kiedy |
+|---|---|---|
+| `logo-pelne-bordo.png` | sygnet + napis, bordo | **domyślne**: nagłówek dokumentu, oferta, cennik, prezentacja na białym lub jasnym tle |
+| `logo-pelne-biel.png`, `logo-pelne-krem.png` | sygnet + napis, jasne | na ciemnym tle (bordo `#420808`, ciemne zdjęcie), np. okładka, belka tytułowa |
+| `logo-pelne-oliwka.png` | sygnet + napis, oliwka | na jasnym tle, gdy dokument jest „lżejszy” (zaproszenie, materiał wizerunkowy); w dokumentach handlowych bordo |
+| `logo-napis-*.png` | sam napis „opcja natura.” | wąskie miejsce w poziomie (stopka, nagłówek strony), albo gdy sygnet jest już gdzie indziej na stronie |
+| `sygnet-*.png` | samo kółko | małe pola: awatar, ikonka, róg slajdu, znak wodny; nie jako jedyne logo na okładce oferty |
+
+Zasady:
+
+- Kolor logo dobierać do tła z tej samej listy; nie przekolorowywać pliku, nie dodawać cienia, obrysu ani gradientu.
+- Nie rysować, nie odtwarzać i nie składać logo z tekstu wpisanego fontem. Starej wersji z miedzianym gradientem i hasłem „Natura. To proste.” w nowych dokumentach nie używać.
+- Wysokość w dokumencie A4: pełne logo ok. 1-1,5 cm, napis ok. 0,6-0,8 cm w stopce. Wokół logo pusty margines co najmniej wysokości kółka sygnetu / 2.
+- Pliki PNG mają 400 px wysokości: wystarczą do dokumentów, prezentacji i PDF. Do druku dużego formatu i wersji wektorowej: plik źródłowy `.ai` u Uli (Drive, folder „Logo 2026”).
+- Wersja angielska („option nature.”) to osobny zestaw; w dokumentach EN poprosić o nią zamiast używać polskiego logo.
 
 ## QA dokumentu
 
@@ -84,5 +98,5 @@ Tło strony: **białe**. Dokument idzie do druku i do PDF; kremowe tło szarzeje
 3. Tabela: nagłówek wyróżniony, liczby do prawej, suma pogrubiona, brak grubych ramek.
 4. Kwoty z „netto/brutto”, daty i liczby w polskim zapisie.
 5. Białe tło, jeśli dokument może być drukowany.
-6. Logo oficjalne albo brak logo; nic wymyślonego.
+6. Logo z `assets/logo/`, kolor dobrany do tła; nic wymyślonego ani przekolorowanego.
 7. Dla klienta: PDF.

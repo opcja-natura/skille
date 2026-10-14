@@ -51,7 +51,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `pozyskiwanie-wiedzy-produktowej` | mapa źródeł wiedzy produktowej | — | |
 | `glos-opcja-natura` | pisanie prozy marki PL | CC | odsyła do plików `modele-wszystko/projekty_claude/contentWriter/`; poza CC trzeba je dograć jako wiedzę projektu |
 | `tlumaczenia-opcja-natura` | tłumaczenia EN | CC | z glosariuszem `glosariusz_en.md` |
-| `opcja-natura-creative-brand` | wygląd marki: dokumenty biurowe i handlowe (oferty, tabele, PDF) + brandbook 08.2026 dla działu kreatywnego | ChatGPT, CC | 14.10.2026 dodany tryb „dokument” (`references/dokumenty-biurowe.md`); do wgrania do org i ponownie do ChatGPT; brak płaskiego logo PL |
+| `opcja-natura-creative-brand` | wygląd marki: dokumenty biurowe i handlowe (oferty, tabele, PDF) + brandbook 08.2026 dla działu kreatywnego | ChatGPT, CC | 14.10.2026 dodany tryb „dokument” (`references/dokumenty-biurowe.md`); logo PL 09.2026 (Ula) w `assets/logo/`; do wgrania do org i ponownie do ChatGPT |
 | `consensus-formulacja` | research naukowy przy recepturach | org | |
 
 ### Marketing i social

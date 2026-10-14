@@ -12,6 +12,7 @@ Skill zawiera:
 - `references/dokumenty-biurowe.md` - zasady dla dokumentów biurowych i handlowych (krój, kolory, tabele, wykresy, zapis liczb),
 - `references/brand-guidelines-08-2026.md` - operacyjny ekstrakt zasad,
 - `references/brandbook-agent.json` - dokładne tokeny i dane strukturalne,
+- `assets/logo/` - oficjalne logo PL 09.2026 (projekt Uli, PNG 400 px wys., 3 formy × 4 kolory; źródło `.ai`: Drive, folder „Logo 2026”),
 - `assets/brandbook-agent.html` - pełny agent-friendly HTML z materiałem referencyjnym,
 - `agents/openai.yaml` - metadane interfejsu dla ChatGPT; inne implementacje Agent Skills mogą ten plik zignorować.
 

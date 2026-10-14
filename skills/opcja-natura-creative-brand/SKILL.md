@@ -56,7 +56,7 @@ Stosować kolejno:
 - Utrzymywać czystą, jasną bazę projektu.
 - Dodawać analogowe elementy z umiarem: papier, tuszowe abstrakcyjno-organiczne malunki, ołówkowe zakreślenia, podkreślenia, strzałki, skany, wycinanki, gazetowość, mazy, plamy i kształty.
 - Nie używać wszystkich motywów jednocześnie. Wybrać 1-2 środki pasujące do konkretnego materiału.
-- Nie rekonstruować ani nie wymyślać logotypu. Jeśli oficjalny asset logo nie jest dostępny, zostawić miejsce na logo albo przygotować materiał bez niego, zamiast tworzyć pseudo-logo.
+- Logo brać wyłącznie z `assets/logo/` (płaski zestaw 09.2026: sygnet + napis, sam napis, sam sygnet; bordo, złamana biel, oliwka, krem; dobór w `references/dokumenty-biurowe.md`, sekcja „Logo”). Nie rekonstruować, nie przekolorowywać i nie używać starej wersji z gradientem.
 
 ### Social media
 
@@ -75,7 +75,7 @@ Najczęstszy przypadek: oferta, cennik, zestawienie, tabela, one-pager, raport, 
 - tabele i wykresy według `references/dokumenty-biurowe.md`,
 - kwoty i daty w polskim zapisie, kwoty z dopiskiem netto/brutto,
 - dla klienta PDF, wewnątrz firmy plik edytowalny,
-- bez analogowych motywów, ozdobników i wymyślonego logo.
+- logo z `assets/logo/` (domyślnie `logo-pelne-bordo.png`), bez analogowych motywów i ozdobników.
 
 Gdy dokument powstaje narzędziem (skill do docx/xlsx/pptx/pdf, Apps Script, eksport z Sheets), ten skill daje kolory i zasady, a tamto narzędzie mechanikę.
 
@@ -121,7 +121,7 @@ Sprawdzić:
 - czy materiał pozostaje jasny, naturalny i niekrzykliwy,
 - czy analogowe dodatki są dawkowane z umiarem,
 - czy fotografia nie jest nadmiernie nasycona lub „stockowo sterylna”,
-- czy nie wprowadzono niepotwierdzonego logo, fontu lub nowej reguły marki,
+- czy logo pochodzi z `assets/logo/` i ma kolor dobrany do tła, czy nie wprowadzono niepotwierdzonego fontu lub nowej reguły marki,
 - czy rekomendacje z brandbooka nie zostały błędnie przedstawione jako twarde zasady,
 - czy ewentualne odstępstwo od brandbooka wynika z jawnej instrukcji użytkownika.
 
