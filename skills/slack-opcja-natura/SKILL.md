@@ -50,6 +50,8 @@ Skrót uruchamiasz piorunem ⚡ w polu wiadomości (albo „/” i nazwa skrótu
 | kod rabatowy do sklepu | **„Poproś o kupon”** (z uzasadnieniem) | karta na `#zlecenia-kupony` | Daniel |
 | urlop | **„Wniosek o urlop”** (albo przycisk „Nowy wniosek” w zakładce Home apki Urlopy) | DM do wybranego opiekuna (Daniel / Agata / Karina) | opiekun |
 
+**Moje zlecenia:** apka „Zlecenia marketing” → zakładka **Home** pokazuje wszystkie zlecenia zgłaszającego pogrupowane wg statusu (czeka na Twoją odpowiedź / czeka na decyzję / w realizacji / gotowe z ostatnich 30 dni), z przyciskiem do wątku każdego zlecenia i przyciskami „Zgłoś do marketingu” / „Zlecenie B2B”. Odrzuconych tam nie ma: powód jest w wątku.
+
 **Statusy karty zlecenia marketingowego:** 🟡 Nowe · 🟠 Do doprecyzowania (pytanie w wątku, odpowiedz tam) · 🔵 Przyjęte · 🟢 Gotowe (link do materiałów w wątku) · 🔴 Odrzucone (powód w wątku). Ustalenia dopisujemy w wątku karty **przed** przyjęciem. Po przyjęciu wytyczne są zamknięte, a zmiana oznacza nowe zlecenie.
 
 **Urlopy:** dni robocze liczą się same (bez weekendów i świąt). Zmiana dat = odwołanie („Odwołaj” w zakładce Home) i nowy wniosek. Zaakceptowany urlop trafia do kalendarza firmowego i jest ogłaszany na `#general`.
