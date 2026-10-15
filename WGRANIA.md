@@ -4,6 +4,10 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 
 | Data | Skill | Gdzie | Co | Wersja (commit) | Do zrobienia |
 |---|---|---|---|---|---|
+| 2026-10-15 | `glos-klienta-opcja-natura` | claude.ai — biblioteka organizacji | dodany (dwie warstwy: nasza społeczność z komentarzy FB/IG + klientka kategorii z Wizażu; poprawki Daniela po przeglądzie) | `854f874` | — |
+| 2026-10-15 | `bibliografia-blog` | claude.ai — biblioteka organizacji | podmieniony (bez odesłania do nieaktualnego `json_bibliografia.md`) | `533d94b` | — |
+| 2026-10-15 | `slack-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (zakładka Home „Moje zlecenia” w apce Zlecenia marketing; zmiana innego agenta) | `05a8e05` | — |
+| 2026-10-15 | `notion-publikacje` | claude.ai — biblioteka organizacji | podmieniony (zakładka Home „Moje zlecenia”; zmiana innego agenta) | `05a8e05` | — |
 | 2026-10-15 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | dodany (parasol: głos, compliance z uwag Trust Luna, formaty) | `6392884` | Agata usuwa prywatną kopię; zdjąć angielski `humanizer` z domyślnych |
 | 2026-10-15 | `faq-json-blog` | claude.ai — biblioteka organizacji | podmieniony (wchłonął FORMAT_faqJSON, FAQ od razu w JSON, głos → parasol) | `6392884` | — |
 | 2026-10-12 | `bigin-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (zapis etapu „Zaplanowano z klientem” pełną nazwą, koszt akcji przez `Warto_akcji_netto`) | `c8e81f9` | — |
