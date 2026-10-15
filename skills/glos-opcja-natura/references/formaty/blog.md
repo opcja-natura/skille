@@ -8,8 +8,7 @@ Nie zaczynaj bez:
 - **H1**: tytuł wpisu,
 - **H2**: główne sekcje (jeśli ich nie dostałaś, zapytaj; przy wpisach pod SEO są w briefie),
 - **tematu**: co czytelnik ma z wpisu wynieść,
-- **kosmetyków do wymienienia**: same nazwy; wiedzę o nich bierzesz z `produkty-lookup`,
-  `naturalna-pielegnacja` albo od Agaty, nie z głowy.
+- **kosmetyków do wymienienia**: same nazwy; wiedzę o nich bierzesz ze źródeł (strona, inne skille).
 
 Przydatne: sezon albo kampania, w którą wpis się wpisuje. Sprawdź też, czy temat już był na
 blogu (nie piszemy drugiego wpisu na to samo).
@@ -24,7 +23,7 @@ Wpis to **kilka osobnych dokumentów**. Nikt nie wycina potem kawałków z jedne
 | **excerpt** (osobny dokument, w nazwie słowo `excerpt`) | sam excerpt, 50-70 słów, nic więcej |
 | **FAQ** (`faq_<temat>.json`) | 4-6 pytań w JSON, format ze skilla `faq-json-blog` |
 | **bibliografia** (`bibliografia_<temat>.json`) | gdy wpis cytuje badania, format ze skilla `bibliografia-blog` |
-| **zdjęcia** (podfolder `foto/`) | okładka z `okladka_` na początku nazwy, reszta to zdjęcia do tekstu |
+| **zdjęcia** (podfolder `foto/`) | okładka z `okladka_` na początku nazwy, reszta to zdjęcia do tekstu przygotowuje grafik, nie ty |
 
 Wszystko w jednym folderze wpisu.
 
@@ -49,6 +48,29 @@ Wszystko w jednym folderze wpisu.
 * **Nawilżenie to podstawa**: systematyczna pielęgnacja utrzymuje intensywność koloru.
 * **Peeling odsłania pigment**: delikatne złuszczanie przywraca kontrast.
 ```
+
+## Brief: bez niego nie zaczynasz
+
+Brief przychodzi od Daniela i może być kszatłt:
+
+ - JSON na podstawie wytycznych agencji:
+```json
+{
+  "h1": "Tytuł artykułu (fraza kluczowa)",
+  "h2": ["Sekcja 1", "Sekcja 2", "Sekcja 3"],
+  "url_1": "https://opcjanatura.pl/sklep/...",
+  "anchor_1": "tekst linku",
+  "url_2": "https://opcjanatura.pl/blog/...",
+  "anchor_2": "https://opcjanatura.pl/blog/..."
+}
+```
+ - strona Notion na podstawie senuto, która jest napisana bardziej dla copywrightera, wymaga jego decyzji o kierunku treści, ale zaweiera wszelkie elementy tekstu dla seo.
+
+Minimum: 1 H1, 3 sekcje H2, 2 linki. Gdy anchor jest samym adresem, link wstawiasz jako czysty
+adres. Linki osadzasz naturalnie, w zdaniu, które ma sens merytorycznie. Nie dostałaś briefu,
+poproś o niego.
+
+Pamiętaj o AI SEO, brief notion zawiera też ten element. Nie ignoruj go.
 
 ## Excerpt
 
@@ -75,7 +97,7 @@ od ogólnika. Osobny dokument (patrz wyżej).
 
 4-6 pytań, od razu w JSON. Schemat, limity linków i walidacja: skill `faq-json-blog`.
 Głos odpowiedzi: jak odpowiedź na wiadomość od klientki, 4-6 zdań, mechanizm zamiast ogólnika,
-"kosmetyk", nie "produkt". Pytania o rany i choroby nie wchodzą (`compliance.md`, wzorzec 1).
+"kosmetyk", nie "produkt". Pytania o rany i choroby nie wchodzą, uważaj na odpowiedzi pod kątem prawnym (`compliance.md`, wzorzec 1).
 
 ## Checklista przed oddaniem
 

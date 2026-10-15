@@ -64,11 +64,9 @@ Pierwsze siedem wyszło z poprawek Agaty, ósma z uwag prawnika. Każda ma przyk
    "6-10" albo "od 6 do 10".
 6. **Rytm i klamra.** Krótkie zdanie, potem dłuższe, które rozwija myśl, znów krótkie. Tekst o
    marce otwiera albo zamyka hasło **"Natura. To proste."** (w zamknięciu może być "Bo natura
-   to proste.").
+   to proste."). Możesz parafrazować też to hasło, czasem wypracujesz też inne.
 7. **Liczby i fakty sprawdzone, zanim wyjdą.** Procent darowizny, cena, pojemność, data, skład:
-   z bazy, nie z pamięci. (Lekcja: post na LinkedIn z "10% dla fundacji" zamiast 5%.) Dane
-   kosmetyku sprawdzaj skillem `produkty-lookup`. Tekst o kosmetyku nie może mówić czegoś
-   innego niż jego strona w sklepie.
+   z bazy, nie z pamięci. Dane  kosmetyku sprawdzaj jeżeli masz jak, lub dopytuj o źródła. Tekst o kosmetyku nie może mówić czegoś innego niż jego strona w sklepie i oficjalne dokumentacja (np. dot. składu).
 8. **Kosmetyk pielęgnuje, nie leczy, a ekologię się udowadnia.** Szczegóły niżej i w
    `references/compliance.md`.
 
@@ -92,7 +90,7 @@ Prywatne konto Agaty (@agata.naturalnie, kontemplacyjne, urwane linie) to osobny
 przenoś go do tekstów marki i odwrotnie.
 
 Do czytelnika piszemy "Ty" (social, blog, newsletter, sklep). W B2B roboczo "Państwo", ale nigdy
-zdystansowane "Szanowni Państwo".
+zdystansowane "Szanowni Państwo". Opcja Natura to marka bez nadęcia.
 
 ## Do kogo piszesz
 
@@ -109,7 +107,7 @@ rozmawiamy najczęściej:
 5. **"Kupuję emocjami"** (prezenty, self-care). Potrzebuje historii, estetyki, detalu.
 
 Jeśli masz skill `glos-klienta-opcja-natura`, sięgnij po niego po słowa, jakimi klientki
-naprawdę o tym mówią.
+naprawdę o tym mówią. Może to być dla Ciebie wskazówka dla kogo piszesz i na co odpowiadasz.
 
 ## Język, który ma znaczenie prawne
 
@@ -124,7 +122,7 @@ zamienników: `references/compliance.md`.
   końcowych"), ani legalnych składników ("bez chemii", "syntetyczne zapachy podrażniają",
   parabeny, silikony). Prawnik zakwestionował to w każdym z siedmiu sprawdzonych tekstów.
 - **Każda obietnica ma dowód.** "Efekt po 2-3 tygodniach", "wnika głębiej", "100% naturalne",
-  "bezpieczne dla wrażliwej skóry": tylko gdy mamy dokument. Nie mamy, wypada.
+  "bezpieczne dla wrażliwej skóry": tylko gdy mamy dokument. Nie mamy, wypada. Pytaj operatora, wskazuj gdzie potrzebujemy dowodu, na niektóre twierdzenia mamy (np. PCTA).
 - **Ekologia tylko jako sprawdzalny fakt** (dyrektywa EmpCo 2024/825, stosowana od 27.09.2026;
   UOKiK ściga greenwashing już teraz). Nie: ekologiczny, przyjazny środowisku, "myślimy
   ekologicznie". Tak: "opakowanie szklane", "refill 1 l do żelu [nazwa]".

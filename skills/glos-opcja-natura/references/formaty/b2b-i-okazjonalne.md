@@ -27,4 +27,3 @@
 
 - Ten sam brak myślników.
 - Wprost, z pełną informacją, także o niepewności. Bez krytyki osobistej.
-- Agata podpisuje się "ciepło, Agata".

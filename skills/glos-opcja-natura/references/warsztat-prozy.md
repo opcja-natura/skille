@@ -1,8 +1,6 @@
 # Warsztat prozy: jak pisać, żeby brzmiało jak człowiek, a nie jak encyklopedia
 
-Ten plik przyszedł z projektu Content Writer (manifest głosu zespołu, czerwiec 2026). Pokazuje
-na jednym temacie (olej kokosowy) osiem ruchów, które zamieniają tekst "encyklopedyczny" w
-rozmowę. Potem trzy filtry, audyt i porządki na sam koniec.
+Ten plik przyszedł pokazuje na jednym temacie (olej kokosowy) osiem ruchów, które zamieniają tekst "encyklopedyczny" w rozmowę. Potem trzy filtry, audyt i porządki na sam koniec.
 
 Kolejność pracy jest stała: **najpierw głos (ruchy i filtry), na końcu porządki.** Wyczyszczona
 typograficznie sztampa to dalej sztampa.
@@ -11,8 +9,8 @@ typograficznie sztampa to dalej sztampa.
 
 ## Po co i dla kogo piszemy
 
-Blog i nasze teksty to miejsce nasze. Piszemy, bo chcemy się dzielić: tym, co nam w duszy gra
-i nie gra. Nie chcemy dawać wykładów ani być encyklopedią.
+Blog i nasze wpisy na social media to miejsce nasze. Piszemy, bo chcemy się dzielić: tym, co nam w duszy gra
+i nie gra. Nie chcemy dawać wykładów ani być encyklopedią. Chcemy współtworzyć i być autentyczni, bo to naszym zdaniem jest nasz atut.
 
 Nasi klienci nie potrzebują wykładu z kosmetologii, ale **chcą się poczuć zaopiekowani.** Już
 zaufali Agacie, chcą się czegoś nauczyć, a w prostym przekazie chcą wiedzieć: czy ten olej
@@ -188,6 +186,7 @@ Gdy je widzisz, przepisz na konkret, nie na synonim:
 - **Fałszywe zakresy:** "od pielęgnacji po filozofię życia".
 - **Cykl synonimów:** krem → kosmetyk → preparat → specyfik w czterech kolejnych zdaniach.
   Powtórzenie nazwy jest w porządku, sztuczna wariacja nie.
+- **Długie myślniki:** w polskim języku myślnik jest raczej mniej niż więcej.
 
 ---
 

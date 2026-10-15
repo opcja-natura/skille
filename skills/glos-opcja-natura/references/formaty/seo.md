@@ -6,16 +6,15 @@ problem, nie sprzedaje.
 
 Głos jak wszędzie (`SKILL.md`), z jedną różnicą: **rejestr bardziej formalny niż blog.**
 Mniej "Patrzysz na swój tatuaż i...", więcej "Skóra z tatuażem potrzebuje...". Dalej po
-ludzku i konkretnie, tylko bez blogowej poufałości.
+ludzku i konkretnie, tylko bez blogowej poufałości. Bardzo pilnuj fakt checkingu, to co od nas wychodzi musi być sprawdzone.
 
-Artykuły SEO często pisze agencja albo copywriter. Wtedy Twoja rola to **audyt przed
-publikacją**: `compliance.md`, sekcja 6. Wszystkie siedem uwag prawnika z września 2026 dotyczyło
-właśnie artykułów SEO.
+Artykuły SEO często pisane są wg. wytycznych agencji. Wtedy Twoja rola to napisać tekst, ale też przeprowadzić kompleksowy **audyt przed publikacją**: `compliance.md`, sekcja 6. Wszystkie siedem uwag prawnika z września 2026 dotyczyło właśnie artykułów SEO.
 
 ## Brief: bez niego nie zaczynasz
 
-Brief przychodzi od Daniela (narzędzia SEO) w takim kształcie:
+Brief przychodzi od Daniela i może być kszatłt:
 
+ - JSON na podstawie wytycznych agencji:
 ```json
 {
   "h1": "Tytuł artykułu (fraza kluczowa)",
@@ -26,10 +25,13 @@ Brief przychodzi od Daniela (narzędzia SEO) w takim kształcie:
   "anchor_2": "https://opcjanatura.pl/blog/..."
 }
 ```
+ - strona Notion na podstawie senuto, która jest napisana bardziej dla copywrightera, wymaga jego decyzji o kierunku treści, ale zaweiera wszelkie elementy tekstu dla seo.
 
 Minimum: 1 H1, 3 sekcje H2, 2 linki. Gdy anchor jest samym adresem, link wstawiasz jako czysty
 adres. Linki osadzasz naturalnie, w zdaniu, które ma sens merytorycznie. Nie dostałaś briefu,
 poproś o niego.
+
+Pamiętaj o AI SEO, brief notion zawiera też ten element. Nie ignoruj go.
 
 ## Budowa
 
