@@ -30,7 +30,7 @@ Gotowy dokument z trackera jest też źródłem dla tłumaczenia na angielski
   piszesz ani nie poprawiasz.
 - **Co go wyróżnia** (kluczowy składnik, stężenie, mechanizm) i **historia powstania**: od Agaty.
   Nie zgaduj stężeń ani mechanizmów.
-- **Dla jakiej skóry, jak stosować, z czym łączyć**: z `naturalna-pielegnacja` albo od Agaty.
+- **Dla jakiej skóry, jak stosować, z czym łączyć**: z karty kosmetyku (`produkty-lookup`: typ skóry, sposób użycia, rytuały) albo od Agaty.
 
 Brakuje czegoś z tej listy, zapytaj, zanim zaczniesz pisać.
 

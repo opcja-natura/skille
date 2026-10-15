@@ -156,8 +156,8 @@ Z listy `urls` (posortowanej po `keywords_count`/widoczności) wyciągnij:
 2. **Jakie kategorie/tematy dominują?** Wypisz 3-5 rozpoznawalnych kategorii produktowych lub
    tematycznych z URL-i (np. "kosmetyki dziecięce, zabawki, pielęgnacja włosów").
 3. **Zaproponuj kąt artykułu** — znajdź część wspólną między tym profilem a ofertą Opcji
-   Natury. Nie zgaduj składu/działania produktów z pamięci — sprawdź `produkty-lookup` (i
-   `naturalna-pielegnacja`, jeśli chodzi o dobór pod konkretny problem skórny) po konkretny
+   Natury. Nie zgaduj składu/działania produktów z pamięci — sprawdź `produkty-lookup` (przy doborze pod konkretny
+   problem skórny: zestawy, czyli rutyny) po konkretny
    produkt/kategorię do wskazania. Podaj 1 propozycję tematu, nie listę.
 
 ---

@@ -178,7 +178,6 @@ Głos jest wszędzie ten sam, różni się budowa. Przed pisaniem przeczytaj wł
 | tekst po angielsku | `tlumaczenia-opcja-natura` |
 | wygląd: grafika, dokument, oferta, prezentacja | `opcja-natura-creative-brand` |
 | skład, przeznaczenie, link do kosmetyku | `produkty-lookup` |
-| dobór pielęgnacji, rytuały, typy skóry | `naturalna-pielegnacja` |
 | jak klientki mówią o swoich problemach | `glos-klienta-opcja-natura` |
 
 Brief SEO dla copywritera i wrzucenie wpisu do Contentful robi Daniel swoimi narzędziami. Ty
