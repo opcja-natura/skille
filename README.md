@@ -46,7 +46,6 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 
 | Skill | Po co | Gdzie wgrany | Uwagi |
 |---|---|---|---|
-| `naturalna-pielegnacja` | doradztwo pielęgnacyjne, rytuały | CC | 10.10: kopia w CC miała błąd (30% biofermentu w Atop Stop zamiast 10%) i brak sekcji „pachy”; kanon = ta wersja |
 | `produkty-lookup` | dane o kosmetykach tylko z konektora „Opcja Natura — produkty” (skład, ceny, zdjęcia, zestawy, kategorie) | CC; do wgrania: org | od 15.10 mini-skill; wymaga konektora (Edge Function `produkty-mcp`, on_brain, projekt `n8n/products_and_categories_sync`); dane z dev do przełączenia synca na prod |
 | `glos-opcja-natura` | **parasol treści PL**: głos marki, kto mówi, compliance (1223/2009, 655/2013, EmpCo + 6 wzorców z uwag prawnika Trust Luna 09.2026), opis marki, przykłady przed/po, formaty (blog, SEO, newsletter, strona kosmetyku, social, B2B); odsyła do mniejszych skilli | org, CC | 15.10.2026 przebudowany na bazie wersji Agaty (Slack 14.10) + Content Writer (manifest, humanizer PL, FORMAT_*); samowystarczalny, wgrany do org 15.10 (`6392884`); Agata usuwa swoją prywatną kopię; hasło „Natura. To proste.” |
 | `faq-json-blog` | FAQ do wpisu na blogu w JSON (schemat, linki, checklista, przykład) | org (domyślny) | 15.10.2026 przeniesiony z `skille_daniel`; wchłonął `FORMAT_faqJSON.md` z Content Writera, głos odsyła do `glos-opcja-natura`; podmieniony w org 15.10 |
@@ -83,7 +82,8 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `notion-produkcja-tresci` | `notion-publikacje` (10.10.2026) |
 | `notion-opcja-natura` | `notion-publikacje` + `references/inne-bazy.md` (10.10.2026) |
 | `supabase-opcja-natura` | `sklep-ecommerce-database`, `pracownicy-database`, `produkty-lookup`, `meetings-opcja-natura` |
-| `pozyskiwanie-wiedzy-produktowej` | `produkty-lookup` (konektor „Opcja Natura — produkty”) + `naturalna-pielegnacja` (15.10.2026; nigdzie niewgrany, nic do zdjęcia) |
+| `pozyskiwanie-wiedzy-produktowej` | `produkty-lookup` (konektor „Opcja Natura — produkty”) (15.10.2026; nigdzie niewgrany, nic do zdjęcia) |
+| `naturalna-pielegnacja` | — **wstrzymany 15.10.2026 do weryfikacji Agaty** (doradztwo, rytuały); folder zostaje w repo, był tylko w CC. Dane o kosmetykach: `produkty-lookup` |
 
 ## Poza tym repo (świadomie)
 

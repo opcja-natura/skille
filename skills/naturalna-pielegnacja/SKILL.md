@@ -3,6 +3,9 @@ name: naturalna-pielegnacja
 description: Doradztwo pielęgnacyjne Opcja Natura — dobór produktów, rytuały, typy cery, problemy skórne
 ---
 
+> **STATUS 15.10.2026: WYCOFANY do weryfikacji merytorycznej Agaty.** Nie używaj do doradztwa ani tekstów, dopóki Agata nie potwierdzi treści. Dane o kosmetykach (skład, działanie, ceny, zestawy pod problem): skill `produkty-lookup` (konektor „Opcja Natura — produkty”).
+
+
 # SKILL — Doradztwo pielęgnacyjne Opcja Natura
 
 Używaj tego pliku gdy klient pyta o pielęgnację, rytuał, problem skórny lub dobór produktów. Podejście: problem → zrozumienie → rytuał → produkty → oczekiwania.
