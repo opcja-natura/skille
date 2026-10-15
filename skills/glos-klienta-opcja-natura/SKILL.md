@@ -1,13 +1,14 @@
 ---
 name: glos-klienta-opcja-natura
 description: >
-  Głos klientki Opcji Natury: kim są nasze klientki, czego się boją, czego szukają i jakimi
-  słowami mówią o swoich problemach ze skórą, włosami, potem czy tatuażem. Na podstawie segmentów
-  klientów marki i analizy ponad 50 tys. opinii o kosmetykach z 22 kategorii sklepu. Używaj, gdy
-  wybierasz kąt tekstu, pierwsze zdanie, pytania do FAQ albo decyzję, którą ma rozstrzygnąć opis
-  kategorii lub kosmetyku; gdy ktoś pyta "o co pytają klientki", "czego się boją przy X", "jak
-  klientki mówią o Y", "jakie FAQ dać do kategorii Z", "do kogo piszemy". Działa razem ze skillem
-  glos-opcja-natura (głos, prawo, formaty); ten skill mówi, DO KOGO i NA CO odpowiadasz.
+  Głos klientki Opcji Natury: kim są osoby, do których piszemy, czego się boją, o co pytają, na
+  co narzekają i jakimi słowami o tym mówią. Dwie warstwy: nasza społeczność (ok. 4,2 tys.
+  komentarzy pod naszymi postami na FB i IG, 2025-2026) i szeroki odbiorca, który nas jeszcze nie
+  zna (ponad 50 tys. opinii o kosmetykach z 22 kategorii sklepu). Używaj, gdy wybierasz kąt
+  tekstu, pierwsze zdanie, pytania do FAQ albo decyzję, którą ma rozstrzygnąć opis; gdy ktoś pyta
+  "o co pytają klientki", "na co narzekają przy dezodorancie", "jak klientki mówią o X", "jakie
+  FAQ do kategorii Y", "do kogo piszemy". Działa razem ze skillem glos-opcja-natura (głos, prawo,
+  formaty); ten skill mówi, DO KOGO i NA CO odpowiadasz.
 ---
 
 # Głos klientki
@@ -18,22 +19,32 @@ obiecać, mówi `glos-opcja-natura`. Używaj obu razem.
 > Nie piszemy, żeby sprzedać. Piszemy, żeby ktoś poczuł: "ktoś mnie rozumie".
 > Sprzedaż jest efektem ubocznym.
 
-## Skąd ta wiedza i czego NIE mówi
+## Dwie warstwy: nasi i wszyscy
 
-Dwa źródła:
-1. **Pięć grup naszych klientek** (segmenty marki): `references/segmenty-i-techniki.md`.
-2. **Analiza 53,7 tys. opinii z Wizażu** (wrzesień 2026, 22 kategorie sklepu): czego klientki
-   nie wiedzą przed zakupem, co je zatrzymuje przy kosmetyku, gdzie obietnica rozjeżdża się z
-   doświadczeniem. Kategoria po kategorii: `references/kategorie.md`.
+Piszemy do szerokiego odbiorcy, ale brzmimy jak ktoś, kto zna swoje klientki. Dlatego dwie
+warstwy, zawsze razem:
 
-Trzy zastrzeżenia, zanim cokolwiek z tego wykorzystasz:
-- **To opinie o kosmetykach innych marek.** Opcja Natura ma na Wizażu około 10 opinii. Nie wolno
-  napisać "nasze klientki mówią, że..." na podstawie tego materiału. Bierzemy z niego język,
-  lęki i pytania, nie dowody na nasze kosmetyki.
-- **Opinie dobrze pokazują, co klientkę zatrzymuje, słabo, co ją odpycha.**
-- **Cytaty i nazwy marek z analizy nie trafiają do naszych tekstów.** Służą zrozumieniu.
+| Warstwa | Kto | Do czego | Plik |
+| :-- | :-- | :-- | :-- |
+| **Nasza społeczność** | osoby, które używają naszych kosmetyków albo komentują nasze posty (ok. 4,2 tys. komentarzy FB i IG, 2025-2026) | co naprawdę mówią o NASZYCH kosmetykach: co kochają, na co narzekają, o co pytają, czego nie wiedzą; ich słowa | `references/nasza-spolecznosc.md` |
+| **Klientka kategorii** | szeroki odbiorca, który nas jeszcze nie zna (ponad 53 tys. opinii o kosmetykach innych marek z Wizażu, 09.2026) | czego ktoś szukający "kremu do pięt" czy "naturalnego dezodorantu" nie wie przed zakupem, co go zatrzymuje, gdzie obietnice się rozjeżdżają; gotowe pytania do FAQ | `references/kategorie.md` |
+| **Pięć grup klientek** | segmenty marki | wybór jednego bólu i techniki na tekst | `references/segmenty-i-techniki.md` |
 
-## Szesnaście reguł z opinii
+Zasada łączenia: **pytanie i lęk bierz z obu warstw, konkret o naszym kosmetyku tylko z naszej.**
+Gdy obie mówią to samo (plamy po dezodorancie, porcja, "czy to dla mnie"), to temat pewny do FAQ i
+opisu.
+
+Zastrzeżenia:
+- **Warstwa Wizażu to opinie o innych markach.** Bierzemy z niej język, lęki i pytania, nie
+  dowody na nasze kosmetyki. Nie piszemy "nasze klientki mówią..." na jej podstawie.
+- **Komentarze naszej społeczności nie są reprezentatywne:** komentują głównie zachwyceni i
+  rozczarowani. Liczą się powtarzające się tematy, nie proporcje.
+- **Cytaty z obu warstw nie trafiają do tekstów** bez zgody autorki (i nigdy z obietnicą
+  leczenia, choćby klientka tak napisała). Służą zrozumieniu.
+- Sklep nie zbiera dziś własnych opinii o kosmetykach. Gdy zacznie, to będzie trzecia, najlepsza
+  warstwa.
+
+## Szesnaście reguł z opinii (warstwa Wizażu, potwierdzone przez naszą społeczność)
 
 Te same luki wracały w prawie każdej kategorii. Opis i FAQ, które je zamykają, odpowiadają na to,
 o co klientka naprawdę pyta.
@@ -94,7 +105,10 @@ Wyjątek: "bariera hydrolipidowa" klientki znają i używają poprawnie.
 ## Jak z tego korzystać
 
 - **Kąt tekstu i pierwsze zdanie:** wybierz grupę klientek i jeden jej lęk
-  (`references/segmenty-i-techniki.md`). Jeden tekst, jeden ból, jedno przesłanie.
+  (`references/segmenty-i-techniki.md`), a słowa weź z `nasza-spolecznosc.md`. Jeden tekst, jeden
+  ból, jedno przesłanie.
+- **Tekst o konkretnym kosmetyku:** zacznij od `nasza-spolecznosc.md` (co ludzie o nim mówią i o
+  co pytają), potem `kategorie.md` (czego nie wie ktoś, kto nas nie zna).
 - **FAQ do kategorii albo kosmetyku:** weź pytania z `references/kategorie.md`, sprawdź podpowiedzi
   ze stroną kosmetyku i compliance, odpowiedz głosem z `glos-opcja-natura`.
 - **Opis kosmetyku:** szablon opisu na Dysku (patrz `glos-opcja-natura`) + reguły R1-R4, R8-R9:
@@ -104,7 +118,11 @@ Wyjątek: "bariera hydrolipidowa" klientki znają i używają poprawnie.
 
 ## Skąd się bierze i jak odświeżać
 
-Materiał źródłowy (korpus opinii, skrypty, pełne wytyczne z liczbami) jest na komputerze Daniela:
-`~/Claude_praca/n8n/reviews_intelligence/` (start: `README.md`, wytyczne w
-`wytyczne_kategorie/`). Ten skill zawiera tylko wyciąg. Gdy korpus zostanie odświeżony albo
-zaczniemy zbierać własne opinie w sklepie, wyciąg trzeba przegotować i wgrać nową wersję skilla.
+- **Nasza społeczność:** baza komentarzy social media (Supabase, projekt socialAutomation, tabela
+  `Komentarze`: treść, kategoria, platforma, data). Wyciąg zrobiony 15.10.2026 z komentarzy
+  negatywnych, pytań i dłuższych pozytywnych. Odświeżaj co kwartał albo po dużej kampanii.
+- **Klientka kategorii:** korpus Wizażu na komputerze Daniela
+  (`~/Claude_praca/n8n/reviews_intelligence/`, wytyczne w `wytyczne_kategorie/`).
+- **Grupy klientek:** `00_o_marce/wiedza_o_kliencie.md` w repozytorium marki.
+
+Ten skill zawiera tylko wyciągi. Po odświeżeniu źródła przegotuj wyciąg i wgraj nową wersję.
