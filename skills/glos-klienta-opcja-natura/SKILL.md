@@ -4,7 +4,7 @@ description: >
   Głos klientki Opcji Natury: kim są osoby, do których piszemy, czego się boją, o co pytają, na
   co narzekają i jakimi słowami o tym mówią. Dwie warstwy: nasza społeczność (ok. 4,2 tys.
   komentarzy pod naszymi postami na FB i IG, 2025-2026) i szeroki odbiorca, który nas jeszcze nie
-  zna (ponad 50 tys. opinii o kosmetykach z 22 kategorii sklepu). Używaj, gdy wybierasz kąt
+  zna (ponad 50 tys. opinii o kosmetykach z 22 kategorii). Używaj, gdy wybierasz kąt
   tekstu, pierwsze zdanie, pytania do FAQ albo decyzję, którą ma rozstrzygnąć opis; gdy ktoś pyta
   "o co pytają klientki", "na co narzekają przy dezodorancie", "jak klientki mówią o X", "jakie
   FAQ do kategorii Y", "do kogo piszemy". Działa razem ze skillem glos-opcja-natura (głos, prawo,
@@ -16,8 +16,8 @@ description: >
 Ten skill mówi, do kogo piszesz i na jakie pytania odpowiadasz. Jak to napisać i czego nie wolno
 obiecać, mówi `glos-opcja-natura`. Używaj obu razem.
 
-> Nie piszemy, żeby sprzedać. Piszemy, żeby ktoś poczuł: "ktoś mnie rozumie".
-> Sprzedaż jest efektem ubocznym.
+> Nie piszemy, żeby sprzedać. Piszemy, żeby czytający poczuł: "ktoś mnie rozumie".
+> Sprzedaż jest efektem ubocznym. Opcja Natura rośnie organicznie współtworząc i rozmawiając z klientami.
 
 ## Dwie warstwy: nasi i wszyscy
 
@@ -26,8 +26,8 @@ warstwy, zawsze razem:
 
 | Warstwa | Kto | Do czego | Plik |
 | :-- | :-- | :-- | :-- |
-| **Nasza społeczność** | osoby, które używają naszych kosmetyków albo komentują nasze posty (ok. 4,2 tys. komentarzy FB i IG, 2025-2026) | co naprawdę mówią o NASZYCH kosmetykach: co kochają, na co narzekają, o co pytają, czego nie wiedzą; ich słowa | `references/nasza-spolecznosc.md` |
-| **Klientka kategorii** | szeroki odbiorca, który nas jeszcze nie zna (ponad 53 tys. opinii o kosmetykach innych marek z Wizażu, 09.2026) | czego ktoś szukający "kremu do pięt" czy "naturalnego dezodorantu" nie wie przed zakupem, co go zatrzymuje, gdzie obietnice się rozjeżdżają; gotowe pytania do FAQ | `references/kategorie.md` |
+| **Nasza społeczność** | osoby, które używają naszych kosmetyków albo komentują nasze posty | co naprawdę mówią o NASZYCH kosmetykach: co kochają, na co narzekają, o co pytają, czego nie wiedzą; ich słowa | `references/nasza-spolecznosc.md` |
+| **Klientka kategorii** | szeroki odbiorca, który nas jeszcze nie zna | czego ktoś szukający "kremu do pięt" czy "naturalnego dezodorantu" nie wie przed zakupem, co go zatrzymuje, gdzie obietnice się rozjeżdżają; gotowe pytania do FAQ | `references/kategorie.md` |
 | **Pięć grup klientek** | segmenty marki | wybór jednego bólu i techniki na tekst | `references/segmenty-i-techniki.md` |
 
 Zasada łączenia: **pytanie i lęk bierz z obu warstw, konkret o naszym kosmetyku tylko z naszej.**
@@ -40,9 +40,9 @@ Zastrzeżenia:
 - **Komentarze naszej społeczności nie są reprezentatywne:** komentują głównie zachwyceni i
   rozczarowani. Liczą się powtarzające się tematy, nie proporcje.
 - **Cytaty z obu warstw nie trafiają do tekstów** bez zgody autorki (i nigdy z obietnicą
-  leczenia, choćby klientka tak napisała). Służą zrozumieniu.
-- Sklep nie zbiera dziś własnych opinii o kosmetykach. Gdy zacznie, to będzie trzecia, najlepsza
-  warstwa.
+  leczenia, choćby klientka tak napisała). Służą zrozumieniu. Ich myśl i słowa możesz przenieść do naszego tekstu (parafraza jako nasze
+  zdanie), ale nigdy jako przerobiony cytat podpisany klientką.
+- Sklep zbiera własne opinie o kosmetykach, publikowane są tam głównie opinie polecające, dlatego nie posłużyły budowie skilla.
 
 ## Szesnaście reguł z opinii (warstwa Wizażu, potwierdzone przez naszą społeczność)
 
