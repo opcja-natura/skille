@@ -1,89 +1,212 @@
 ---
 name: glos-opcja-natura
-description: Pisanie prozy marki Opcja Natura po polsku głosem człowieka, nie AI. Używaj ZANIM napiszesz jakąkolwiek treść marketingową/redakcyjną w tym repo — odpowiedzi FAQ, opisy produktów, posty, fragmenty bloga/newslettera, treści na stronę. Triggeruj też, gdy tekst „brzmi robotycznie", gdy ktoś prosi „napisz to głosem marki", „przepisz mniej sztucznie", „zhumanizuj", albo gdy zaraz wygenerujesz proze, którą i tak trzeba by potem poprawiać ręcznie. NIE do: doradztwa pielęgnacyjnego (naturalna-pielegnacja), angielskiego (tlumaczenia-opcja-natura), lookupu danych produktu (produkty-lookup), technicznego schematu FAQ JSON (FORMAT_faqJSON.md). Ten skill daje GŁOS; format/pakowanie to osobna sprawa.
+description: >
+  Głos marki Opcja Natura w tekstach po polsku, razem z bezpieczeństwem prawnym i formatami
+  (blog, SEO, newsletter, strona kosmetyku, post, stories, B2B, odpowiedź na komentarz).
+  Używaj ZAWSZE, gdy ktokolwiek w Opcji Naturze pisze, poprawia albo ocenia tekst wychodzący
+  na zewnątrz, także tekst od agencji lub copywritera przed publikacją. Także gdy ktoś pyta
+  "czy to brzmi jak my", "popraw ton", "napisz w naszym stylu", "czy to jest zgodne z prawem",
+  "czy możemy tak napisać", wkleja szkic do oceny albo dyktuje luźny pomysł do zamiany w gotowy
+  tekst. Nie czekaj, aż padnie słowo "ton". To skill parasolowy: sam daje głos, prawo i formaty,
+  a po technikę odsyła do mniejszych skilli (FAQ do bloga, źródła naukowe, TikTok, angielski,
+  wygląd, dane kosmetyku).
 ---
 
-# Głos Opcji Natury — proza marki, po polsku, po ludzku
+# Głos Opcji Natury
 
-Ten skill ładuje istniejący system głosu Opcji Natury do Twojego kontekstu **zanim** zaczniesz pisać. Problem, który rozwiązuje: treść pisana „na zimno" (bez tego systemu) brzmi jak AI i wymaga drugiego, marnotrawnego passu humanizacji. Jeśli głos jest w kontekście od pierwszego zdania — pierwsza wersja ma brzmienie, a pas mechaniczny na końcu tylko sprząta typografię.
+Ten skill jest po to, żeby każda osoba w zespole (i każdy Claude) pisała tak, jakby siedziała
+przy jednym stole z Agatą. Nie jest zbiorem zakazów, tylko zapisem tego, czego nauczyłyśmy się,
+poprawiając prawdziwe teksty. Najwięcej uczą przykłady, więc zanim napiszesz coś większego niż
+jedno zdanie, przeczytaj `references/przyklady-przed-po.md`.
 
-> **Kluczowa kolejność (nie odwracaj):** GŁOS najpierw (manifest + wiedza o kliencie), MECHANIKA na końcu (`humanizer.md`). Wyczyszczona typograficznie sztampa to dalej sztampa — humanizer nie buduje głosu, robi to manifest i człowiek.
+## Kim jesteśmy, w jednym oddechu
 
----
+Rodzinna manufaktura naturalnych kosmetyków z Krotoszyna. Wszystko powstaje u nas, od receptury
+po słoik. Krótkie, przemyślane składy. Jedzenie dla skóry. Rzemiosło ma twarze. Kosmetyki
+tworzymy razem z klientami. Natura. To proste.
 
-## Kanon — wskazuje, nie kopiuje
+Oficjalny opis marki (krótki, średni, długi) jest w `references/opis-marki.md`. Nie wymyślaj go
+od nowa, adaptuj.
 
-Nie duplikujemy tych plików do skilla (to psuje kanon). Czytasz je w repo w momencie pisania:
+## Charakter głosu
 
-| Plik (ścieżka w repo) | Po co go wczytać |
+Gdyby Opcja Natura była osobą, byłaby kimś, kto dużo wie i się nie mądrzy. Zaprasza, nie namawia.
+Mówi "nie wiem", kiedy nie wie. Opowiada historię tam, gdzie inni dają listę argumentów.
+
+- **Spokojna.** Nie krzyczymy, nie budujemy niedoboru ("ostatnia szansa", "tylko dziś").
+- **Konkretna.** Pokazujemy proces i skład zamiast przymiotników. Nie zaokrąglamy obietnic.
+- **Ciepła.** Człowiek do człowieka, nie marka do konsumenta.
+- **Szczera.** Pokazujemy też ograniczenia. "Dla skóry tłustej to nie jest dobry wybór" buduje
+  zaufanie mocniej niż dziesięć zachwytów. Marketing zachwala wszystko, rzemiosło mówi
+  "nie dla Ciebie".
+
+Robocza metafora: piszesz tak, jakbyś tłumaczyła znajomej w kuchni przy herbacie, która właśnie
+kupiła olej kokosowy i pyta, czy dobrze zrobiła. Powiesz jej prawdę, nawet jeśli źle. I dorzucisz
+coś od siebie, bo lubisz z nią rozmawiać.
+
+## Osiem zasad
+
+Pierwsze siedem wyszło z poprawek Agaty, ósma z uwag prawnika. Każda ma przykład w
+`references/przyklady-przed-po.md`.
+
+1. **Mówimy, ZA czym jesteśmy, nie PRZECIW czemu.** Żadnego "my kontra wielkie koncerny",
+   "zamiast chować za ładnym opakowaniem", "nie interesuje nas greenwashing". Nawet z pazurem
+   ustawia to markę w obronie. Opisujemy swoje, nie cudze. To jest też wymóg prawa (zasada 8).
+2. **Mówimy, co JEST w słoiku, nie czego w nim nie ma.** Lista "bez parafiny, bez syntetyków,
+   bez barwników" wypada. Zamiast niej: "naturalne olejki eteryczne, masła, oleje". Wyjątek:
+   rzeczowa odpowiedź komuś, kto pyta (B2B, alergik), i tylko gdy jest prawdziwa dla tego
+   kosmetyku.
+3. **Konkret zamiast hasła.** "Robimy w małych partiach, ręcznie" zamiast "rzemieślnicza jakość".
+   "Olej z pestek truskawki" zamiast "cenne oleje". Dowód z procesu bije przymiotnik.
+4. **"Kosmetyk", nigdy "produkt".** To słowo marki, nie synonim do wymieniania.
+5. **Żadnych myślników (—, –) w tekście.** Zastępujemy przecinkiem, dwukropkiem, kropką albo
+   nowym zdaniem. Dotyczy wszystkiego, także tekstów wewnętrznych. Zakresy liczb piszemy
+   "6-10" albo "od 6 do 10".
+6. **Rytm i klamra.** Krótkie zdanie, potem dłuższe, które rozwija myśl, znów krótkie. Tekst o
+   marce otwiera albo zamyka hasło **"Natura. To proste."** (w zamknięciu może być "Bo natura
+   to proste.").
+7. **Liczby i fakty sprawdzone, zanim wyjdą.** Procent darowizny, cena, pojemność, data, skład:
+   z bazy, nie z pamięci. (Lekcja: post na LinkedIn z "10% dla fundacji" zamiast 5%.) Dane
+   kosmetyku sprawdzaj skillem `produkty-lookup`. Tekst o kosmetyku nie może mówić czegoś
+   innego niż jego strona w sklepie.
+8. **Kosmetyk pielęgnuje, nie leczy, a ekologię się udowadnia.** Szczegóły niżej i w
+   `references/compliance.md`.
+
+## Kto mówi w tekście
+
+Marka mówi kilkoma głosami i to działa. Ustal na początku, który piszesz, i trzymaj go do końca.
+
+| Gdzie | Kto mówi |
 | :-- | :-- |
-| `00_o_marce/brand_dna.md` | fundament: tożsamość, zakazy językowe, mechanizm wyjaśniania składników |
-| `projekty_claude/contentWriter/MANIFEST_glosu.md` | **serce głosu** — 8 przykładów „encyklopedia → człowiek" + 3 filtry |
-| `00_o_marce/wiedza_o_kliencie.md` | do kogo piszesz: segment, jego lęk, technika komunikacji |
-| `projekty_claude/contentWriter/FORMAT_faqJSON.md` | gdy piszesz FAQ (schemat + ton odpowiedzi 4–6 zdań) |
-| `projekty_claude/contentWriter/FORMAT_blog.md` / `FORMAT_seo.md` / `FORMAT_newsletter.md` / `FORMAT_stronaProduktu.md` | gdy piszesz odpowiednio bloga / SEO / newsletter / stronę produktu |
-| `projekty_claude/contentWriter/humanizer.md` | pas mechaniczny na sam koniec (typografia + polskie AI-frazy) |
-| `00_o_marce/produkty.json` | gdy pada konkretny kosmetyk — skład i dane stamtąd, nie z głowy |
+| strona www, opis kosmetyku, opis marki, B2B, newsletter | **my**, zespół manufaktury ("rzemiosło ma twarze") |
+| blog podpisany przez autora | autor; może mówić od siebie ("mnie to fascynuje"), a o firmie "u nas", "w manufakturze" |
+| treści merytoryczne Agaty (dlaczego ten olej, a nie inny) | **Agata, biolożka i twórczyni receptur**, w pierwszej osobie. Tylko gdy to faktycznie jej treść |
+| post członka zespołu (np. Uli) | ta osoba, z własnego doświadczenia ("używam, bo...") |
+| edukacja (Antosia) | biologia skóry językiem kogoś bez wykształcenia medycznego, metafory z codzienności |
+| cytaty klientek | one same, **bez retuszu** (poprawiamy tylko literówki zmieniające sens) |
 
-Uwaga: `projekty_claude/contentWriter/` to projekt zespołu na claude.ai — **czytaj, nie modyfikuj**. Ten skill jest jego „ zdalną końcówką" w repo: ta sama wiedza, dostępna agentowi pracującemu tutaj.
+Gdy nie wiesz, kto ma mówić (licytacja, event, mail od kogoś z zespołu), **zapytaj**, zanim
+napiszesz. Imię Agaty w tekstach marki pada tylko tam, gdzie mówi ona sama.
 
----
+Prywatne konto Agaty (@agata.naturalnie, kontemplacyjne, urwane linie) to osobny głos. Nie
+przenoś go do tekstów marki i odwrotnie.
 
-## Rdzeń głosu (destylat — masz go od ręki, bez czytania plików)
+Do czytelnika piszemy "Ty" (social, blog, newsletter, sklep). W B2B roboczo "Państwo", ale nigdy
+zdystansowane "Szanowni Państwo".
 
-To skrót; przy realnym pisaniu i tak wczytaj `MANIFEST_glosu.md` po pełne przykłady.
+## Do kogo piszesz
 
-### Trzy filtry — każde zdanie przez nie przechodzi
-1. **Mówię to JA, do Ciebie.** Człowiek podpisany na blogu, nie encyklopedia. Może się czymś jarać, czegoś nie rozumieć, pokazać siebie. Druga osoba: „masz", „zatka Ci", „znasz to uczucie".
-2. **Co czytelnik zyska z tego zdania?** Decyzję, spokój, konkret. Jeśli nie wiesz — piszesz encyklopedię na zlecenie.
-3. **Czy to mogła napisać konkretnie Opcja Natura?** Jeśli zdanie pasuje też do Avonu i Yves Rocher — nie jest nasze. Przepisz albo usuń.
+Zanim napiszesz, odpowiedz sobie: czego ta osoba się boi i czego szuka? Pięć grup, z którymi
+rozmawiamy najczęściej:
 
-> Metafora robocza: piszesz tak, jakbyś tłumaczyła to znajomej w kuchni przy herbacie, która właśnie kupiła olej kokosowy i pyta, czy dobrze zrobiła. Powiesz jej prawdę, nawet jeśli źle. I dorzucisz coś od siebie — bo lubisz z nią gadać.
+1. **"Potrzebuję ulgi i bezpieczeństwa"** (skóra wrażliwa, atopowa). Boi się, że znów nie
+   zadziała albo zaszkodzi. Potrzebuje spokoju i doświadczenia, nie obietnic.
+2. **"Chcę prostą rutynę, która działa"**. Nie ma czasu analizować. Potrzebuje uproszczeń.
+3. **"Chcę efektu"** (pięty, kosmetyki zadaniowe). Boi się, że da się nabrać na marketing.
+   Potrzebuje mechanizmu i uczciwości, co zadziała, a co nie.
+4. **"Chcę naturalnie, ale boję się, że nie zadziała"** (dezodoranty). Potrzebuje
+   przejrzystości i obalania mitów.
+5. **"Kupuję emocjami"** (prezenty, self-care). Potrzebuje historii, estetyki, detalu.
 
-### Osiem ruchów „encyklopedia → człowiek" (skrót z manifestu)
-- **Strona bierna → człowiek robiący coś.** „był używany" → kto, kiedy, po co. Wstaw obraz.
-- **„Dla skóry X" → „Jeśli masz skórę X".** Mówisz *do niej*, nie *o niej*.
-- **Liczba sucho → liczba z intuicją.** „32%" → „3 razy lepiej" — ale **liczbę zostaw** dla wiarygodności, dokładasz przekład, nie zastępujesz.
-- **Termin techniczny → most do doświadczenia.** „zmęczenie hygralne" → „znasz to, gdy po trzecim myciu włosy jak słoma?". Ekspert, który mówi zrozumiale.
-- **Lista cech → lista decyzji.** Nie „Virgin: tłoczony na zimno, polifenole" → „Virgin — wybierz, gdy chcesz pełni działania". Cecha jako argument, nie wykład.
-- **Akapit jednolity → akapit z oddechem.** Krótkie, krótkie, pytanie, odpowiedź, fakt. Monotonny rytm usypia.
-- **Wstęp tezowy → wstęp sceną.** „Historia olejku…" → „Na Sri Lance kobiety codziennie…". Hook w pierwszych 3 słowach.
-- **Domknięcie podsumowaniem → domknięcie postawą.** Nie „A Ty? 🥥✨", tylko odważne zdanie z charakterem: „Skóra sucha — tak. Skóra tłusta — nie."
+Jeśli masz skill `glos-klienta-opcja-natura`, sięgnij po niego po słowa, jakimi klientki
+naprawdę o tym mówią.
 
-### Nasza szczerość = autorytet
-Pokazuj ograniczenia. „Dla tej skóry to nie jest dobry wybór" buduje zaufanie mocniej niż dziesięć zachwytów. Marketing zachwala wszystko; rzemiosło mówi „nie dla Ciebie". Mechanizm zamiast ogólnika: „lanolina spowalnia parowanie wody z naskórka" > „intensywnie nawilża".
+## Język, który ma znaczenie prawne
 
-### Słowa (twarde)
-- Zawsze **„kosmetyk"**, nigdy „produkt" (to słowo marki, nie synonim do wymieniania).
-- **Zakazane:** premium, innowacyjny, kompleksowy, holistyczny, rewolucyjny, kluczowy, doskonały, wyjątkowy, „skuteczny" bez mechanizmu; czasowniki: zapewnia, zdecydowanie.
-- **Bez negatywnego różnicowania** („bez zbędnej chemii", atak na konkurencję).
+Dwa reżimy, oba obowiązują już teraz. Pełne zasady, wzorce z uwag naszego prawnika i listy
+zamienników: `references/compliance.md`.
 
-### Polskie AI-flagi (przepisz na konkret, nie na synonim)
-„stanowi", „odgrywa kluczową rolę", „warto pamiętać", „należy podkreślić", „jak widać", „w dzisiejszych czasach"; gerundium-ogon („…nawilżając skórę, wspierając regenerację…"); przeczące paralelizmy („to nie tylko krem, to rytuał"); reguła trójki jako ozdobnik; cykl synonimów (krem→kosmetyk→preparat→specyfik).
+- **Kosmetyk pielęgnuje, nie leczy** (Rozp. 1223/2009, 655/2013). Nie: goi, leczy, odbudowuje,
+  antybakteryjny, "na atopię". Tak: koi, łagodzi, natłuszcza, wspiera odnowę, "do pielęgnacji
+  skóry atopowej". Uwaga na kontekst: lista "opryszczka, łuszczyca, otarcia, skaleczenia"
+  robi z kosmetyku lek, nawet jeśli żadne zdanie osobno nie mówi "leczy".
+- **Nie dyskredytujemy innych.** Ani konkurencji ("duzi producenci polegają tylko na testach
+  końcowych"), ani legalnych składników ("bez chemii", "syntetyczne zapachy podrażniają",
+  parabeny, silikony). Prawnik zakwestionował to w każdym z siedmiu sprawdzonych tekstów.
+- **Każda obietnica ma dowód.** "Efekt po 2-3 tygodniach", "wnika głębiej", "100% naturalne",
+  "bezpieczne dla wrażliwej skóry": tylko gdy mamy dokument. Nie mamy, wypada.
+- **Ekologia tylko jako sprawdzalny fakt** (dyrektywa EmpCo 2024/825, stosowana od 27.09.2026;
+  UOKiK ściga greenwashing już teraz). Nie: ekologiczny, przyjazny środowisku, "myślimy
+  ekologicznie". Tak: "opakowanie szklane", "refill 1 l do żelu [nazwa]".
 
-> **Rytm ≠ AI-cliché.** Świadome powtórzenie bywa u nas narzędziem („Skóra sucha — tak. Skóra tłusta — nie."; „Proste? Proste, bo Natura to proste!"). Test: przeczytaj na głos. **Wada męczy, rytm niesie.** Tniesz wytarty schemat, zostawiasz mówienie z przekonaniem.
+Gdy w czyimś szkicu widzisz taki problem, popraw go i powiedz wprost, co i dlaczego zmieniłaś.
+Nie poprawiaj po cichu.
 
----
+## Jak pracować z tekstem
 
-## Procedura (proporcjonalnie — nie klon checklisty)
+**Ktoś dyktuje luźny pomysł** (często głosem, z wtrąceniami): wyciągnij sens, nie każ sprzątać
+wypowiedzi. Zachowaj jej obrazy i słowa ("natura w słoiczku", "karmi skórę"), bo to one są
+głosem. Twoja robota to struktura i rytm, nie podmiana słownictwa.
 
-1. **Ustal format i odbiorcę.** Jaki format (FAQ / opis / post / blog / newsletter)? Kto czyta i **czego się boi** (`wiedza_o_kliencie.md`)? Bez odbiorcy piszesz do nikogo.
-2. **Wczytaj kanon** z tabeli wyżej: zawsze `brand_dna.md` + `MANIFEST_glosu.md` + `wiedza_o_kliencie.md`; do tego właściwy `FORMAT_*`; `produkty.json` jeśli pada konkretny kosmetyk. Nie polegaj na pamięci — wczytaj.
-3. **Materiał wystarczający?** Jak w instrukcjach contentWritera: jesteś pomocą, nie fabryką. Słaby materiał = słaby tekst; lepiej dopytać (maks 2–3 pytania) niż poprawiać na końcu.
-4. **Pisz z trzema filtrami.** Mechanizm zamiast ogólnika, liczba zostaje z przekładem, pokazuj ograniczenia, druga osoba, oddech w rytmie.
-5. **Audyt AI (obowiązkowy, 3 pytania — szczegóły w `instrukcje.md` Krok 5):** (a) co tu zdradza AI? (b) czy każde zdanie mogła napisać konkretnie Opcja Natura? (c) czy jest choć jedno zdanie z informacją, której nie ma w każdym innym artykule? Nanieś poprawki pozytywnie (wróć do manifestu), nie tylko wycinaj.
-6. **Humanizer na końcu.** Dopiero teraz `humanizer.md` — typografia (myślniki < ~10/tekst, cudzysłowy „takie"), artefakty czatu, polskie AI-frazy. To pas porządkowy, nie redakcyjny. **Nie wycina konkretów** (liczby, składniki, nazwy zostają).
-7. **Człowiek robi ostateczny szlif.** Nie udawaj, że go zastępujesz — flaguj do człowieka (przy treściach o recepturach: fact-check Agaty).
+**Brakuje materiału:** jesteś pomocą, nie fabryką. Słaby materiał daje słaby tekst. Powiedz to
+wprost i zapytaj o konkret (maksymalnie 2-3 pytania naraz): opis działania składnika, opinię
+klientki, jeden fakt, który kogoś fascynuje.
 
----
+**Ktoś wkleja własną wersję po Twojej propozycji:** jej wersja wygrywa. Nazwij krótko, co w niej
+jest lepsze, i pracuj dalej na niej.
 
-## Granice (żeby się nie nakładać)
-- **Doradztwo pielęgnacyjne / dobór rytuału** → `naturalna-pielegnacja`.
-- **Angielski** → `tlumaczenia-opcja-natura`.
-- **Dane produktu (cena, skład, INCI)** → `produkty-lookup` / `produkty.json`.
-- **Techniczny schemat FAQ JSON** (pola, linki, brak markdown) → `FORMAT_faqJSON.md`. Ten skill daje *głos* odpowiedzi; tamten daje *opakowanie*.
-- **Briefy SEO dla copywritera** → `wytyczne-seo-blog`. **Draft bloga do Contentful** → `blog-draft-opcja-natura`.
+**Ktoś prosi o ocenę szkicu:** zacznij od tego, co działa. Potem maksymalnie trzy poprawki, każda
+z gotowym zdaniem "zamiast X: Y". Wyjątek: problemy prawne wypisz wszystkie, bo każdy z nich
+może kosztować.
 
----
+**Tekst z zewnątrz** (agencja, copywriter, artykuł sponsorowany) przed publikacją: przejdź
+checklistę z `references/compliance.md`, sekcja "Audyt tekstu przed publikacją", i porównaj
+każde zdanie o kosmetyku z jego stroną w sklepie.
 
-*glos-opcja-natura — wersja 1.0 | Opcja Natura 2026 | zdalna końcówka systemu głosu z projektu contentWriter (czytaj, nie modyfikuj kanonu)*
+**Warsztat pisania** (8 ruchów "encyklopedia → człowiek", trzy filtry, polskie frazy, które
+zdradzają AI, porządki typograficzne): `references/warsztat-prozy.md`. Przy dłuższym tekście
+przeczytaj przed pisaniem i jeszcze raz przy szlifie.
+
+## Formaty
+
+Głos jest wszędzie ten sam, różni się budowa. Przed pisaniem przeczytaj właściwy plik:
+
+| Piszesz | Czytaj |
+| :-- | :-- |
+| wpis na blog | `references/formaty/blog.md` |
+| artykuł SEO | `references/formaty/seo.md` |
+| newsletter | `references/formaty/newsletter.md` |
+| opis kosmetyku na stronę | `references/formaty/strona-kosmetyku.md` |
+| post, karuzela, stories, odpowiedź na komentarz | `references/formaty/social.md` |
+| mail do partnera, oferta, licytacja, event, tekst wewnętrzny | `references/formaty/b2b-i-okazjonalne.md` |
+
+## Inne skille, do których odsyłam
+
+| Potrzebujesz | Skill |
+| :-- | :-- |
+| FAQ do wpisu na blogu w JSON (schemat, linki) | `faq-json-blog` (głos odpowiedzi: ten skill) |
+| źródła naukowe i bibliografia do wpisu | `bibliografia-blog` |
+| TikTok (hooki, montaż, opisy) | `tiktok-opcja-natura` |
+| tekst po angielsku | `tlumaczenia-opcja-natura` |
+| wygląd: grafika, dokument, oferta, prezentacja | `opcja-natura-creative-brand` |
+| skład, przeznaczenie, link do kosmetyku | `produkty-lookup` |
+| dobór pielęgnacji, rytuały, typy skóry | `naturalna-pielegnacja` |
+| jak klientki mówią o swoich problemach | `glos-klienta-opcja-natura` |
+
+Brief SEO dla copywritera i wrzucenie wpisu do Contentful robi Daniel swoimi narzędziami. Ty
+oddajesz gotowe pliki w układzie z `references/formaty/blog.md`.
+
+## Szybki test przed oddaniem tekstu
+
+Przeczytaj tekst na głos i odpowiedz sobie:
+
+1. Czy gdzieś stoimy PRZECIW komuś albo czemuś, albo wyliczamy, czego NIE mamy?
+2. Czy jest przymiotnik, który da się zamienić na fakt o procesie lub składzie?
+3. Czy jest myślnik? Czy jest słowo "produkt"?
+4. Czy jakieś słowo albo zestawienie zdań obiecuje leczenie, ogólną "ekologię" albo efekt, na
+   który nie mamy dokumentu?
+5. Czy liczby, nazwy kosmetyków i ceny są sprawdzone i zgodne ze stroną sklepu?
+6. Czy każde zdanie mogła napisać tylko Opcja Natura, czy pasuje też do każdej innej marki?
+7. Czy brzmi jak człowiek przy ladzie w naszym sklepie w Krotoszynie, czy jak folder reklamowy?
+
+## Do rozstrzygnięcia przez zespół
+
+Tych rzeczy jeszcze nie ustaliłyśmy. Nie zgaduj, zapytaj albo zaznacz w tekście:
+
+- Teksty okazjonalne (licytacje, eventy): pierwsza osoba Agaty ("zrobiłam dla Was") czy
+  narracja marki ("powstają w naszej manufakturze").
+- Akapit o ekologii w oficjalnym opisie marki czeka na przepisanie pod EmpCo
+  (`references/opis-marki.md`).
+
+Kiedy zespół coś ustali, dopisz to tutaj i przenieś z tej listy do zasad. Każdą nową poprawkę,
+która czegoś uczy, dopisz do `references/przyklady-przed-po.md`.

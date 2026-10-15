@@ -49,7 +49,9 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `naturalna-pielegnacja` | doradztwo pielęgnacyjne, rytuały | CC | 10.10: kopia w CC miała błąd (30% biofermentu w Atop Stop zamiast 10%) i brak sekcji „pachy”; kanon = ta wersja |
 | `produkty-lookup` | szybki lookup produktu: opis + link do strony (bez cen i pojemności od 10.10) | CC | nazwy produktów do tatuażu nieaktualne (czeka na decyzję); docelowo lista generowana z `products_catalog` |
 | `pozyskiwanie-wiedzy-produktowej` | mapa źródeł wiedzy produktowej | — | |
-| `glos-opcja-natura` | pisanie prozy marki PL | CC | odsyła do plików `modele-wszystko/projekty_claude/contentWriter/`; poza CC trzeba je dograć jako wiedzę projektu |
+| `glos-opcja-natura` | **parasol treści PL**: głos marki, kto mówi, compliance (1223/2009, 655/2013, EmpCo + 6 wzorców z uwag prawnika Trust Luna 09.2026), opis marki, przykłady przed/po, formaty (blog, SEO, newsletter, strona kosmetyku, social, B2B); odsyła do mniejszych skilli | CC | 15.10.2026 przebudowany na bazie wersji Agaty (Slack 14.10) + Content Writer (manifest, humanizer PL, FORMAT_*); samowystarczalny, **do wgrania do org** (Agata usuwa swoją prywatną kopię); hasło „Natura. To proste.” |
+| `faq-json-blog` | FAQ do wpisu na blogu w JSON (schemat, linki, checklista, przykład) | org (domyślny) | 15.10.2026 przeniesiony z `skille_daniel`; wchłonął `FORMAT_faqJSON.md` z Content Writera, głos odsyła do `glos-opcja-natura`; **do ponownego wgrania** |
+| `bibliografia-blog` | źródła naukowe do wpisu (Consensus → JSON Contentful) | org (domyślny) | 15.10.2026 przeniesiony z `skille_daniel` bez zmian treści |
 | `tlumaczenia-opcja-natura` | tłumaczenia EN | CC | z glosariuszem `glosariusz_en.md` |
 | `opcja-natura-creative-brand` | wygląd marki: dokumenty biurowe i handlowe (oferty, tabele, PDF) + brandbook 08.2026 dla działu kreatywnego | ChatGPT, CC | 14.10.2026 dodany tryb „dokument” (`references/dokumenty-biurowe.md`); logo PL 09.2026 (Ula) w `assets/logo/`; do wgrania do org i ponownie do ChatGPT |
 | `consensus-formulacja` | research naukowy przy recepturach | org | |
@@ -85,4 +87,4 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 ## Poza tym repo (świadomie)
 
 - **Skille robocze Daniela** (tylko Claude Code, nie dla zespołu): lokalne repo `~/Claude_praca/skille_daniel/` — m.in. `radar-aeo`, `metabase-dashboards-opcja-natura`, `backoffice-opcja-natura`, `sklep-ecommerce-database`, `pracownicy-database`, `meetings-opcja-natura`, `influencer-research`, `generowanie-przelewow-pko`. Jeśli taki skill ma trafić do zespołu, przenosimy go tutaj.
-- Skille ogólne, niefirmowe (`n8n-*`, `apify-cli`, `google-workspace-cli`, `notion-api`, `kompresja-zdjec*`, `usuwanie-tla-obrazow`), skille Anthropic (docx, pdf, xlsx…) i `humanizer` — tylko w `~/.claude/skills`.
+- Skille ogólne, niefirmowe (`n8n-*`, `apify-cli`, `google-workspace-cli`, `notion-api`, `kompresja-zdjec*`, `usuwanie-tla-obrazow`), skille Anthropic (docx, pdf, xlsx…) i `humanizer` — tylko w `~/.claude/skills`. Uwaga: angielski `humanizer` jest w bibliotece org jako „installed by default” (stan 15.10.2026) i kłóci się z głosem marki; po wgraniu `glos-opcja-natura` rozważyć zdjęcie z domyślnych (polski pas porządkowy jest w `glos-opcja-natura/references/warsztat-prozy.md`).
