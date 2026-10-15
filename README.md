@@ -83,7 +83,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `notion-opcja-natura` | `notion-publikacje` + `references/inne-bazy.md` (10.10.2026) |
 | `supabase-opcja-natura` | `sklep-ecommerce-database`, `pracownicy-database`, `produkty-lookup`, `meetings-opcja-natura` |
 | `pozyskiwanie-wiedzy-produktowej` | `produkty-lookup` (konektor „Opcja Natura — produkty”) (15.10.2026; nigdzie niewgrany, nic do zdjęcia) |
-| `naturalna-pielegnacja` | — **wstrzymany 15.10.2026 do weryfikacji Agaty** (doradztwo, rytuały); folder zostaje w repo, był tylko w CC. Dane o kosmetykach: `produkty-lookup` |
+| `naturalna-pielegnacja` | — **wstrzymany 15.10.2026 do weryfikacji Agaty** (doradztwo, rytuały); folder zostaje w repo, był tylko w CC. Dane o kosmetykach: `produkty-lookup`; jeśli wróci, raczej jako część `produkty-lookup` |
 
 ## Poza tym repo (świadomie)
 
