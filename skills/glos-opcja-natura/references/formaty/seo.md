@@ -12,7 +12,7 @@ Artykuły SEO często pisane są wg. wytycznych agencji. Wtedy Twoja rola to nap
 
 ## Brief: bez niego nie zaczynasz
 
-Brief przychodzi od Daniela i może być kszatłt:
+Brief przychodzi od Daniela i ma jeden z dwóch kształtów:
 
  - JSON na podstawie wytycznych agencji:
 ```json
@@ -25,13 +25,13 @@ Brief przychodzi od Daniela i może być kszatłt:
   "anchor_2": "https://opcjanatura.pl/blog/..."
 }
 ```
- - strona Notion na podstawie senuto, która jest napisana bardziej dla copywrightera, wymaga jego decyzji o kierunku treści, ale zaweiera wszelkie elementy tekstu dla seo.
+ - strona Notion na podstawie Senuto, która jest napisana bardziej dla copywritera, wymaga jego decyzji o kierunku treści, ale zawiera wszelkie elementy tekstu dla SEO.
 
 Minimum: 1 H1, 3 sekcje H2, 2 linki. Gdy anchor jest samym adresem, link wstawiasz jako czysty
 adres. Linki osadzasz naturalnie, w zdaniu, które ma sens merytorycznie. Nie dostałaś briefu,
 poproś o niego.
 
-Pamiętaj o AI SEO, brief notion zawiera też ten element. Nie ignoruj go.
+Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go.
 
 ## Budowa
 

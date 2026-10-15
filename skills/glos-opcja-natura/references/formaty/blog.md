@@ -13,6 +13,29 @@ Nie zaczynaj bez:
 Przydatne: sezon albo kampania, w którą wpis się wpisuje. Sprawdź też, czy temat już był na
 blogu (nie piszemy drugiego wpisu na to samo).
 
+### Brief
+
+Brief przychodzi od Daniela i ma jeden z dwóch kształtów:
+
+ - JSON na podstawie wytycznych agencji:
+```json
+{
+  "h1": "Tytuł artykułu (fraza kluczowa)",
+  "h2": ["Sekcja 1", "Sekcja 2", "Sekcja 3"],
+  "url_1": "https://opcjanatura.pl/sklep/...",
+  "anchor_1": "tekst linku",
+  "url_2": "https://opcjanatura.pl/blog/...",
+  "anchor_2": "https://opcjanatura.pl/blog/..."
+}
+```
+ - strona Notion na podstawie Senuto, która jest napisana bardziej dla copywritera, wymaga jego decyzji o kierunku treści, ale zawiera wszelkie elementy tekstu dla SEO.
+
+Minimum: 1 H1, 3 sekcje H2, 2 linki. Gdy anchor jest samym adresem, link wstawiasz jako czysty
+adres. Linki osadzasz naturalnie, w zdaniu, które ma sens merytorycznie. Nie dostałaś briefu,
+poproś o niego.
+
+Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go.
+
 ## Co oddajesz: osobne pliki, nie jeden
 
 Wpis to **kilka osobnych dokumentów**. Nikt nie wycina potem kawałków z jednego pliku.
@@ -23,7 +46,7 @@ Wpis to **kilka osobnych dokumentów**. Nikt nie wycina potem kawałków z jedne
 | **excerpt** (osobny dokument, w nazwie słowo `excerpt`) | sam excerpt, 50-70 słów, nic więcej |
 | **FAQ** (`faq_<temat>.json`) | 4-6 pytań w JSON, format ze skilla `faq-json-blog` |
 | **bibliografia** (`bibliografia_<temat>.json`) | gdy wpis cytuje badania, format ze skilla `bibliografia-blog` |
-| **zdjęcia** (podfolder `foto/`) | okładka z `okladka_` na początku nazwy, reszta to zdjęcia do tekstu przygotowuje grafik, nie ty |
+| **zdjęcia** (podfolder `foto/`) | okładka z `okladka_` na początku nazwy, reszta to zdjęcia do tekstu; przygotowuje je grafik, nie Ty |
 
 Wszystko w jednym folderze wpisu.
 
@@ -48,29 +71,6 @@ Wszystko w jednym folderze wpisu.
 * **Nawilżenie to podstawa**: systematyczna pielęgnacja utrzymuje intensywność koloru.
 * **Peeling odsłania pigment**: delikatne złuszczanie przywraca kontrast.
 ```
-
-## Brief: bez niego nie zaczynasz
-
-Brief przychodzi od Daniela i może być kszatłt:
-
- - JSON na podstawie wytycznych agencji:
-```json
-{
-  "h1": "Tytuł artykułu (fraza kluczowa)",
-  "h2": ["Sekcja 1", "Sekcja 2", "Sekcja 3"],
-  "url_1": "https://opcjanatura.pl/sklep/...",
-  "anchor_1": "tekst linku",
-  "url_2": "https://opcjanatura.pl/blog/...",
-  "anchor_2": "https://opcjanatura.pl/blog/..."
-}
-```
- - strona Notion na podstawie senuto, która jest napisana bardziej dla copywrightera, wymaga jego decyzji o kierunku treści, ale zaweiera wszelkie elementy tekstu dla seo.
-
-Minimum: 1 H1, 3 sekcje H2, 2 linki. Gdy anchor jest samym adresem, link wstawiasz jako czysty
-adres. Linki osadzasz naturalnie, w zdaniu, które ma sens merytorycznie. Nie dostałaś briefu,
-poproś o niego.
-
-Pamiętaj o AI SEO, brief notion zawiera też ten element. Nie ignoruj go.
 
 ## Excerpt
 

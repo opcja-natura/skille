@@ -1,6 +1,6 @@
 # Warsztat prozy: jak pisać, żeby brzmiało jak człowiek, a nie jak encyklopedia
 
-Ten plik przyszedł pokazuje na jednym temacie (olej kokosowy) osiem ruchów, które zamieniają tekst "encyklopedyczny" w rozmowę. Potem trzy filtry, audyt i porządki na sam koniec.
+Ten plik pokazuje na jednym temacie (olej kokosowy) osiem ruchów, które zamieniają tekst "encyklopedyczny" w rozmowę. Potem trzy filtry, audyt i porządki na sam koniec.
 
 Kolejność pracy jest stała: **najpierw głos (ruchy i filtry), na końcu porządki.** Wyczyszczona
 typograficznie sztampa to dalej sztampa.
@@ -186,7 +186,7 @@ Gdy je widzisz, przepisz na konkret, nie na synonim:
 - **Fałszywe zakresy:** "od pielęgnacji po filozofię życia".
 - **Cykl synonimów:** krem → kosmetyk → preparat → specyfik w czterech kolejnych zdaniach.
   Powtórzenie nazwy jest w porządku, sztuczna wariacja nie.
-- **Długie myślniki:** w polskim języku myślnik jest raczej mniej niż więcej.
+- **Myślniki (—, –):** zero, zasada 5 w `SKILL.md`. Przecinek, dwukropek, kropka albo nowe zdanie.
 
 ---
 

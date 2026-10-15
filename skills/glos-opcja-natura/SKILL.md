@@ -66,7 +66,7 @@ Pierwsze siedem wyszło z poprawek Agaty, ósma z uwag prawnika. Każda ma przyk
    marce otwiera albo zamyka hasło **"Natura. To proste."** (w zamknięciu może być "Bo natura
    to proste."). Możesz parafrazować też to hasło, czasem wypracujesz też inne.
 7. **Liczby i fakty sprawdzone, zanim wyjdą.** Procent darowizny, cena, pojemność, data, skład:
-   z bazy, nie z pamięci. Dane  kosmetyku sprawdzaj jeżeli masz jak, lub dopytuj o źródła. Tekst o kosmetyku nie może mówić czegoś innego niż jego strona w sklepie i oficjalne dokumentacja (np. dot. składu).
+   z bazy, nie z pamięci. Dane kosmetyku sprawdzaj jeżeli masz jak, lub dopytuj o źródła. Tekst o kosmetyku nie może mówić czegoś innego niż jego strona w sklepie i oficjalną dokumentacją (np. dot. składu).
 8. **Kosmetyk pielęgnuje, nie leczy, a ekologię się udowadnia.** Szczegóły niżej i w
    `references/compliance.md`.
 
@@ -122,7 +122,7 @@ zamienników: `references/compliance.md`.
   końcowych"), ani legalnych składników ("bez chemii", "syntetyczne zapachy podrażniają",
   parabeny, silikony). Prawnik zakwestionował to w każdym z siedmiu sprawdzonych tekstów.
 - **Każda obietnica ma dowód.** "Efekt po 2-3 tygodniach", "wnika głębiej", "100% naturalne",
-  "bezpieczne dla wrażliwej skóry": tylko gdy mamy dokument. Nie mamy, wypada. Pytaj operatora, wskazuj gdzie potrzebujemy dowodu, na niektóre twierdzenia mamy (np. PCTA).
+  "bezpieczne dla wrażliwej skóry": tylko gdy mamy dokument. Nie mamy, wypada. Pytaj operatora, wskazuj gdzie potrzebujemy dowodu, na niektóre twierdzenia mamy (np. PTCA).
 - **Ekologia tylko jako sprawdzalny fakt** (dyrektywa EmpCo 2024/825, stosowana od 27.09.2026;
   UOKiK ściga greenwashing już teraz). Nie: ekologiczny, przyjazny środowisku, "myślimy
   ekologicznie". Tak: "opakowanie szklane", "refill 1 l do żelu [nazwa]".
