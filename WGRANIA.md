@@ -4,6 +4,8 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 
 | Data | Skill | Gdzie | Co | Wersja (commit) | Do zrobienia |
 |---|---|---|---|---|---|
+| 2026-10-15 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | dodany (parasol: głos, compliance z uwag Trust Luna, formaty) | `6392884` | Agata usuwa prywatną kopię; zdjąć angielski `humanizer` z domyślnych |
+| 2026-10-15 | `faq-json-blog` | claude.ai — biblioteka organizacji | podmieniony (wchłonął FORMAT_faqJSON, FAQ od razu w JSON, głos → parasol) | `6392884` | — |
 | 2026-10-12 | `bigin-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (zapis etapu „Zaplanowano z klientem” pełną nazwą, koszt akcji przez `Warto_akcji_netto`) | `c8e81f9` | — |
 | 2026-10-10 | `notion-publikacje` | claude.ai — biblioteka organizacji | podmieniony (część dla operatora + references, ludzie i terminy z Notiona, pola linków) | `4e91806` | — |
 | 2026-10-10 | `notion-produkcja-tresci` | claude.ai — biblioteka organizacji | usunięty (wchłonięty przez `notion-publikacje`) | — | — |

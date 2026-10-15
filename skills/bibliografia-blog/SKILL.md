@@ -12,7 +12,7 @@ Skill obsługuje trzy scenariusze:
 2. **Sama konwersja** — dostajesz listę źródeł w markdown, masz przerobić na JSON.
 3. **Walidacja** — dostajesz istniejące źródła, masz sprawdzić czy realnie wspierają tezy.
 
-Pełna specyfikacja formatu JSON: `json_bibliografia.md` w pamięci projektowej / uploadach.
+Pełna specyfikacja formatu JSON jest w tym skillu, sekcja „Schemat JSON (Contentful)”. Stary plik `json_bibliografia.md` (z polem `url`) jest nieaktualny.
 
 ---
 
