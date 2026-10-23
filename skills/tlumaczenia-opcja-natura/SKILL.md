@@ -53,7 +53,7 @@ Klient online nie dotknie kosmetyku, więc tekstura, zapach i kolor są ważne. 
 Kanonem jest **glosariusz §6** (MHRA GN8 + rozporządzenie UE 655/2013). Zasada: wolno obiecać efekt kosmetyczny, nie wolno obiecać leczenia ani działania na chorobę.
 
 - Bez *cures, treats, heals, repairs, prevents, eliminates, anti-ageing, clinically proven* (chyba że mamy badanie).
-- Bez nazw chorób w treści (*eczema, atopic, psoriasis, acne*) poza formułą z glosariusza, słowo w słowo: *It is also suitable for people who may be prone to eczema.*
+- Nazwy chorób (*eczema, atopic, psoriasis, acne*) tylko tam, gdzie mamy dokumentację (glosariusz §6, „Nazwy chorób”): Atop Stop i Soothing Rescue Balm (test konsumencki PTCA) oraz opis oferty marki, np. strona „O nas”. Zawsze jako opis skóry albo grupy testowej (*eczema-prone skin*, *100 people with atopic dermatitis*), nigdy jako leczenie. W pozostałych tekstach tylko formuła z glosariusza, słowo w słowo: *It is also suitable for people who may be prone to eczema.*
 - Działanie składnika opisujesz odczuciem lub wyglądem: *leaves skin feeling firmer*, *softens hard skin*, *helps limit moisture loss*.
 - Nie dyskredytujesz innych kosmetyków ani legalnych składników (*paraben-free*, „antyperspiranty szkodzą”).
 

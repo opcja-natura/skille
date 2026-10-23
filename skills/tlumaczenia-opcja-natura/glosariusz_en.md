@@ -21,7 +21,7 @@ Status wierszy: ✅ zatwierdzone · ❓ czeka na decyzję (patrz sekcja 0).
 |---|---|---|
 | D1 ✅ UK | Pisownia UK czy US? Obecne materiały są w US (*moisturize, color, odor*). | **UK** (*moisturise, colour, odour, aluminium*) — rynki eksportowe to EU/UK, dystrybutorzy w EU czytają brytyjski. Jedna decyzja dla całego sklepu. |
 | D2 | Anty Tarka: *Bye-Bye Pumice* (arkusz, skill) vs *Anti Crack Anty Tartka* (katalog). | **Bye-Bye Pumice** |
-| D3 ✅ zostaje | Atop Stop — nazwa nawiązuje do atopii (choroba). MHRA: odniesienie do AZS w nazwie/prezentacji = roszczenie lecznicze. | Zostawić nazwę marki, ale w EN **zero** słów atopy/eczema/psoriasis w treści poza formułą „Also suitable for people who may be prone to eczema”. Rozważyć z prawnikiem przy wejściu na UK. |
+| D3 ✅ zostaje | Atop Stop — nazwa nawiązuje do atopii (choroba). MHRA: odniesienie do AZS w nazwie/prezentacji = roszczenie lecznicze. | Zostawić nazwę marki. **Aktualizacja 2026-10-23 (Daniel):** mamy dokumentację claimów (test PTCA), więc nazwy chorób wolno w zakresie z sekcji 6 „Nazwy chorób”. Poza tym zakresem tylko formuła „Also suitable for people who may be prone to eczema”. |
 | D4 ✅ zostaje | „Healthy Deodorant” — *healthy* to sugestia zdrowotna, a ASA (Wild 2023) karze dyskredytowanie antyperspirantów. | Nazwa ❓; w treści nigdy nie sugerować, że inne dezodoranty szkodzą. |
 | D5 | CMOK: *Kiss Cmok* / *KISS CMOK*. | **CMOK Lip Balm** (CMOK jako nazwa własna, wielkie litery) |
 | D6 | Miód w balsamie: arkusz *tattoo balm*, opis *Honey in Balm*. | **Tattoo Honey Balm** (rodzina z Tattoo Honey) |
@@ -233,7 +233,7 @@ Nie może leczyć, zapobiegać chorobom, usuwać objawów ani zmieniać funkcji 
 | kills bacteria, antiseptic | neutralises odour (dezodorant) / gentle cleansing | ogólne „antibacterial” tylko w higienie i bez nazw patogenów |
 | prevents infections, restores immunity (Biogel) | supports a balanced intimate pH, cares for natural flora | |
 | relief for burns, cold sores, bites, bruises, psoriasis | for dry, chapped, cracked skin; lips, hands, elbows | |
-| for atopic / eczema / psoriasis skin | *Also suitable for people who may be prone to eczema* — **dokładnie to brzmienie**, mało eksponowane | dosłowna formuła MHRA/CTPA |
+| for atopic / eczema / psoriasis skin (bez dokumentacji) | *Also suitable for people who may be prone to eczema* — **dokładnie to brzmienie**, mało eksponowane | dosłowna formuła MHRA/CTPA; gdy mamy dokumentację → niżej „Nazwy chorób” |
 | for acne, fights spots | for blemish-prone skin; cleanses pores | |
 | anti-ageing / anti-aging | smooths the look of fine lines, for mature skin | ok w tagach, nie jako obietnica |
 | clinically proven | — (chyba że mamy badanie) | |
@@ -246,6 +246,20 @@ Nie może leczyć, zapobiegać chorobom, usuwać objawów ani zmieniać funkcji 
 | aluminium-free (jako przewaga) | doesn't block natural sweating | dopuszczalne informacyjnie, nie jako „bezpieczniejsze od innych” (ASA Wild 2023) |
 | paraben-free itp. | — | EU 655/2013: zakaz dyskredytowania legalnych składników |
 | 100% natural | ❓ tylko z uzasadnieniem (ISO 16128) | patrz mydło malinowe |
+
+
+### Nazwy chorób, gdy mamy dokumentację (decyzja Daniela 2026-10-23)
+
+Na te twierdzenia mamy papiery (test konsumencki PTCA IV–V 2026, 100 osób z AZS lub skórą atopową; rekomendacja PTCA dla Atop Stop i Mazidła). Dlatego:
+
+| Gdzie | Wolno | Przykład |
+|---|---|---|
+| Atop Stop, Soothing Rescue Balm (opisy, FAQ, materiały) | skóra z egzemą/atopowa jako adresat; wyniki testu słowo w słowo z liczbami | *for eczema-prone (atopic) skin* · *80/100 reported less itching, burning and discomfort* |
+| Opis testu PTCA | grupa testowa nazwana wprost + kto, kiedy, ile osób | *in April and May 2026, 100 people with atopic dermatitis (eczema) or atopic skin used…* |
+| Opis oferty marki („O nas”, fakty dla AI, schema) | grupy skóry tak jak w polskim oryginale | *specialist cosmetics for sensitive, dry and eczema-prone skin, and for skin affected by psoriasis* |
+| Pozostałe kosmetyki | tylko formuła MHRA z tabeli wyżej | |
+
+Granica bez zmian: kosmetyk **pielęgnuje skórę z egzemą**, nie **leczy egzemy**. Nadal zakazane *treats / heals / cures / relieves eczema*, *for the treatment of*, *clinically proven* (test konsumencki to nie badanie kliniczne). Wynik testu podajemy jako odczucie badanych (*reported*, *said their skin felt*), nie jako działanie kosmetyku.
 
 ---
 
