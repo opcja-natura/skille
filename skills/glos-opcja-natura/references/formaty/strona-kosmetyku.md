@@ -33,12 +33,11 @@ Arkusz ma trzy zakładki:
    Lista pokazuje tylko wersje tego kosmetyku (aktualną w dniu zgłoszenia i pierwszą nowszą).
 
 **Nowy kosmetyk**
-1. Dopisz go na końcu listy w „aktualne” (nazwa i EAN, formuły skopiuj z wiersza wyżej).
-2. W arkuszu wybierz z menu **Opisy → Wygeneruj nowy opis** i wskaż kosmetyk. Skrypt sam zrobi
+1. W arkuszu wybierz z menu **Opisy → Wygeneruj nowy opis** i wskaż kosmetyk. Skrypt sam zrobi
    kopię szablonu w folderze z opisami (podfolder `RRRR-MM`), nazwie ją
-   `[opis RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__` i wpisze nazwę kosmetyku. Kosmetyku nie ma
-   na liście = nie ma go jeszcze w bazie produktów: zapytaj Daniela.
-3. Napisz opis według szablonu (szare teksty to przykład, nadpisz je) i dodaj wiersz w „wersje”.
+   `[opis RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__`, wpisze nazwę kosmetyku i dopisze kosmetyk
+   w „aktualne”. Kosmetyku nie ma na liście = nie ma go jeszcze w bazie produktów: zapytaj Daniela.
+2. Napisz opis według szablonu (szare teksty to przykład, nadpisz je) i dodaj wiersz w „wersje”.
 
 Starej zakładki „Opisy produktów” (kto pisze, status) już nie używamy: to archiwum pisania
 opisów z 2026.
