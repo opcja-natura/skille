@@ -7,20 +7,38 @@ Przed pisaniem otwórz szablon i pracuj według niego.
 | Co | Gdzie |
 | :-- | :-- |
 | **Szablon opisu** (sekcje, długości, wzorcowy opis Anty Tarki, checklista) | [00 szablon] szablon opisu na opcjanatura.pl: https://docs.google.com/document/d/1sP6ntnFyl2tdmQshjb7T32SharetrJMsmkd6UvfoD50/edit |
-| **Tracker opisów** (kto pisze, status, link do gotowego opisu) | [000] Opisy_produktow: https://docs.google.com/spreadsheets/d/1qNyeNaQwSCPW_dBjVVAHS2BCY_7BwK3XPetA8LHS38A/edit?gid=2132239461 |
+| **Arkusz zmian opisów** (aktualna wersja każdego opisu, zgłoszenia zmian, historia wersji) | [000] Opisy_produktow, zakładka „aktualne”: https://docs.google.com/spreadsheets/d/1qNyeNaQwSCPW_dBjVVAHS2BCY_7BwK3XPetA8LHS38A/edit?gid=177679068 |
+| **Folder z opisami** (jeden dokument na kosmetyk i wersję) | https://drive.google.com/drive/folders/1a4HqnTA0Y7NlBGV9w8jmj7-Y9VPL74E_ |
 
 Gdy szablon i ten plik mówią co innego o budowie opisu, **wygrywa szablon.** Ten plik daje
 tylko głos, źródła danych i prawo.
 
 ## Jak pracujemy
 
-1. W trackerze (zakładka "Opisy produktów") znajdź kosmetyk i ustaw siebie w kolumnie "Kto
-   pisze", a status "W trakcie".
-2. Zrób kopię szablonu na Dysku i nazwij ją jak pozostałe: `[opis] <nazwa kosmetyku> _<EAN>_`.
-3. Napisz opis w kopii, według szablonu.
-4. Link do dokumentu wklej w kolumnie "Link do opisu", status "Gotowe", data oddania.
+Arkusz ma trzy zakładki:
+- **aktualne**: tu sprawdzasz, który dokument jest aktualnym opisem kosmetyku i czy są do niego
+  otwarte zmiany (żółty wiersz). Liczy się sama, nic w niej nie wpisujesz.
+- **zmiany**: zgłoszenia poprawek. Jedno zgłoszenie = jeden wiersz.
+- **wersje**: każdy nowy dokument opisu to jeden wiersz.
 
-Gotowy dokument z trackera jest też źródłem dla tłumaczenia na angielski
+**Poprawka istniejącego opisu**
+1. Zgłoś ją w „zmiany”: data, kosmetyk, sekcja opisu, co zmienić, kto zgłasza. Kolumnę
+   „Weszło w wersję” zostaw pustą: zgłoszenie jest otwarte.
+2. Gdy nanosisz poprawki: otwórz aktualny dokument (link w „aktualne”), zrób jego kopię
+   w folderze z opisami i popraw kopię. Starych wersji nie nadpisujesz.
+3. Dodaj wiersz w „wersje”: kosmetyk, data, link do nowego dokumentu, co się zmieniło, kto.
+4. Zamknij zgłoszenia: w „zmiany” wybierz w „Weszło w wersję” wersję, w której poprawka weszła.
+   Lista pokazuje tylko wersje tego kosmetyku (aktualną w dniu zgłoszenia i pierwszą nowszą).
+
+**Nowy kosmetyk**
+1. Dopisz go na końcu listy w „aktualne” (nazwa i EAN, formuły skopiuj z wiersza wyżej).
+2. Zrób kopię szablonu w folderze z opisami i nazwij ją `[opis] <nazwa kosmetyku>__<EAN>__`.
+3. Napisz opis według szablonu i dodaj wiersz w „wersje”.
+
+Starej zakładki „Opisy produktów” (kto pisze, status) już nie używamy: to archiwum pisania
+opisów z 2026.
+
+Aktualny dokument z zakładki „aktualne” jest też źródłem dla tłumaczenia na angielski
 (`tlumaczenia-opcja-natura`).
 
 ## Zanim zaczniesz: dane
