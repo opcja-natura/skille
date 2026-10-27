@@ -4,6 +4,7 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 
 | Data | Skill | Gdzie | Co | Wersja (commit) | Do zrobienia |
 |---|---|---|---|---|---|
+| 2026-10-27 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: arkusz zmian opisów aktualne / zmiany / wersje, menu Opisy → Wygeneruj nowy opis, nazwy `[opis RRRR-MM-DD]` w podfolderach RRRR-MM) | `39d75ef` | — |
 | 2026-10-15 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (bez odesłań do wstrzymanego `naturalna-pielegnacja`; strona kosmetyku: dobór i stosowanie z karty `produkty-lookup`) | `d5c66cf` | — |
 | 2026-10-15 | `ocena-wydawcy-b2b` | claude.ai — biblioteka organizacji | podmieniony (bez odesłania do `naturalna-pielegnacja`) | `d5c66cf` | — |
 | 2026-10-15 | `produkty-lookup` | claude.ai — biblioteka organizacji | dodany (mini-skill: dane o kosmetykach tylko z konektora „Opcja Natura — produkty”) | `78aaf70` | konektor czyta dane z dev do przełączenia synca na prod |
