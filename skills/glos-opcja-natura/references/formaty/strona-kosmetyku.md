@@ -23,7 +23,8 @@ Arkusz ma trzy zakładki:
 
 **Poprawka istniejącego opisu**
 1. Zgłoś ją w „zmiany”: data, kosmetyk, sekcja opisu, co zmienić, kto zgłasza. Kolumnę
-   „Weszło w wersję” zostaw pustą: zgłoszenie jest otwarte.
+   „Weszło w wersję” zostaw pustą: zgłoszenie jest otwarte. Kolumna „Status” liczy się sama
+   (otwarte, dopóki „Weszło w wersję” jest puste), nic w niej nie wpisujesz.
 2. Gdy nanosisz poprawki: otwórz aktualny dokument (link w „aktualne”), zrób jego kopię
    w folderze z opisami (podfolder bieżącego miesiąca `RRRR-MM`), nazwij ją
    `[opis RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__` z dzisiejszą datą i popraw kopię.
