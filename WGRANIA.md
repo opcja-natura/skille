@@ -21,3 +21,4 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 | 2026-10-10 | `notion-opcja-natura` | claude.ai — skille osobiste Daniela | usunięty (wycofany) | — | — |
 | 2026-10-10 | `marketing-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (część dla operatora + references) | `4e91806` | — |
 | 2026-10-10 | `bigin-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (rdzeń + references: handel, marketing-trade, rozliczenia-retro) | `4e91806` | **Łukasz:** usunąć swoją starą kopię skilla i dodać wersję z biblioteki organizacji |
+| 2026-10-30 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: kolumna „Status” w zakładce „zmiany” liczy się sama) | `ce68a89` | — |
