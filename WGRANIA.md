@@ -4,6 +4,7 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 
 | Data | Skill | Gdzie | Co | Wersja (commit) | Do zrobienia |
 |---|---|---|---|---|---|
+| 2026-10-30 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: kolumna „Status” w zakładce „zmiany” liczy się sama) | `ce68a89` | — |
 | 2026-10-27 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: arkusz zmian opisów aktualne / zmiany / wersje, menu Opisy → Wygeneruj nowy opis, nazwy `[opis RRRR-MM-DD]` w podfolderach RRRR-MM) | `39d75ef` | — |
 | 2026-10-15 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (bez odesłań do wstrzymanego `naturalna-pielegnacja`; strona kosmetyku: dobór i stosowanie z karty `produkty-lookup`) | `d5c66cf` | — |
 | 2026-10-15 | `ocena-wydawcy-b2b` | claude.ai — biblioteka organizacji | podmieniony (bez odesłania do `naturalna-pielegnacja`) | `d5c66cf` | — |
@@ -21,4 +22,3 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 | 2026-10-10 | `notion-opcja-natura` | claude.ai — skille osobiste Daniela | usunięty (wycofany) | — | — |
 | 2026-10-10 | `marketing-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (część dla operatora + references) | `4e91806` | — |
 | 2026-10-10 | `bigin-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (rdzeń + references: handel, marketing-trade, rozliczenia-retro) | `4e91806` | **Łukasz:** usunąć swoją starą kopię skilla i dodać wersję z biblioteki organizacji |
-| 2026-10-30 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: kolumna „Status” w zakładce „zmiany” liczy się sama) | `ce68a89` | — |
