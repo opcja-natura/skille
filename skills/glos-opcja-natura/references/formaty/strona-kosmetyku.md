@@ -17,9 +17,14 @@ tylko głos, źródła danych i prawo.
 
 Arkusz ma trzy zakładki:
 - **aktualne**: tu sprawdzasz, który dokument jest aktualnym opisem kosmetyku i czy są do niego
-  otwarte zmiany (żółty wiersz). Liczy się sama, nic w niej nie wpisujesz.
-- **zmiany**: zgłoszenia poprawek. Jedno zgłoszenie = jeden wiersz.
-- **wersje**: każdy nowy dokument opisu to jeden wiersz.
+  otwarte zmiany (żółty wiersz). Kolumny C–F to opis polski, G–J angielski. Liczy się sama,
+  nic w niej nie wpisujesz.
+- **zmiany**: zgłoszenia poprawek. Jedno zgłoszenie = jeden wiersz. Kolumna „Język”: PL albo EN
+  (puste = PL).
+- **wersje**: każdy nowy dokument opisu to jeden wiersz, z kolumną „Język” (PL albo EN).
+
+Opisy polski i angielski mają osobne wersje: wersja EN ma w nazwie „EN” (np. „Cmok EN 2026-10-31”),
+a zgłoszenie z językiem EN zamykasz tylko wersją EN.
 
 **Poprawka istniejącego opisu**
 1. Zgłoś ją w „zmiany”: data, kosmetyk, sekcja opisu, co zmienić, kto zgłasza. Kolumnę
@@ -28,23 +33,26 @@ Arkusz ma trzy zakładki:
 2. Gdy nanosisz poprawki: otwórz aktualny dokument (link w „aktualne”), zrób jego kopię
    w folderze z opisami (podfolder bieżącego miesiąca `RRRR-MM`), nazwij ją
    `[opis RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__` z dzisiejszą datą i popraw kopię.
+   Opis angielski: podfolder `RRRR-MM/en`, nazwa `[opis EN RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__`.
    Starych wersji nie nadpisujesz.
-3. Dodaj wiersz w „wersje”: kosmetyk, data, link do nowego dokumentu, co się zmieniło, kto.
+3. Dodaj wiersz w „wersje”: kosmetyk, data, link do nowego dokumentu, co się zmieniło, kto, język.
 4. Zamknij zgłoszenia: w „zmiany” wybierz w „Weszło w wersję” wersję, w której poprawka weszła.
-   Lista pokazuje tylko wersje tego kosmetyku (aktualną w dniu zgłoszenia i pierwszą nowszą).
+   Lista pokazuje tylko wersje tego kosmetyku w języku zgłoszenia (aktualną w dniu zgłoszenia
+   i pierwszą nowszą).
 
 **Nowy kosmetyk**
-1. W arkuszu wybierz z menu **Opisy → Wygeneruj nowy opis** i wskaż kosmetyk. Skrypt sam zrobi
+1. W arkuszu wybierz z menu **Opisy → Wygeneruj nowy opis**, wskaż kosmetyk i język. Skrypt sam zrobi
    kopię szablonu w folderze z opisami (podfolder `RRRR-MM`), nazwie ją
    `[opis RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__`, wpisze nazwę kosmetyku i dopisze kosmetyk
-   w „aktualne”. Kosmetyku nie ma na liście = nie ma go jeszcze w bazie produktów: zapytaj Daniela.
+   w „aktualne” (wersja EN: szablon angielski, podfolder `RRRR-MM/en`, nazwa `[opis EN RRRR-MM-DD] …`).
+   Kosmetyku nie ma na liście = nie ma go jeszcze w bazie produktów: zapytaj Daniela.
 2. Napisz opis według szablonu (szare teksty to przykład, nadpisz je) i dodaj wiersz w „wersje”.
 
 Starej zakładki „Opisy produktów” (kto pisze, status) już nie używamy: to archiwum pisania
 opisów z 2026.
 
-Aktualny dokument z zakładki „aktualne” jest też źródłem dla tłumaczenia na angielski
-(`tlumaczenia-opcja-natura`).
+Aktualny dokument PL z zakładki „aktualne” jest też źródłem dla tłumaczenia na angielski
+(`tlumaczenia-opcja-natura`). Gotowe opisy angielskie: kolumny EN w „aktualne”.
 
 ## Zanim zaczniesz: dane
 

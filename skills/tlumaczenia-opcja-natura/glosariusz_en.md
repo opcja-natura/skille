@@ -68,7 +68,7 @@ Format: **Nazwa** — podtytuł (= `name span`). Podtytuł mówi CO to jest, bez
 | peeling relax | **Relax Body Scrub** | Epsom salt scrub with lemongrass | ✅ sól Epsom (katalog „sugar scrub” był błędny) |
 | szampon z lasu | **Forest Shampoo** | Shampoo for oily hair with nettle | ✅ |
 | szampon z łąki | **Meadow Shampoo** | Shampoo for dry hair | ✅ |
-| maska do włosów suchych | **Dry Hair Mask** | Nourishing mask for dry hair | ✅ |
+| maska z łąki (maska do włosów suchych) | **Meadow Hair Mask** | Nourishing mask for dry hair | ✅ decyzja 2026-10-31 (para z Meadow Shampoo; wcześniej *Dry Hair Mask*) |
 | żel myjący limonka & aloes | **Lime & Aloe Cleansing Gel** | 2-in-1 face & body wash | ✅ 2-in-1 (bez *intimate*) |
 | naturalna mega piana | **Natural Mega Foam** | Bubble bath for kids | ✅ |
 | woda czarująca lawendowa | **Charming Lavender Water** | Lavender flower hydrosol | ✅ |
@@ -78,10 +78,10 @@ Format: **Nazwa** — podtytuł (= `name span`). Podtytuł mówi CO to jest, bez
 | koktajl pod oczy | **Eye Cocktail** | Eye serum with caffeine & prickly pear | ✅ nie *anti-wrinkle serum* w podtytule (ok w treści jako *smooths the look of fine lines*) |
 | mleczkopiana | **Milky Foam** | Face cleanser & makeup remover | ⚠️ w arkuszu połowa pól po polsku |
 | cmok mazidło do ust | **CMOK Lip Balm** | Lip balm with cranberry & cinnamon | ❓ D5 |
-| zdrowy dezodorant (len & paczula) | **Healthy Deodorant — Flax & Patchouli** | Cream deodorant with baking soda | ❓ D4 |
-| zdrowy dezodorant pinia & grejpfrut | **Healthy Deodorant — Pine & Grapefruit** | Cream deodorant with baking soda | ❓ D4 |
-| zdrowy dezodorant rollOn pomarańcza & paczula | **Healthy Deodorant — Orange & Patchouli** | Roll-on deodorant | ✅ roll-on |
-| zdrowy dezodorant sztyft bergamota | **Healthy Deodorant — Bergamot** | Deodorant stick | |
+| zdrowy dezodorant (len & paczula) | **Healthy Deodorant Flax & Patchouli** | Cream deodorant with bicarbonate of soda | nazwy linii bez myślnika (decyzja 2026-10-31) |
+| zdrowy dezodorant pinia & grejpfrut | **Healthy Deodorant Pine & Grapefruit** | Cream deodorant with bicarbonate of soda | |
+| zdrowy dezodorant rollOn pomarańcza & paczula | **Healthy Deodorant Roll-on Orange & Patchouli** | Roll-on deodorant | ✅ roll-on |
+| zdrowy dezodorant sztyft bergamota | **Healthy Deodorant Stick Bergamot** | Deodorant stick | bez sody (*bicarb-free*) |
 | atop stop | **Atop Stop** | Body lotion with bioferment & urea | ❓ D3; *lotion* (lekki) nie *balm*; literówka *biofement* |
 | biożel | **Biogel** | Intimate wash with bioferment | ⚠️ opisy: *prevents infections, restores immunity* — lecznicze, do przepisania |
 | miód na tatuaż | **Tattoo Honey** | Rich tattoo balm | ✅ |
@@ -177,7 +177,7 @@ W prozie nazwa zwyczajowa; INCI tylko w liście składników.
 | glinka zielona / czerwona / biała | green / red / white clay (kaolin) | |
 | algi brunatne | brown algae / kelp | |
 | spirulina | spirulina | |
-| soda oczyszczona | baking soda | ❌ *soda* sama |
+| soda oczyszczona | **bicarbonate of soda**, dalej **bicarb** (*bicarb-free*) | ❌ *soda* sama; ❌ *baking soda* (US; brytyjskie sklepy i marki piszą *bicarbonate of soda / bicarb*, decyzja 2026-10-31) |
 | ałun | alum (potassium alum) | |
 | sól Epsom | Epsom salt | |
 | cukier | sugar | |
