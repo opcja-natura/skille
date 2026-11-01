@@ -5,7 +5,7 @@ Wersja robocza 2026-10-08. Źródła: zakładka `__EN__BD_products_marketing` w 
 (`1NOXkf4ik43sTBM_cJNwl57R-NoO5Pkq8`), MHRA Guidance Note 8 (wyd. 08.2026, App. 1 i 6),
 orzeczenie ASA Wild Cosmetics (A22-1178272), EU Technical Document on Cosmetic Claims.
 
-**Zasada użycia:** przed każdym tłumaczeniem przeczytaj ten plik. Terminy z kolumny „EN” są
+**Zasada użycia:** przed każdym tłumaczeniem przeczytaj ten plik. **SSOT nazw EN produktów = BD_produkty, zakładka `__EN__BD_products_marketing`, kolumna `_eng_ name`** (wg niej etykiety i oferty; decyzja Daniela 2026-10-31). Terminy z kolumny „EN” są
 obowiązujące — nie wymyślaj synonimów dla nazw produktów, kategorii i typów. W prozie (opisy,
 artykuły) synonimy są dozwolone tylko w sekcji „Działanie i efekty”.
 
@@ -40,7 +40,8 @@ Status wierszy: ✅ zatwierdzone · ❓ czeka na decyzję (patrz sekcja 0).
 | rzemiosło, ręcznie robione | handcrafted, made in small batches | nie *handmade* w tytułach (kojarzy się z amatorką), ok w prozie |
 | slow beauty | slow beauty | |
 | Naturalnie skuteczne | Naturally effective | katalog: *Opcja Natura. Naturally Effective Cosmetics*; „Efective by nature” — literówka, nie używać |
-| Slogan | ❓ *Nature made simple* / *Nature. Simple as that.* / *Nature — it's that simple!* | trzy wersje w obiegu; wybrać jedną |
+| Natura. To proste. (slogan) | **Nature. Simple as that.** | ✅ decyzja Daniela 2026-11-01; nie używać *Nature made simple* ani *Nature — it's that simple!* |
+| Perła Rynku Kosmetycznego | Perła Rynku Kosmetycznego **award** | ✅ decyzja Daniela 2026-11-01; nazwa bez tłumaczenia, nie *distinction* |
 
 ---
 
@@ -59,7 +60,7 @@ Format: **Nazwa** — podtytuł (= `name span`). Podtytuł mówi CO to jest, bez
 | mydło malinowe | **Raspberry Soap** | Cold-process bar soap | ⚠️ potwierdzone: barwione ultramaryną → w EN **nie** pisać *100% natural / no artificial colours* przy tym mydle ani w treściach całej marki bez zastrzeżenia (sekcja 7) |
 | mydło kawa | **Coffee Soap** | — | brak danych EN |
 | masło mango & awokado | **Mango & Avocado Body Butter** | | ✅ zapach: arkusz nie mówi, katalog *bergamot and lime* |
-| mus rokitnikowy | **Sea Buckthorn Body Mousse** | Light body mousse with mandarin | ✅ (D8) |
+| mus rokitnikowy | **Sea Buckthorn Mousse** | Rich, water-free body mousse with mandarin | ✅ nazwa wg BD_produkty (SSOT nazw, decyzja 2026-10-31) |
 | eliksir młodości | **Elixir of Youth** | Face cream with coenzyme Q10 | ⚠️ arkusz „rich consistency”, katalog „light, fast-absorbing” — sprzeczne; w arkuszu literówka *eliskir* |
 | bio-tox | **Bio-Tox** | Balancing face cream with hyaluronic acid | ❓ D7; *balancing*, nie *normalizing* |
 | zielone oczyszczanie | **Green Cleanse Mask** | Green clay & algae face mask | ✅ |
@@ -77,11 +78,11 @@ Format: **Nazwa** — podtytuł (= `name span`). Podtytuł mówi CO to jest, bez
 | koktajl do twarzy | **Face Cocktail** | Antioxidant day serum, rose & patchouli | ✅ |
 | koktajl pod oczy | **Eye Cocktail** | Eye serum with caffeine & prickly pear | ✅ nie *anti-wrinkle serum* w podtytule (ok w treści jako *smooths the look of fine lines*) |
 | mleczkopiana | **Milky Foam** | Face cleanser & makeup remover | ⚠️ w arkuszu połowa pól po polsku |
-| cmok mazidło do ust | **CMOK Lip Balm** | Lip balm with cranberry & cinnamon | ❓ D5 |
-| zdrowy dezodorant (len & paczula) | **Healthy Deodorant Flax & Patchouli** | Cream deodorant with bicarbonate of soda | nazwy linii bez myślnika (decyzja 2026-10-31) |
-| zdrowy dezodorant pinia & grejpfrut | **Healthy Deodorant Pine & Grapefruit** | Cream deodorant with bicarbonate of soda | |
-| zdrowy dezodorant rollOn pomarańcza & paczula | **Healthy Deodorant Roll-on Orange & Patchouli** | Roll-on deodorant | ✅ roll-on |
-| zdrowy dezodorant sztyft bergamota | **Healthy Deodorant Stick Bergamot** | Deodorant stick | bez sody (*bicarb-free*) |
+| cmok mazidło do ust | **Kiss Cmok** | Lip balm with cranberry & cinnamon | ✅ wg BD_produkty (decyzja 2026-10-31, D5 zamknięte) |
+| zdrowy dezodorant (len & paczula) | **Healthy Deodorant - Flax & Patchouli** | Cream deodorant with bicarbonate of soda | nazwy linii z łącznikiem „ - ” jak w BD_produkty/etykietach (decyzja 2026-10-31); w tekstach nadal zero pauz — i – |
+| zdrowy dezodorant pinia & grejpfrut | **Healthy Deodorant - Pine & Grapefruit** | Cream deodorant with bicarbonate of soda | |
+| zdrowy dezodorant rollOn pomarańcza & paczula | **Healthy Deodorant Roll-on - Orange & Patchouli** | Roll-on deodorant | ✅ roll-on |
+| zdrowy dezodorant sztyft bergamota | **Healthy Deodorant Stick - Bergamot** | Deodorant stick | bez sody (*bicarb-free*) |
 | atop stop | **Atop Stop** | Body lotion with bioferment & urea | ❓ D3; *lotion* (lekki) nie *balm*; literówka *biofement* |
 | biożel | **Biogel** | Intimate wash with bioferment | ⚠️ opisy: *prevents infections, restores immunity* — lecznicze, do przepisania |
 | miód na tatuaż | **Tattoo Honey** | Rich tattoo balm | ✅ |
