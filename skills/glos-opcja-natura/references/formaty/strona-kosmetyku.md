@@ -34,7 +34,9 @@ a zgłoszenie z językiem EN zamykasz tylko wersją EN.
    w folderze z opisami (podfolder bieżącego miesiąca `RRRR-MM`), nazwij ją
    `[opis RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__` z dzisiejszą datą i popraw kopię.
    Opis angielski: podfolder `RRRR-MM/en`, nazwa `[opis EN RRRR-MM-DD] <nazwa kosmetyku>__<EAN>__`.
-   Starych wersji nie nadpisujesz.
+   Starych wersji nie nadpisujesz. Mała zmiana może wejść w obecny dokument, ale wtedy nie zmieniasz
+   jego daty w nazwie i nie dodajesz nowej wersji.
+   Gdy nowa wersja jest wdrożona, stary dokument przenieś do podfolderu `archiwum` w folderze z opisami.
 3. Dodaj wiersz w „wersje”: kosmetyk, data, link do nowego dokumentu, co się zmieniło, kto, język.
 4. Zamknij zgłoszenia: w „zmiany” wybierz w „Weszło w wersję” wersję, w której poprawka weszła.
    Lista pokazuje tylko wersje tego kosmetyku w języku zgłoszenia (aktualną w dniu zgłoszenia
