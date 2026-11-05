@@ -6,6 +6,7 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 |---|---|---|---|---|---|
 | 2026-11-05 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (`references/geo.md`: pisanie pod Google i AI; blog: pierwszy akapit = podsumowanie przed 1. H2, bez „Warto zapamiętać”, excerpt w pliku `excerpt`) | `cfc5c96` | — |
 | 2026-11-05 | `faq-json-blog` | claude.ai — biblioteka organizacji | podmieniony (odpowiedź zaczyna się wprost, FAQ pod treścią wpisu) | `cfc5c96` | — |
+| 2026-11-01 | `tlumaczenia-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (slogan `Nature. Simple as that.`, Perła Rynku jako `award`, nazwy EN wg BD_produkty) | `8fb1e2d` | — |
 | 2026-10-31 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: język PL/EN w arkuszu zmian, folder `RRRR-MM/en`, menu z wyborem języka) | `607e2a1` | — |
 | 2026-10-31 | `tlumaczenia-opcja-natura` | claude.ai — biblioteka organizacji | wgrany/podmieniony (glosariusz: Meadow Hair Mask, bicarbonate of soda / bicarb, dezodoranty bez myślnika) | `607e2a1` | — |
 | 2026-10-30 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: kolumna „Status” w zakładce „zmiany” liczy się sama) | `ce68a89` | — |
