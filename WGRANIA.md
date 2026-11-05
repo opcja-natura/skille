@@ -4,6 +4,8 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 
 | Data | Skill | Gdzie | Co | Wersja (commit) | Do zrobienia |
 |---|---|---|---|---|---|
+| 2026-11-05 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (`references/geo.md`: pisanie pod Google i AI; blog: pierwszy akapit = podsumowanie przed 1. H2, bez „Warto zapamiętać”, excerpt w pliku `excerpt`) | `cfc5c96` | — |
+| 2026-11-05 | `faq-json-blog` | claude.ai — biblioteka organizacji | podmieniony (odpowiedź zaczyna się wprost, FAQ pod treścią wpisu) | `cfc5c96` | — |
 | 2026-10-31 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: język PL/EN w arkuszu zmian, folder `RRRR-MM/en`, menu z wyborem języka) | `607e2a1` | — |
 | 2026-10-31 | `tlumaczenia-opcja-natura` | claude.ai — biblioteka organizacji | wgrany/podmieniony (glosariusz: Meadow Hair Mask, bicarbonate of soda / bicarb, dezodoranty bez myślnika) | `607e2a1` | — |
 | 2026-10-30 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (strona kosmetyku: kolumna „Status” w zakładce „zmiany” liczy się sama) | `ce68a89` | — |
