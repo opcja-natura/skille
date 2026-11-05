@@ -34,7 +34,8 @@ Minimum: 1 H1, 3 sekcje H2, 2 linki. Gdy anchor jest samym adresem, link wstawia
 adres. Linki osadzasz naturalnie, w zdaniu, które ma sens merytorycznie. Nie dostałaś briefu,
 poproś o niego.
 
-Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go.
+Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go. Jak pisać pod Google
+i odpowiedzi AI: `references/geo.md`.
 
 ## Co oddajesz: osobne pliki, nie jeden
 
@@ -42,8 +43,8 @@ Wpis to **kilka osobnych dokumentów**. Nikt nie wycina potem kawałków z jedne
 
 | Plik | Co w nim jest |
 | :-- | :-- |
-| **treść wpisu** | H1, akapit wstępu, sekcje H2, "Warto zapamiętać". Bez FAQ i bez bibliografii. |
-| **excerpt** (osobny dokument, w nazwie słowo `excerpt`) | sam excerpt, 50-70 słów, nic więcej |
+| **treść wpisu** | H1, pierwszy akapit z podsumowaniem, sekcje H2. Bez excerptu, bez FAQ i bez bibliografii. |
+| **`excerpt`** (zawsze oddzielny plik o tej nazwie: `excerpt.md` albo dokument `excerpt` na Dysku) | sam excerpt, 50-70 słów, nic więcej |
 | **FAQ** (`faq_<temat>.json`) | 4-6 pytań w JSON, format ze skilla `faq-json-blog` |
 | **bibliografia** (`bibliografia_<temat>.json`) | gdy wpis cytuje badania, format ze skilla `bibliografia-blog` |
 | **zdjęcia** (podfolder `foto/`) | okładka z `okladka_` na początku nazwy, reszta to zdjęcia do tekstu; przygotowuje je grafik, nie Ty |
@@ -57,25 +58,28 @@ Wszystko w jednym folderze wpisu.
 **Kolejność:**
 
 1. `# H1`, jeden, **bez emotki**.
-2. **Akapit wstępu**, czyli zwykły tekst bez nagłówka. Pierwsze H2 pojawia się dopiero **po**
-   nim. Wstęp otwiera scenę albo pytanie czytelniczki (ruch 7 w `warsztat-prozy.md`). To nie
-   jest excerpt wklejony drugi raz: excerpt żyje w swoim pliku, wstęp pisz jako początek
-   rozmowy.
-3. `## H2`: 4-6 sekcji zgodnych z briefem. Mogą mieć emotkę, jeśli pasuje, nie każdy musi.
-4. `## Warto zapamiętać`: 3-5 punktów z pogrubionym początkiem, przed FAQ.
+2. **Pierwszy akapit: podsumowanie wpisu**, zwykły tekst bez nagłówka, 3-5 zdań. Od razu daje
+   odpowiedź na pytanie z tytułu i najważniejsze wnioski, po ludzku, głosem marki. Dawną sekcję
+   "Warto zapamiętać" przenosimy właśnie tu: na końcu wpisu już jej nie ma.
+3. `## H2`: 4-6 sekcji zgodnych z briefem. **Pierwsze H2 pojawia się dopiero po pierwszym
+   akapicie.** Scena albo pytanie czytelniczki (ruch 7 w `warsztat-prozy.md`) może otwierać
+   pierwszą sekcję. H2 mogą mieć emotkę, jeśli pasuje, nie każdy musi.
 
 ```
-## Warto zapamiętać
+# Jak zachować kolor tatuażu
 
-* **Słońce rozbija cząsteczki tuszu**, więc SPF 50 każdego dnia, cały rok.
-* **Nawilżenie to podstawa**: systematyczna pielęgnacja utrzymuje intensywność koloru.
-* **Peeling odsłania pigment**: delikatne złuszczanie przywraca kontrast.
+Słońce rozbija cząsteczki tuszu, więc najbardziej pomaga SPF 50 każdego dnia, przez cały rok.
+Reszta to systematyczne nawilżanie, które utrzymuje intensywność koloru, i delikatne złuszczanie,
+które przywraca kontrast.
+
+## Dlaczego tatuaż blednie?
 ```
 
 ## Excerpt
 
-50-70 słów. Streszcza wartość wpisu i zachęca do czytania. Nie zaczyna się od nazwy marki ani
-od ogólnika. Osobny dokument (patrz wyżej).
+50-70 słów, zawsze w oddzielnym pliku o nazwie `excerpt` (patrz wyżej), nigdy w treści wpisu.
+Streszcza wartość wpisu i zachęca do czytania. Nie zaczyna się od nazwy marki ani od ogólnika. To
+nie jest pierwszy akapit wpisu wklejony drugi raz: mają inne zadania, więc napisz je osobno.
 
 > Świeży tatuaż potrzebuje czasu i właściwej pielęgnacji. Swędzenie, łuszczenie, chwilowe
 > blaknięcie kolorów? To normalne etapy. Odnowa skóry trwa od 2 do 3 miesięcy. Sprawdź, czego się
@@ -85,7 +89,7 @@ od ogólnika. Osobny dokument (patrz wyżej).
 
 - **Bez tabel w treści wpisu.** Blog ich nie wyświetla poprawnie. Porównanie zamień na listę albo
   na krótkie akapity ("Skóra sucha: tak. Skóra tłusta: nie.").
-- **Emoji:** maksymalnie 3-4 na cały wpis (H2 + "Warto zapamiętać" razem). H1 nigdy.
+- **Emoji:** maksymalnie 3-4 na cały wpis. H1 i pierwszy akapit nigdy.
 - **Pogrubienia:** nazwa kosmetyku przy pierwszym wystąpieniu, kluczowy termin przy
   wprowadzeniu, ważne zalecenie. Reszta bez.
 - **Listy:** gdy treść tego wymaga (kroki, kilka równorzędnych porad). Nie zamiast tekstu.
@@ -96,17 +100,18 @@ od ogólnika. Osobny dokument (patrz wyżej).
 ## FAQ do wpisu
 
 4-6 pytań, od razu w JSON. Schemat, limity linków i walidacja: skill `faq-json-blog`.
-Głos odpowiedzi: jak odpowiedź na wiadomość od klientki, 4-6 zdań, mechanizm zamiast ogólnika,
+Głos odpowiedzi: jak odpowiedź na wiadomość od klientki, 4-6 zdań, od razu bezpośrednia odpowiedź ("Tak", "Nie", "Zwykle..."), mechanizm zamiast ogólnika,
 "kosmetyk", nie "produkt". Pytania o rany i choroby nie wchodzą, uważaj na odpowiedzi pod kątem prawnym (`compliance.md`, wzorzec 1).
 
 ## Checklista przed oddaniem
 
-- [ ] Osobne pliki: treść, excerpt, FAQ JSON, (bibliografia), `foto/`
+- [ ] Osobne pliki: treść, `excerpt`, FAQ JSON, (bibliografia), `foto/`
 - [ ] H1 bez emotki
-- [ ] Akapit wstępu przed pierwszym H2
-- [ ] Excerpt 50-70 słów, nie od nazwy marki, nie powtórzony jako wstęp
+- [ ] Pierwszy akapit to podsumowanie, a pierwsze H2 stoi dopiero po nim
+- [ ] Na końcu wpisu nie ma już sekcji "Warto zapamiętać"
+- [ ] Excerpt w pliku `excerpt`, 50-70 słów, nie od nazwy marki, nie powtarza pierwszego akapitu
 - [ ] 4-6 sekcji H2 zgodnych z briefem
-- [ ] "Warto zapamiętać" (3-5 punktów) na końcu treści
+- [ ] Zasady z `references/geo.md`, bez kwot i bez wymyślonych liczb
 - [ ] Zero tabel, zero myślników, maks. 3-4 emoji
 - [ ] Nazwy kosmetyków pogrubione przy pierwszym użyciu i zgodne ze stroną sklepu
 - [ ] 7 000-10 000 znaków

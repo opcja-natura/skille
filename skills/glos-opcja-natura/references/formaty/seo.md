@@ -31,7 +31,8 @@ Minimum: 1 H1, 3 sekcje H2, 2 linki. Gdy anchor jest samym adresem, link wstawia
 adres. Linki osadzasz naturalnie, w zdaniu, które ma sens merytorycznie. Nie dostałaś briefu,
 poproś o niego.
 
-Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go.
+Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go. Jak pisać pod Google
+i odpowiedzi AI: `references/geo.md`.
 
 ## Budowa
 
@@ -39,7 +40,7 @@ Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go.
 
 1. `# H1` zgodny z briefem, bez emotki.
 2. **Wstęp bez nagłówka**, 150-250 słów. Pierwsze H2 dopiero po nim. Hook w pierwszym zdaniu,
-   główna fraza w pierwszym akapicie.
+   główna fraza i odpowiedź na pytanie z H1 w pierwszym akapicie.
 3. `## H2` z briefu (6-10 sekcji). Frazy w nagłówkach brzmią naturalnie, bez upychania.
 4. **Podsumowanie**: krótkie, z praktycznym wnioskiem. Bez "Jak widać, pielęgnacja jest ważna".
 5. **FAQ w treści artykułu**, 6-10 pytań (tu FAQ jest w markdownie, inaczej niż na blogu):
@@ -49,7 +50,7 @@ Pamiętaj o AI SEO, brief z Notiona zawiera też ten element. Nie ignoruj go.
 
 ### Pytanie tak, jak wpisuje je człowiek w Google?
 
-Odpowiedź w 3-5 zdaniach, konkretna, z mechanizmem. **Pogrubienie** kluczowego terminu.
+Bezpośrednia odpowiedź na początku, razem 3-5 zdań, konkretnie, z mechanizmem. **Pogrubienie** kluczowego terminu.
 ```
 
 ## Formatowanie
@@ -70,7 +71,8 @@ aluminium i podrażnień", "Anty tarka: nowoczesna kuracja na pięty bez agresyw
 ## Checklista przed oddaniem
 
 - [ ] H1 zgodny z briefem, bez emotki
-- [ ] Wstęp bez nagłówka przed pierwszym H2, fraza w pierwszym akapicie
+- [ ] Wstęp bez nagłówka przed pierwszym H2, fraza i odpowiedź w pierwszym akapicie
+- [ ] Zasady z `references/geo.md`, bez kwot i bez wymyślonych liczb
 - [ ] H2 zgodne z briefem
 - [ ] Linki z briefu wstawione naturalnie, żadnych wymyślonych
 - [ ] FAQ 6-10 pytań w treści

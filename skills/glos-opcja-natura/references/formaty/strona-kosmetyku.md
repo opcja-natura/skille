@@ -80,6 +80,8 @@ Zasady z `SKILL.md` i `warsztat-prozy.md`, a tu najważniejsze dla tego formatu:
 - Składniki nie mogą brzmieć jednakowo ("wspiera odnowę" przy każdym). Podobne oleje opisz
   razem. Nie pisz "kompleks olejów", wymień je.
 - "Kosmetyk", nie "produkt"; zero myślników.
+- Pod Google i odpowiedzi AI: `references/geo.md`, w granicach szablonu opisu. Budowy opisu ten
+  plik nie zmienia.
 
 ## Prawo na stronie kosmetyku
 

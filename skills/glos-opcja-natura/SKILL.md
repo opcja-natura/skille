@@ -6,8 +6,8 @@ description: >
   Używaj ZAWSZE, gdy ktokolwiek w Opcji Naturze pisze, poprawia albo ocenia tekst wychodzący
   na zewnątrz, także tekst od agencji lub copywritera przed publikacją. Także gdy ktoś pyta
   "czy to brzmi jak my", "popraw ton", "napisz w naszym stylu", "czy to jest zgodne z prawem",
-  "czy możemy tak napisać", wkleja szkic do oceny albo dyktuje luźny pomysł do zamiany w gotowy
-  tekst. Nie czekaj, aż padnie słowo "ton". To skill parasolowy: sam daje głos, prawo i formaty,
+  "czy możemy tak napisać", "jak to napisać pod Google i AI", "pod GEO", wkleja szkic do oceny albo
+  dyktuje luźny pomysł do zamiany w gotowy tekst. Nie czekaj, aż padnie słowo "ton". To skill parasolowy: sam daje głos, prawo i formaty,
   a po technikę odsyła do mniejszych skilli (FAQ do bloga, źródła naukowe, TikTok, angielski,
   wygląd, dane kosmetyku).
 ---
@@ -167,6 +167,9 @@ Głos jest wszędzie ten sam, różni się budowa. Przed pisaniem przeczytaj wł
 | opis kosmetyku na stronę | `references/formaty/strona-kosmetyku.md` |
 | post, karuzela, stories, odpowiedź na komentarz | `references/formaty/social.md` |
 | mail do partnera, oferta, licytacja, event, tekst wewnętrzny | `references/formaty/b2b-i-okazjonalne.md` |
+
+Przy wpisie na blog, artykule SEO i treściach na stronę przeczytaj też `references/geo.md`
+(widoczność w Google i odpowiedziach AI). Głos i prawo mają pierwszeństwo przed tym plikiem.
 
 ## Inne skille, do których odsyłam
 

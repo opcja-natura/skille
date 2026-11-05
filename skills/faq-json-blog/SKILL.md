@@ -6,7 +6,7 @@ description: FAQ do wpisu na blogu Opcji Natury w formacie JSON dla Contentful. 
 # FAQ JSON do wpisu na blogu
 
 FAQ do wpisu na blogu powstaje **od razu w JSON**, jako osobny plik obok treści wpisu
-(`faq_<temat>.json`). Na stronie wyświetla się pod sekcją "Warto zapamiętać". Nie piszemy
+(`faq_<temat>.json`). Na stronie wyświetla się pod treścią wpisu. Nie piszemy
 najpierw FAQ w tekście wpisu, żeby potem je przenosić.
 
 Jak mają brzmieć odpowiedzi i czego nie wolno w nich obiecać: skill **`glos-opcja-natura`**
@@ -52,6 +52,7 @@ Jak mają brzmieć odpowiedzi i czego nie wolno w nich obiecać: skill **`glos-o
 
 - **4-6 pytań** na wpis, w ramach tematu wpisu. Nowych tematów nie dokładasz.
 - **4-6 zdań** na odpowiedź. Krótsza brzmi sucho, dłuższa jak akapit bloga.
+- Zacznij od bezpośredniej odpowiedzi ("Tak", "Nie", "Zwykle...").
 - Układ, gdy pasuje: krótka odpowiedź (1-2 zdania), mechanizm albo kontekst (2-3 zdania),
   kosmetyk, jeśli naturalnie pasuje (1 zdanie).
 - Pisz jak do osoby, która zadała to pytanie w wiadomości.
