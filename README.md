@@ -63,6 +63,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `notion-publikacje` | publikacje i zadania marketingu w Notionie; SKILL.md = część dla operatora (po ludzku), `references/zapis.md` + `inne-bazy.md` = część techniczna dla agenta | org, CC | 10.10.2026 wchłonął `notion-produkcja-tresci`; zweryfikowany na żywym Notionie i n8n; org ma stare wersje obu — wgrać ten; 15.10 podmieniony w org (`05a8e05`, zakładka Home „Moje zlecenia”), tamten zdjąć |
 | `tiktok-opcja-natura` | second brain TikToka Agaty | org | master był tylko w paczce |
 | `slack-opcja-natura` | Slack dla pracownika: kanały i do czego służą, apki (marketing, kupony, urlopy), wysyłki, boty | org | przepisany 10.10.2026 (bez `employees.json`); 15.10 wgrany do org z zakładką Home „Moje zlecenia” (`05a8e05`) |
+| `zaplecze-marketing` | pliki marketingu na dysku `[04] OpcjaNatura - marketing`, na start zdjęcia: wrzucanie z Maca (Cowork + Dysk Google na komputer) do folderów kosmetyków, strony, zestawów, sesji; nazwy, archiwum przy podmianie; `references/foldery.md` = ID folderów | — | 19.11.2026 nowy, dla Uli (niewgrany, czeka na akcept Daniela); ID folderów z inwentaryzacji 19.11 (`modele-wszystko/marketing/porzadki_drive/`); po porządkach dysku zaktualizować `foldery.md` |
 
 ### B2B, sprzedaż, eksport
 
