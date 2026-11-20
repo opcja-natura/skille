@@ -1,0 +1,10 @@
+interface:
+  display_name: analityka ERP
+  short_description: 'Pytania o dane z arkuszy ERP Opcji Natury: stan wyrobów gotowych, sprzedaż kosmetyków w sztukach po miesiącach i kwartałach, na ile starczy zapasu, zaplanowana produkcja i statusy zleceń, stan surowców i opakowań. Mapa plików, kolumn i pułapek (niepełny bieżący kwartał, stan jako kopia z backoffice, helper planowania). Tylko odczyt.'
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
