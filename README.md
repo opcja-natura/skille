@@ -41,7 +41,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 | `delivery-order-intake` | zakładanie zamówień eksploatacyjnych/pozostałych w rejestrze dostaw | ChatGPT | zgodny z arkuszem live 10.10 |
 | `przelewy-powracajace` | odnotowanie opłaconych płatności powracających | ChatGPT | zgodny z arkuszem live 10.10 |
 | `katalog-wersje` | wersje i poprawki katalogu PL/EN | — | niewgrany |
-| `baselinker-opcja-natura` | BaseLinker przez konektor MCP `base`: numery zamówień (sklep/BL/B2B), przepływy statusów i rozchodu, słowniki konta, kontrole złych przepływów, awizacje B2B, pomoc przy arkuszach hubu (raport e-commerce, ewidencja zwrotów), wąska lista zapisów za zgodą | org, CC | 26.11.2026 nowy (2 recenzje Fable 5.2), wgrany do org 26.11 (`05e3051`); wymaga konektora Base; procesy hubu do przeniesienia do `hub-manufaktura`, gdy dostanie rozdziały wysyłka/zwroty/B2B; masowe zapisy katalogu zostają w CLI Daniela (`baselinker-api`) |
+| `baselinker-opcja-natura` | BaseLinker przez konektor MCP `base`: numery zamówień (sklep/BL/B2B), przepływy statusów i rozchodu, słowniki konta, kontrole złych przepływów, awizacje B2B, pomoc przy arkuszach hubu (raport e-commerce, ewidencja zwrotów), wąska lista zapisów za zgodą | org, CC | 26.11.2026 nowy (2 recenzje Fable 5.2), wgrany do org 26.11 (`05e3051`), podmieniony 26.11 (`44ebee9`: Bigin, statusy z kuriera, okno operacyjne); wymaga konektora Base; procesy hubu do przeniesienia do `hub-manufaktura`, gdy dostanie rozdziały wysyłka/zwroty/B2B; masowe zapisy katalogu zostają w CLI Daniela (`baselinker-api`) |
 
 ### Marka, produkt, treści
 
