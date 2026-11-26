@@ -87,12 +87,25 @@ Kody nie są uporządkowane. „Kurier zabrał paczkę” = w historii jest jaki
 
 ## 6. Kolejki i zaległości
 
-Pytaj `ask_agent` o liczby i numery, np.:
-- „Które zamówienia są w statusie 9888 (Wysłane) dłużej niż 2 pełne dni robocze? Same order_id i data wejścia w status.”
-- „Ile zamówień czeka w statusach 10454, 342066, 356786, 348458, 329445? Same liczby.”
+**Okno operacyjne.** Pytanie o bieżącą pracę ograniczasz do zakresu, w którym problem może się dziś pokazać. Zamówienie starsze niż okno albo już zostało obsłużone, albo jest sprawą zwrotów i reklamacji, a nie kolejki. Zakres podajesz w filtrze (`date_confirmed_from` w `getOrders`, data w pytaniu do `ask_agent`) i w odpowiedzi („sprawdziłam zamówienia z ostatnich 7 dni”).
+
+| Pytanie | Okno (od dziś wstecz, po dacie potwierdzenia) | Próg „za długo” |
+| :-- | :-- | :-- |
+| co wisi w `9888` Wysłane | 7 dni | ponad 2 pełne dni robocze w statusie |
+| etykieta bez odbioru (`10455`) | 3 dni | od poprzedniego dnia roboczego |
+| co czeka w kolejkach wejściowych, spóźnione wysyłki | 7 dni | sklep: złożone do 12:00 i niespakowane tego dnia; paleta: 3 dni robocze |
+| rozchód magazynu, rozjazd z Biginem | 3 dni (tyle sięga historia zdarzeń) | |
+| `313961` on hold, zwroty w toku | 30 dni | on hold: 5 dni roboczych; zwrot w drodze: 7 dni bez ruchu |
+| awizacje do wysłania | 14 dni | |
+
+Szersze okno (do 3 miesięcy, limit API) tylko na prośbę albo przy szukaniu konkretnego zamówienia.
+
+Przykłady pytań do `ask_agent` (zawsze z zakresem):
+- „Które zamówienia potwierdzone od <data sprzed 7 dni> są teraz w statusie 9888 (Wysłane) dłużej niż 2 pełne dni robocze? Same order_id i data wejścia w status.”
+- „Ile zamówień potwierdzonych od <data sprzed 7 dni> czeka w statusach 10454, 342066, 356786, 348458, 329445? Same liczby.”
 - „Ile zamówień weszło <dnia> w status 10476? Sama liczba.”
 
-Samodzielnie: `getOrders` z `status_id` i `date_confirmed_from`; maks. 100 na stronę, kolejna od `date_confirmed` ostatniego + 1.
+Samodzielnie: `getOrders` z `status_id` i `date_confirmed_from` (początek okna); maks. 100 na stronę, kolejna od `date_confirmed` ostatniego + 1.
 
 ## 7. Historia zamówienia
 

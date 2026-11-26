@@ -1,6 +1,6 @@
 # Kontrole: nieprawidłowe przepływy
 
-Każda kontrola: **reguła → jak sprawdzić → wyjątki → komu przekazać** (role w `SKILL.md`). Najpierw liczby i numery przez `ask_agent`, potem szczegóły pojedynczych zamówień. Dni robocze liczysz w kalendarzu polskim (bez weekendów i świąt), od `date_in_status`. Kontrole robisz na prośbę; ich wyniki nie trafiają same do arkuszy hubu.
+Każda kontrola: **reguła → jak sprawdzić → wyjątki → komu przekazać** (role w `SKILL.md`). Najpierw liczby i numery przez `ask_agent`, potem szczegóły pojedynczych zamówień. Dni robocze liczysz w kalendarzu polskim (bez weekendów i świąt), od `date_in_status`. Każdą kontrolę robisz w oknie operacyjnym z `zapytania.md`, sekcja 6 (np. Wysłane: zamówienia z ostatnich 7 dni), chyba że ktoś prosi o szerszy zakres. Kontrole robisz na prośbę; ich wyniki nie trafiają same do arkuszy hubu.
 
 Wynik: tabela `order_id | numer (ON-… / ON-B2B__…) | kanał | status od kiedy | co jest nie tak | dowód | do kogo`, bez adresów i telefonów. Oddziel „błąd” (reguła złamana, dowód w danych) od „do sprawdzenia” (sygnał). Niczego nie poprawiasz w trakcie kontroli.
 
@@ -40,7 +40,7 @@ Wynik: tabela `order_id | numer (ON-… / ON-B2B__…) | kanał | status od kied
 
 | # | Reguła | Jak sprawdzić | Do kogo |
 | :-- | :-- | :-- | :-- |
-| D1 | Każde zamówienie B2B z BL ma rekord w Biginie | numery B2B z BL (źródło `39943`, ostatnie 30 dni) vs Bigin po `baselinkerOrderId` (jeśli masz Bigin). Najczęstsza przyczyna braku: kosmetyk z zamówienia nie istnieje w produktach Bigina | właściciel systemów |
+| D1 | Każde zamówienie B2B z BL ma rekord w Biginie | numery B2B z BL (źródło `39943`, ostatnie 3 dni; szerzej na prośbę) vs Bigin po `baselinkerOrderId` (jeśli masz Bigin). Najczęstsza przyczyna braku: kosmetyk z zamówienia nie istnieje w produktach Bigina | właściciel systemów |
 | D2 | Numer `ON-B2B__n` jest unikalny | dwa zamówienia z tym samym numerem w `extra_field_2` | właściciel systemów |
 | D3 | Waluta, VAT i kraj spójne | `currency` EUR przy `tax_rate` 23 albo kraj inny niż PL przy PLN | handlowiec przed fakturą |
 | D4 | Typ transakcji zgodny ze ścieżką | `77837` = `SHIPMENT` z fakturą albo poza ścieżką komisu; `SALE` bez `294244` | handlowiec |
