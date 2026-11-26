@@ -30,8 +30,8 @@ Automatyczne akcje BL ustawia się w panelu. API ich nie pokazuje, więc opis po
 | wstrzymanie | `313961` on hold | handlowiec albo hub | B2B: też zakłada zamówienie w Biginie |
 | pakowanie | `10476` / `10475` Spakowano | hub, przy pakowaniu ze skanowaniem | rozchód w magazynie firmy (sekcja 3) |
 | etykieta | `10455` Wydrukowano etykietę | hub, moduł kuriera w zamówieniu | paczka z `tracking_status` 1; Bigin: „Spakowano” |
-| wysyłka | `9888` Wysłane; komis `294156` | automat BL | wiadomość do klientki; Bigin: „Wysłane” |
-| koniec | `17910` Dostarczone, `10468` Odebrane/dostarczone | automat BL z trackingu | sklep (m.in. potwierdzenie zapisu do programu lojalnościowego); Bigin zakłada zamówienie na nowo z kwotą faktury i datą doręczenia |
+| wysyłka | `9888` Wysłane; komis `294156` | automat BL po zeskanowaniu paczki przez kuriera | wiadomość do klientki; Bigin: „Wysłane” |
+| koniec | `17910` Dostarczone, `10468` Odebrane/dostarczone | automat na podstawie informacji o doręczeniu z API przewoźnika | sklep (m.in. potwierdzenie zapisu do programu lojalnościowego); Bigin zakłada zamówienie na nowo z kwotą faktury i datą doręczenia |
 | rozliczenie komisu | `294244` | handlowiec | faktura ręczna; „Ściągnij z magazynu” zdejmuje towar z magazynu komisanta |
 | nieodebrana | `9888` dłużej niż 2 pełne dni robocze | nikt (to nie zdarzenie) | automat zwrotów zakłada sprawę „Nie doręczone” dla osoby od zwrotów |
 | zwrot w drodze | `284070` | automat z trackingu | alarm po 7 dniach bez ruchu |

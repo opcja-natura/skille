@@ -20,7 +20,7 @@ Wynik: tabela `order_id | numer (ON-… / ON-B2B__…) | kanał | status od kied
 | :-- | :-- | :-- | :-- | :-- |
 | B1 | Rano brak niewyjaśnionych zamówień w `10455` z poprzedniego dnia roboczego | `ask_agent` o order_id w `10455` sprzed dziś; `getOrderPackages`: kod 1 = kurier nie zabrał | paleta z uzgodnionym odbiorem; paczki spakowane po ostatnim odbiorze | lider hubu |
 | B2 | `9888` krócej niż 2 pełne dni robocze | jak wyżej dla `9888`; pilne kody: 3, 7, 8, 9, 12 | komis `294156`; zagranica | zwroty (kontakt z klientką) |
-| B3 | Status zgodny z trackingiem | `9888` przy kodzie 5 albo `17910` / `10468` przy kodzie innym niż 5 | odbiór osobisty (bez trackingu) | właściciel systemów |
+| B3 | Status zgodny z trackingiem (Wysłane ustawia skan kuriera, Dostarczone informacja o doręczeniu z API przewoźnika) | `9888` przy kodzie 5 = doręczenie nie dotarło do BL; `17910` / `10468` przy kodzie innym niż 5; `10455` przy kodzie innym niż 0, 1, 10 = skan nie przestawił statusu | odbiór osobisty (bez trackingu) | właściciel systemów |
 | B4 | Zamówienie w `9888` ma list w BL | `delivery_package_nr` pusty i brak paczek w `getOrderPackages` | odbiór osobisty, dowóz własny | lider hubu: paczka nadana poza zamówieniem, automatyczne wiadomości nie poszły |
 | B5 | Kurier zgodny z wymaganiami klienta B2B | wymagania klienta (Bigin / wiadomość na `#baselinker-bot`) vs `courier_code` paczki | | lider hubu przed nadaniem |
 | B6 | Paleta spakowana w 3 dni robocze | B2B w `9886` z dostawą paletową starsze niż 3 dni robocze | termin uzgodniony z klientem | lider hubu |
