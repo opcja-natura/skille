@@ -4,6 +4,7 @@ Co, kiedy i dokąd wgrano (claude.ai organizacji, skille osobiste, ChatGPT). Wpi
 
 | Data | Skill | Gdzie | Co | Wersja (commit) | Do zrobienia |
 |---|---|---|---|---|---|
+| 2026-11-26 | `baselinker-opcja-natura` | claude.ai — biblioteka organizacji | dodany (BaseLinker przez konektor MCP `base`: numery, przepływy, kontrole, awizacje, arkusze hubu, wąskie zapisy) | `05e3051` | działa tylko z podłączonym konektorem Base |
 | 2026-11-19 | `zaplecze-marketing` | claude.ai — biblioteka organizacji | dodany (zdjęcia na dysku marketingu: foldery kosmetyków z ID, nazwy, archiwum przy podmianie, praca w Coworku przez Dysk Google na komputer) | `0954fd9` | **Ula:** test z instrukcji (zapis Coworku do folderu Dysku Google), odesłać wynik; po porządkach dysku zaktualizować `references/foldery.md` |
 | 2026-11-05 | `glos-opcja-natura` | claude.ai — biblioteka organizacji | podmieniony (`references/geo.md`: pisanie pod Google i AI; blog: pierwszy akapit = podsumowanie przed 1. H2, bez „Warto zapamiętać”, excerpt w pliku `excerpt`) | `cfc5c96` | — |
 | 2026-11-05 | `faq-json-blog` | claude.ai — biblioteka organizacji | podmieniony (odpowiedź zaczyna się wprost, FAQ pod treścią wpisu) | `cfc5c96` | — |
