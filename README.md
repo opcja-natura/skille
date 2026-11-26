@@ -71,6 +71,7 @@ Skróty w kolumnie „Gdzie wgrany”: **org** = biblioteka organizacji claude.a
 |---|---|---|---|
 | `bigin-opcja-natura` | CRM Bigin na żywo: rdzeń + `references/` (handel, marketing-trade, rozliczenia-retro) | org | przebudowany 10.10.2026 (zweryfikowany na MCP); poprawka zapisu akcji 12.10.2026, wgrany (`c8e81f9`) |
 | `analityka-b2b-zoho` | liczenie sprzedaży B2B w Zoho Analytics | org | |
+| `analiza-sklepu-opcja-natura` | analiza danych sklepu www dla agenta analityka (org-wide): słownik metryk (jedyne definicje), mapa bazy z pułapkami i przełomami, sprawdzone zapytania, metoda (decyzja → definicje → liczenie → kontrola drugim sposobem → wniosek po ludzku); magazyn i planowanie produkcji przez konektor „analityk” | — | 25.11.2026 nowy, niewgrany; słownik zweryfikowany niezależnie (Fable 5.2, 43 sprawdzenia); wymaga dostępu agenta do bazy sklepu tylko do odczytu. 26.11.2026 rozdział „Magazyn i planowanie produkcji” (`references/magazyn-i-produkcja.md`) pod konektor MCP „analityk” (`n8n/analityk_mcp`) |
 | `analityka-erp` | dane z arkuszy ERP: stan wyrobów gotowych, sprzedaż w sztukach (miesiące, kwartały), planowanie i statusy zleceń, surowce i opakowania; mapa plików i kolumn, pułapki | — | 20.11.2026 nowy, dla Kariny; tylko odczyt przez Google Drive; zweryfikowany na żywych arkuszach 20.11 |
 | `sprint-handlowy` | partner Łukasza do szukania sprzedaży | org | |
 | `ocena-wydawcy-b2b` | ocena cudzej domeny pod współpracę | org | |
