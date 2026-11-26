@@ -50,7 +50,7 @@ Zmiana statusu uruchamia automaty BL (rozchód, dokumenty, wiadomości do klient
 | `10454`, `9890`, `341571`, `342066`, `329445`, `356786`, `348458`, `350558`, `343182`, `348497` | `313961` on hold | osoba podała powód; dopisz go w uwagach (zapis 1) |
 | `313961` on hold | ta sama kolejka, z której zamówienie przyszło (lista wyżej) | `77969` puste (rozchodu nie było) |
 
-**Zamówień B2B (źródło `39943`, status `9886`) nie przestawiasz wcale:** wejście w `9886` i `313961` zakłada rekord w Biginie i publikuje wiadomość na `#baselinker-bot`, więc przestawienie może je zdublować. Statusy B2B zmienia handlowiec albo lider hubu w panelu.
+**Zamówień B2B (źródło `39943`) nie przestawiasz wcale:** każda zmiana statusu B2B przestawia zamówienie w Biginie, a przejście `9886` ↔ `313961` po założeniu rekordu kończy się błędem synchronizacji i rozjazdem BL z Biginem (`przeplywy.md`, sekcja 2a). Statusy B2B zmienia handlowiec albo lider hubu w panelu.
 
 Każdy inny status docelowy jest zakazany, w szczególności `10476`, `10475` (Spakowano: uruchamia rozchód), `10455`, `9888`, `294156`, `17910`, `10468` (wiadomości do klientki, Bigin, sklep), `9889` Anulowane, `294244` Rozliczenie komisu oraz wszystkie statusy zwrotów (`284070`, `320111`, `320503`, `320112`, `324032`, `325481`): ani **na** nie, ani **z** nich (także powrót zwrotu do „do wysyłki”). Te przejścia robi człowiek w panelu według procedury hubu.
 

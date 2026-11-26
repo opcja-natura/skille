@@ -2,6 +2,7 @@
 
 1. Skąd zamówienie przychodzi
 2. Statusy: kto ustawia i co uruchamiają
+2a. Synchronizacja B2B z Biginem
 3. Rozchód magazynu
 4. Trzy osobne potwierdzenia
 5. Ponowna wysyłka i nowe zamówienie
@@ -40,6 +41,20 @@ Automatyczne akcje BL ustawia się w panelu. API ich nie pokazuje, więc opis po
 | koniec zwrotu | `324032` wypakowano | hub po rozliczeniu obu torów | sprawa zamknięta |
 | archiwum | `325481` | automat po kilku dniach | |
 | problem | `284310` reklamowane, `9889` Anulowane, `341284` duplikaty | hub, lider | |
+
+## 2a. Synchronizacja B2B z Biginem
+
+Każda zmiana statusu zamówienia B2B w BL wywołuje webhook do backoffice, który przestawia zamówienie w potoku „Zamówienia” w Biginie. BL jest źródłem, Bigin odbiciem: etap w Biginie zmienia się tylko przez status w BL.
+
+| Status BL | Etap w Biginie |
+| :-- | :-- |
+| `9886` B2B | Przekazano do realizacji (rekord zakładany; znika „Otrzymano od klienta”) |
+| `313961` on hold | Wstrzymane - on hold (też jako zakładanie rekordu) |
+| `10455`, `10475` | Spakowano |
+| `9888`, `294156` | Wysłane |
+| `17910`, `10468`, `294244` | Zamówienie dostarczone; komis `SHIPMENT`: Dostarczone - komis |
+
+Jak to działa: przy `9886`, `313961` i rozliczeniu komisu backoffice **zakłada** rekord; przy pozostałych usuwa stary i zakłada nowy z nowym etapem (dlatego `id` rekordu w Biginie się zmienia, a stałym kluczem jest `baselinkerOrderId` albo numer `ON-B2B__…`). **Pułapka:** wejście w `9886` albo `313961`, gdy rekord już istnieje na etapie innym niż „Otrzymano od klienta” (np. on hold po spakowaniu, powrót z on hold do `9886`), kończy się błędem i Bigin zostaje na starym etapie. Wtedy BL i Bigin się rozjeżdżają (kontrola D8).
 
 ## 3. Rozchód magazynu
 

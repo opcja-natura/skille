@@ -47,6 +47,7 @@ Wynik: tabela `order_id | numer (ON-… / ON-B2B__…) | kanał | status od kied
 | D5 | Awizacja wysłana na czas | `awizacje.md`, „Przegląd zaległych awizacji” | lider hubu |
 | D6 | `313961` on hold nie wisi bez powodu | order_id w `313961` starsze niż 5 dni roboczych; powód w uwagach | handlowiec |
 | D7 | Klient wymagający XML faktury ma fakturę | wymóg z Bigina / wiadomości na kanale + `getInvoices` po `order_id` | lider hubu |
+| D8 | Etap w Biginie zgodny ze statusem BL | dla zamówień B2B z ostatnich dni: status BL vs `Stage` rekordu w Biginie po `baselinkerOrderId` (mapowanie: `przeplywy.md`, sekcja 2a). Typowy rozjazd: BL `313961` on hold, Bigin „Spakowano” albo „Przekazano do realizacji” | właściciel systemów (rekord trzeba poprawić w Biginie albo ponowić webhook) |
 
 ## E. Sklep
 
