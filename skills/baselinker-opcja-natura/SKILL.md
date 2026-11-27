@@ -13,7 +13,7 @@ Konektor działa na **żywym koncie**, bez środowiska testowego.
 
 | Zadanie | Plik |
 | :-- | :-- |
-| znaleźć zamówienie, rozpoznać numer, gotowe wywołania (paczka, kolejka, ile dziś do spakowania, historia, stany) | `references/zapytania.md` |
+| jak pytać szybko, znaleźć zamówienie, rozpoznać numer, gotowe wywołania (paczka, kolejka, ile dziś do spakowania, historia, stany) | `references/zapytania.md` |
 | skąd zamówienie przyszło, kto ustawia który status, co się wtedy dzieje, rozchód, ponowna wysyłka | `references/przeplywy.md` |
 | ID statusów, źródeł, pól własnych, kurierów | `references/konto.md` |
 | awizacja dostawy B2B | `references/awizacje.md` |
@@ -39,7 +39,7 @@ Konektor prosi o przeczytanie `https://mcp.base.com/api-skill.txt` przed pierwsz
 3. **ID ze słownika, nie z pamięci** (`konto.md`). Coś się nie zgadza → pobierz słownik na nowo (`getOrderStatusList`, `getOrderSources`, `getOrderExtraFields`).
 4. **Daty** są w Unix timestamp (sekundy). Podawaj je w czasie polskim.
 5. **HTTP 200 nie znaczy sukcesu.** Sprawdzaj `status` (`SUCCESS` albo `ERROR` z `error_message`). Po błędzie popraw parametry; po dwóch nieudanych próbach przerwij i zgłoś.
-6. **Limit: 100 zapytań na minutę**, wspólny z automatami firmy. Zawsze filtruj `getOrders`. Zadanie na ponad 20 wywołań: najpierw powiedz, ile ich będzie.
+6. **Szybko i oszczędnie.** Każde pytanie do `ask_agent` to ok. 50 s, a `getOrders` to ciężkie dane z adresem: zanim zaczniesz, wybierz najlżejsze źródło (`zapytania.md`, sekcja 2), niezależne odczyty wysyłaj równolegle. Limit API: 100 zapytań na minutę, wspólny z automatami firmy. Zawsze filtruj `getOrders`. Zadanie na ponad 20 wywołań: najpierw powiedz, ile ich będzie.
 7. **Pytanie operacyjne = okno operacyjne.** „Co wisi”, „co utknęło”, „co dziś do zrobienia” dotyczy bieżącej pracy: bierzesz najkrótszy zakres dat, który na nie odpowiada (tabela w `zapytania.md`, sekcja 6), a nie całe 3 miesiące konta. W odpowiedzi podaj, jaki zakres przyjąłeś. Szerzej szukasz tylko na wyraźną prośbę („cały listopad”, „wszystkie”).
 8. **Nie naprawiasz po cichu.** Problem opisujesz (numer, co jest, co powinno być, skąd wiesz) i przekazujesz właściwej roli. Nie zmieniasz statusu ani pola po to, żeby problem zniknął.
 

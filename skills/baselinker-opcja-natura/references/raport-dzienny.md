@@ -8,7 +8,7 @@ Arkusz: https://docs.google.com/spreadsheets/d/1TX0-OlKj0mDLJvcNWs1CRAru0JhOsXqe
 | :-- | :-- | :-- |
 | A–C | data, tydzień, dzień | formuły, nie ruszasz |
 | D | raport fiskalny kwota brutto | brak: to raport dobowy z drukarki fiskalnej; z API BL tej sumy nie policzysz |
-| E | il. spakowanych paczek baselinker | na prośbę: liczba zamówień, które danego dnia (czas polski) weszły w `10476` Spakowano - do wysyłki, bez `10475` odbiorów osobistych. Najprościej: `ask_agent` „ile zamówień weszło <dnia> w status 10476”. Samodzielnie: `getJournalList` z `logs_types: [18]`, stronicowanie od `log_id` (`zapytania.md`, sekcja 7), policz zdarzenia z `object_id` 10476 w danym dniu (setki zdarzeń, zapowiedz liczbę wywołań). Historia sięga 3 dni wstecz |
+| E | il. spakowanych paczek baselinker | na prośbę: liczba zamówień, które danego dnia (czas polski) weszły w `10476` Spakowano - do wysyłki, bez `10475` odbiorów osobistych. Najszybciej: `getJournalList` z `logs_types: [18]` (`zapytania.md`, sekcja 7; jedno wywołanie to ok. doba zdarzeń, dalej stronicuj od ostatniego `log_id` + 1), policz zdarzenia z `object_id` 10476 w danym dniu (unikalne `order_id`). Historia sięga 3 dni wstecz; starszy dzień: `ask_agent` „ile zamówień weszło <dnia> w status 10476” |
 | F | inwentura: niezgodności | brak: inwentura w aplikacji magazynowej |
 | G, H, I | nr id dubel / paczka źle spakowana / niewysłane na czas | osoba podaje zamówienie (często z maila klientki: numer sklepu `ON-…`, e-mail, nazwisko); agent znajduje ID BL (`zapytania.md`, sekcje 1 i 3) i ewentualną dosyłkę |
 | J | wartość zam. netto | z pozycji zamówienia: suma `price_brutto × quantity / (1 + tax_rate/100)`, bez dostawy |

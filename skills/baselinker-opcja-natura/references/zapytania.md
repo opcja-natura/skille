@@ -1,7 +1,7 @@
 # Szukanie zamówień i gotowe wywołania
 
 1. Numery zamówień
-2. `ask_agent` czy `getOrders`
+2. Jak pytać szybko
 3. Jedno zamówienie
 4. Co czytać w odpowiedzi
 5. Paczka i tracking
@@ -33,13 +33,26 @@ Wywołania idą przez `run_api_call_readonly` jako `{"method": "...", "parameter
 
 **Marketplace'y:** numer platformy w `external_order_id`, login kupującego w `user_login`.
 
-## 2. `ask_agent` czy `getOrders`
+## 2. Jak pytać szybko
 
-Jedno zamówienie z `getOrders` to 3 do 15 tys. znaków z adresem i pozycjami. Dziesięć zamówień B2B zapycha rozmowę.
+Czas odpowiedzi zjadają dwie rzeczy: pytania do `ask_agent` (każde ok. 50 s, czasem bez odpowiedzi w limicie czasu) i ciężkie odczyty `getOrders` (3–15 tys. znaków na zamówienie, z adresem; dziesięć zamówień B2B zapycha rozmowę). Zanim zaczniesz, rozpisz, czego potrzebujesz do całej odpowiedzi, i wybierz najlżejsze źródło dla każdej części. Gdy żadne nie jest lżejsze, trudno: zrób to wolniej, ale powiedz, że potrwa.
 
-- **Liczba, lista numerów, zestawienie** → `ask_agent`, z prośbą o „same liczby i order_id, bez danych klientów”. Agent Base liczy po swojej stronie. Liczby dla kilku statusów naraz (każdy osobno) podaje poprawnie w jednym pytaniu: nie rozbijaj ich na osobne pytania, bo każde trwa kilkadziesiąt sekund. Przegląda ok. 100 rekordów naraz: wynik od 90 w jednym statusie, odpowiedź „nie mogę ustalić” albo dopisek „to nie jest pełny przegląd” = podziel na pojedyncze dni i zsumuj. Zbiorczych podziałów według cech zamówień (np. paczki dnia według kurierów) nie liczy pełnie: licz krokami. Pojedyncze numery sprawdzaj przez `getOrders` tylko wtedy, gdy od liczby zależy decyzja albo ktoś o to prosi, nie przy zwykłym pytaniu „ile”.
-- **Szczegóły jednego zamówienia** → `getOrders` z `order_id`.
-- `ask_agent`: nowy temat = bez `conversation_id`; maks. 2 pytania naraz i 5 na minutę. Nie widzi konfiguracji konta (automatycznych akcji, szablonów, zapisanych filtrów) i na takie pytania odsyła do panelu.
+| Potrzebujesz | Najszybciej | Unikaj |
+| :-- | :-- | :-- |
+| co się działo dziś / wczoraj: ile weszło w status, ile spakowano, które paczki utworzono | `getJournalList` (sekcja 7): jedno wywołanie oddaje do 1000 lekkich zdarzeń (ok. doby w szczycie), z `order_id`, typem i datą, bez danych osobowych; filtruj `logs_types` | `ask_agent` dzień po dniu, `getOrders` całych statusów |
+| ile teraz w kolejce / statusie | `ask_agent`, wszystkie statusy w **jednym** pytaniu (liczba osobno dla każdego); wynik od 90 w statusie → po dniach (sekcja 6) | osobne pytanie na każdy status |
+| lista `order_id` w statusie | `ask_agent` z prośbą o same `order_id` | `getOrders` tylko po to, żeby zebrać numery |
+| tracking wielu paczek | `getCourierPackagesStatusHistory` z listą `package_ids` w jednym wywołaniu (ID paczek z dziennika, `log_type` 9, albo z `getOrderPackages`) | `getOrderPackages` / historia paczka po paczce dla całego statusu |
+| od kiedy zamówienie w statusie | dziennik (`log_type` 18, ostatnie 3 dni); starsze: `date_in_status` z `getOrders` tylko dla kandydatów | `getOrders` wszystkich zamówień w statusie |
+| szczegóły jednego zamówienia (pozycje, uwagi, pola) | `getOrders` z `order_id` | |
+| jak coś zrobić w panelu | `ask_agent` | |
+
+Zasady:
+- **Niezależne odczyty wysyłaj równolegle**, nie jeden po drugim. Limit 100 zapytań na minutę jest daleko; `ask_agent` najwyżej 2 naraz i 5 na minutę.
+- **`ask_agent` bez odpowiedzi w limicie czasu albo „nie mogę ustalić”:** nie ponawiaj tego samego pytania. Zawęź je (krótszy okres) albo przejdź na API (dziennik, `getOrders` z filtrem).
+- **Zawężaj, zanim dociągniesz szczegóły:** najpierw lekka lista kandydatów (dziennik, `ask_agent`), potem `getOrders` / tracking tylko dla tych ponad progiem.
+- `ask_agent` liczy po swojej stronie, ale przegląda ok. 100 rekordów naraz i zbiorczych podziałów według cech zamówień (np. paczki według kurierów) nie liczy pełnie: licz krokami. Prośba zawsze „same liczby i order_id, bez danych klientów”. Pojedyncze numery sprawdzaj przez `getOrders` tylko wtedy, gdy od liczby zależy decyzja albo ktoś o to prosi.
+- `ask_agent`: nowy temat = bez `conversation_id`. Nie widzi konfiguracji konta (automatycznych akcji, szablonów, zapisanych filtrów) i na takie pytania odsyła do panelu.
 
 ## 3. Jedno zamówienie
 
