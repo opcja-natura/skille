@@ -37,7 +37,7 @@ Wywołania idą przez `run_api_call_readonly` jako `{"method": "...", "parameter
 
 Jedno zamówienie z `getOrders` to 3 do 15 tys. znaków z adresem i pozycjami. Dziesięć zamówień B2B zapycha rozmowę.
 
-- **Liczba, lista numerów, zestawienie** → `ask_agent`, z prośbą o „same liczby i order_id, bez danych klientów”. Agent Base liczy po swojej stronie. Liczby dla kilku statusów naraz (każdy osobno) podaje poprawnie w jednym pytaniu: nie rozbijaj ich na osobne pytania, bo każde trwa kilkadziesiąt sekund. Zwraca najwyżej ok. 100 rekordów: wynik 99–100 w jednym statusie albo dopisek „to nie jest pełny przegląd” = podziel na krótsze okresy. Zbiorczych podziałów według cech zamówień (np. paczki dnia według kurierów) nie liczy pełnie: licz krokami. Pojedyncze numery sprawdzaj przez `getOrders` tylko wtedy, gdy od liczby zależy decyzja albo ktoś o to prosi, nie przy zwykłym pytaniu „ile”.
+- **Liczba, lista numerów, zestawienie** → `ask_agent`, z prośbą o „same liczby i order_id, bez danych klientów”. Agent Base liczy po swojej stronie. Liczby dla kilku statusów naraz (każdy osobno) podaje poprawnie w jednym pytaniu: nie rozbijaj ich na osobne pytania, bo każde trwa kilkadziesiąt sekund. Przegląda ok. 100 rekordów naraz: wynik od 90 w jednym statusie, odpowiedź „nie mogę ustalić” albo dopisek „to nie jest pełny przegląd” = podziel na pojedyncze dni i zsumuj. Zbiorczych podziałów według cech zamówień (np. paczki dnia według kurierów) nie liczy pełnie: licz krokami. Pojedyncze numery sprawdzaj przez `getOrders` tylko wtedy, gdy od liczby zależy decyzja albo ktoś o to prosi, nie przy zwykłym pytaniu „ile”.
 - **Szczegóły jednego zamówienia** → `getOrders` z `order_id`.
 - `ask_agent`: nowy temat = bez `conversation_id`; maks. 2 pytania naraz i 5 na minutę. Nie widzi konfiguracji konta (automatycznych akcji, szablonów, zapisanych filtrów) i na takie pytania odsyła do panelu.
 
@@ -98,7 +98,7 @@ Kody nie są uporządkowane. „Kurier zabrał paczkę” = w historii jest jaki
 | `341571` | wysyłki marketingowe |
 | `9886` | B2B (wysyłka i odbiór) |
 
-Odpowiedź: liczba dla każdego statusu i suma, plus zakres („zamówienia potwierdzone od dd.mm”). Wynik 99–100 w statusie → zapytaj o ten status jeszcze raz w dwóch krótszych okresach i zsumuj. Pozostałe kolejki (odbiór osobisty `9890`, Amazon, TEMU, TikTok, dropshipping) tylko na prośbę. To liczba zamówień, nie paczek (jedno zamówienie B2B bywa kilkoma kartonami albo paletą).
+Odpowiedź: liczba dla każdego statusu i suma, plus zakres („zamówienia potwierdzone od dd.mm”). Wynik od 90 w statusie (w praktyce sklep `10454` w szczycie) → zapytaj o ten status osobno dla każdego dnia okna, który może mieć zamówienia (zwykle wczoraj i dziś; starsze dni jednym pytaniem), i zsumuj. Pytaj o konkretne dni („potwierdzonych 26.11.2026, cały dzień”), nie „od … do teraz”: na takie agent Base potrafi odpowiedzieć „nie mogę ustalić”. Liczba w kolejce sklepu spada w trakcie dnia, bo hub pakuje: podaj godzinę stanu. Pozostałe kolejki (odbiór osobisty `9890`, Amazon, TEMU, TikTok, dropshipping) tylko na prośbę. To liczba zamówień, nie paczek (jedno zamówienie B2B bywa kilkoma kartonami albo paletą).
 
 **Okno operacyjne.** Pytanie o bieżącą pracę ograniczasz do zakresu, w którym problem może się dziś pokazać. Zamówienie starsze niż okno albo już zostało obsłużone, albo jest sprawą zwrotów i reklamacji, a nie kolejki. Zakres podajesz w filtrze (`date_confirmed_from` w `getOrders`, data w pytaniu do `ask_agent`) i w odpowiedzi („sprawdziłam zamówienia z ostatnich 7 dni”).
 
