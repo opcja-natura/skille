@@ -1,6 +1,6 @@
 ---
 name: baselinker-opcja-natura
-description: Praca z BaseLinkerem (BL, Base.com) Opcji Natury przez konektor MCP `base`. Używaj ZAWSZE przed wywołaniem `run_api_call_readonly`, `run_api_call_all` albo `ask_agent` i gdy zadanie dotyczy zamówienia (sklep, marketplace, B2B, dropshipping): jego numeru, statusu, paczki i trackingu, zwrotu, komisu, rozchodu magazynu, uwag i pól; awizacji dostawy B2B; zamówień, które utknęły albo poszły złą ścieżką; pomocy przy arkuszach hubu (raport e-commerce, ile paczek dla kuriera, ewidencja zwrotów). NIE do sprzedaży B2B w liczbach, faktur i należności B2B, analiz sklepu ani masowych zmian katalogu BL.
+description: Praca z BaseLinkerem (BL, Base.com) Opcji Natury przez konektor MCP `base`. Używaj ZAWSZE przed wywołaniem `run_api_call_readonly`, `run_api_call_all` albo `ask_agent` i gdy zadanie dotyczy zamówienia (sklep, marketplace, B2B, dropshipping): jego numeru, statusu, paczki i trackingu, zwrotu, komisu, rozchodu magazynu, uwag i pól; awizacji dostawy B2B; zamówień, które utknęły albo poszły złą ścieżką; ile zamówień dziś do spakowania; pomocy przy arkuszach hubu (raport e-commerce, ile paczek dla kuriera, ewidencja zwrotów). NIE do sprzedaży B2B w liczbach, faktur i należności B2B, analiz sklepu ani masowych zmian katalogu BL.
 ---
 
 # BaseLinker – Opcja Natura (konektor MCP `base`)
@@ -13,7 +13,7 @@ Konektor działa na **żywym koncie**, bez środowiska testowego.
 
 | Zadanie | Plik |
 | :-- | :-- |
-| znaleźć zamówienie, rozpoznać numer, gotowe wywołania (paczka, kolejka, historia, stany) | `references/zapytania.md` |
+| znaleźć zamówienie, rozpoznać numer, gotowe wywołania (paczka, kolejka, ile dziś do spakowania, historia, stany) | `references/zapytania.md` |
 | skąd zamówienie przyszło, kto ustawia który status, co się wtedy dzieje, rozchód, ponowna wysyłka | `references/przeplywy.md` |
 | ID statusów, źródeł, pól własnych, kurierów | `references/konto.md` |
 | awizacja dostawy B2B | `references/awizacje.md` |
